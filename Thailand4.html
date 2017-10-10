@@ -1,160 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>China 2</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>China</title>
+    <title>Phuket</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>    /*nav bar*/
-    /*logo*/
-    .navbar-brand>img {
-        position: absolute;
-        left:calc(50% - 78px);
-    }
-    /*2 ben*/
-    .navbar-nav {
-        padding-top: 15px;}
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-        margin-bottom: 0;
-        border-radius: 0;
-        padding: 10px;
-        z-index: 1;
-        background: transparent;
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        border-color: transparent;
-        font-size: 15px;
-    }
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
 
-    /*menu*/
-    .dropdown ul {
-        background-color: transparent;
-        padding: 0;
-        margin: 0;
-    }
-    .dropdown li {
-        display: block;
-        width: 160px;
-        height: 50px;
+        /*menu*/
+        .dropdown ul {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
 
-    }
-    .dropdown li a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding: 16px;
-        text-align: justify;
-    }
-    .dropdown a:hover {
-        background: transparent;
-        color: white ;
-    }
-    .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
-        background-color: transparent;
-    }
-    .navbar-inverse .navbar-nav>li>a {
-        color: white;
-    }
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
 
-    /*==Dropdown Menu==*/
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-    }
-    .dropdown li {
-        position: relative;
-    }
-    .dropdown li:hover .dropdown-menu {
-        display: block;
-    }
-    .dropdown .dropdown-menu li a:hover  {
-        background-color: transparent;
-        color: royalblue;
-    }
-    .dropdown li:hover  {
-        display: block;
-    }
-    .dropdown-menu li {
-        margin-left: 0 !important;
-    }
-    /*Style cho search*/
-    input[type=text] {
-        width: 180px;
-        box-sizing: border-box;
-        border: 1px solid white;
-        border-radius: 4px;
-        font-size: 15px;
-        background-color: white;
-        background-position: 10px 10px;
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 15px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-        margin-right: 20px;
-    }
-    input[type=text]:focus {
-        width: 100%;
-        color: royalblue;
-    }
-    /*bookings*/
-    #booking a{
-        text-decoration:none ;
-    }
-    /*footer*/
-    /* Add a gray background color and some padding to the footer */
-    footer {
-        background-color: #f2f2f2;
-        padding: 25px;
-    }
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
 
-    footer a {
-        color: #959aa0;
-    }
+        footer a {
+            color: #959aa0;
+        }
 
-    ul.footer-menu li {
-        display: inline-block;
-        padding-left: 10px;
-    }
-    /*content*/
-    #heading1 {
-        font-family: 'Lato', sans-serif;;
-        font-size: 100px;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 0px;
-        color: grey;
-    }
-    #heading2 {
-        font-family: 'Courgette', cursive;
-        font-size: 40px;
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        color: grey;
-    }
-    .content {
-        margin-left: 15%;
-        margin-right: 15%;
-        font-family: 'Catamaran', sans-serif;
-        font-style: italic;
-        text-align: justify;
-    }
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
@@ -196,143 +191,119 @@
     </div>
 </nav>
 <!-- header img -->
-<div style="height: 100vh" id="tl">
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/GettyImages-148592078_high-5fa1f7118005.jpg"
-         width="100%" height="100%">
+<div id="tl">
+    <img src="https://aviascan.net/wp-content/uploads/2016/09/phuket-plyazh3-compressor.jpg" width="100%" height="100%">
 </div>
 <!-- content -->
 <!-- heading -->
 <div>
-    <h3 id="heading1"> Yunnan </h3>
-    <p id="heading2">Best towns and villages to beat the crowds</p>
-    <p align="center"><i> Source: Planet Ware </i></p>
+    <h3 id="heading1"> Phuket Town  </h3>
+    <p id="heading2"> the Thai holiday isle’s cultural capital </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
 </div>
 <!-- text -->
 <div class="content">
-    <p>A journey to China’s southwest province of Yunnan is a journey into the colourful cultures of the region’s Bai,
-        Yi and Naxi people, labyrinthine and historic old towns in the shadow of snow-capped peaks, and flavour-packed
-        street food and local markets.</p>
-    <p>Yunnan is a popular region for visitors, especially with Chinese tourists, so the following places are
-        recommended for their winning combination of all the best aspects of the region but with smaller crowds.</p>
-    <h2> Shaxi</h2>
-    <p>
-        Sitting in a fertile river valley surrounded by mountains, the ancient town of Shaxi was an important stop on
-        China’s fabled Tea Horse Road: tea caravans borne by horses, mules and yaks negotiated a spidery network of
-        trails through jungle and mountains to link southwest China with India via Tibet. Sugar, salt, and the tenets of
-        Buddhism and Christianity were also transported by merchants, monks and missionaries, and Shaxi’s
-        long-established Friday morning market is still the region’s most important trading occasion. Bai people from
-        nearby valleys are joined each week by Yi villagers travelling from more remote mountain settlements, and
-        Shaxi’s arcing main street is packed with buyers and sellers grabbing a quick breakfast of noodles or steamed
-        buns before settling down to essential negotiations. </p>
+    <p>Travellers who think that Phuket is all beaches and no culture may be surprised to find that there’s more to
+        Thailand’s most popular Andaman isle than sun and sea. Ditch your beach towel and head to the island’s east
+        coast: cultural capital Phuket Town will whizz you right back to the island’s roots.</p>
+    <p>Thanks to its strategic southern Thailand location and natural bounty, Phuket’s backstory is a fascinating one.
+        Europeans (Dutch, Portuguese, French, and British) began to arrive from the 16th century, but the largest group
+        of international arrivals were the Chinese, who flocked here in the late 19th century to stake their fortunes
+        on the tin-mining boom. These workers married into Phuket’s Siamese community, and the local ‘Baba’ (also known
+        as Peranakan) culture was born here. This distinctive cultural blend is visible all over Phuket Town, from its
+        architecture to its food.</p>
+    <p>Plenty of travellers blitz through Phuket Town on a half-day visit, but there’s plenty more to linger around for.
+        Stay a night or two and you’ll get to sample its busy nightlife, dig into its hugely varied culinary scene, explore
+        its vibrant art scene and crash in quirky century-old homes transformed into boutique guesthouses.</p>
     <br>
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/GettyImages-671895789_full-90067f130d35.jpg"
-         width="70%">
-    <p>In Shaxi’s old town around Sideng Jie, centuries-old mudbrick houses frame narrow laneways, and the steady but
-        inevitable gentrification that produces cafes, guesthouses and boutique hotels is, at least for now, tempered by
-        a sleepily authentic ambience where horse-riding Shaxi cowboys can still be seen carefully negotiating the
-        downhill path to the town’s main square. Ancient trees bookend the square’s ancient heritage structures, and the
-        local police relaxing in the shadow of the colourful Xingjiao Temple seem as laid-back as Shaxi’s sun-loving
-        cats and lazy dogs.</p>
-    <p> For a taste of traditional Bai food, seek out Orange Restaurant on Sideng Jie’s square, popular with Chinese and
-        foreign visitors (the English menu probably helps).</p>
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/The-Phuket-Thaihua-Museum-in-Phuket-Town-is-a-fusion-of-Chinese-and-European-architectural-building-styles.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
     <br>
-    <h2> Baisha</h2>
-    <p>Courtesy of direct flights from China’s eastern seaboard, Lijiang is an incredibly popular destination for
-        domestic travellers – tens of millions visit the old town warren of souvenir shops, boutique inns and karaoke
-        bars every year – but only a handful venture just 10km north to the small town of Baisha. With the audacious
-        profile of Yulong Xueshan (Jade Dragon Snow Mountain) as a backdrop, cycling to Baisha is a pleasant way to get
-        there and to escape from Lijiang, swapping crowded tangles of lanes and canals for wider and quieter streets
-        perfect for independent exploration.</p>
+    <h2> Sino-Portuguese architecture </h2>
+    <p>
+        Phuket Town's Baba inhabitants were made rich by tin-mining and built majestic, European- and Chinese-inspired
+        mansions featuring breezy terraces, elaborate wood-carved doors and central tile-floored courtyards. Others set
+        up slim, multi-level hôrng tăa·ou (shophouses), with louvered windows, upper terraces and elegantly arched
+        ground-floor porches.</p>
+    <p>A DIY walking tour of Phuket Town’s Sino-Portuguese highlights could begin at the Standard Chartered Bank, before
+        meandering along Th Thalang with its colourfully restored shophouses. Next, wander past vividly revamped shophouses
+        with golden-stuccoed pillars on pretty Soi Romanee. Check out the stunningly refurbished Phra Phitak Chyn Pracha
+        Mansion (now home to famed Blue Elephant Thai restaurant) and pop next door to swoon over the antiques in
+        Chyn Pracha House. Brush up on local history at Phuket Thaihua Museum on Th Krabi or, for an in-depth tour with
+        local experts, link up with Phuket Heritage Trails.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/Phuket-Towns-Jui-Tui-Shrine-shrine-attracts-those-wishing-to-bolster-their-physical-health-through-prayer.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
     <br>
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/GettyImages-154417927_full-fe465b1ca504.jpg"
-         width="70%">
-    <p>Local musicians from Yunnan’s Naxi people play in simple pavilions – Baisha Xiyue or Baisha Fine Music is a
-        classical form unique to the broader Lijiang area – and a courtyard house conceals the Baisha Naxi Embroidery
-        Institute, showcasing and protecting the art of traditional Naxi embroidery. A short walk reveals the Baisha
-        frescoes, more than 50 murals informed by Tibetan Buddhism filling a slightly ramshackle collection of overgrown
-        temples adorned, in season, with cherry blossom.</p>
-    <p> Simple restaurants, butchers and spice shops sit next to dusty antique emporia on Baisha’s cobblestoned main
-        street, while a pair of cafes offering the traveller's holy trinity of espresso, wi-fi and freshly-squeezed
-        juice hints at the changes ahead for this ancient Naxi town.</p>
-    <h2> Xizhou</h2>
-    <p>At the southern end of Erhai Lake, Dali Old Town is often overrun with Chinese travellers. Go just 18km north,
-        though, and the village of Xizhou is a quieter and option for experiencing the culture of the local Bai people.
-        It’s certainly not undiscovered – honeymooners being photographed in traditional garb amid Xizhou’s heritage
-        architecture are ubiquitous on spring and summer weekends – but a weekday visit allows relaxed exploration of
-        local markets and the ornate family mansions and temples of early 20th-century traders, along with the chance to
-        try baba (savoury Bai pancakes), available from all good street vendors.</p>
+    <h2>Hidden shrines</h2>
+    <p>Phuket’s capital isn’t all tin-mining grandeur. Sprinkled amid the Sino-Portuguese storefronts are a number of
+        serene Chinese temples that are a pleasure to explore. One of the most enchanting is the elaborately carved,
+        restored 1890s Shrine of the Serene Light, a Taoist shrine with intricate wall etchings at the end of an alley
+        off Th Phang-Nga.</p>
+    <p>Visit in late September or October and you’ll see these hushed worship spaces burst into action for Phuket’s
+        famously frenzied Vegetarian Festival. Expect thunderous firecrackers, skewer- and knife-pierced worshippers,
+        and colourful street parades. This important local celebration invokes the nine emperor gods of Taoism through
+        self-mutilating mediums (mostly men). Jui Tui Shrine and Bang Niew Shrine are major sites for festival action.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/Expect-fresh-and-inventive-fare-at-Suay-a-Phuket-Town-dining-institution.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <h2> Fabulous food </h2>
+    <p> Phuket Town’s multicultural makeup means its cuisine is as diverse as it is celebrated. From super-fresh seafood
+        to some of the best curries outside the Indian subcontinent, Phuket Town’s culinary creations, both traditional
+        and inventive, are just as likely to be served up on shophouse porches as inside early-20th-century mansions.</p>
+    <p>On Th Thalang, Kopitiam by Wilai is a great place to try some Phuketian favourites; try the mee sua (sautéed noodles
+        with egg, sea bass, prawns and squid). A few doors east, long-standing Abdul’s Roti Shop doles out roti with sweet
+        banana or savoury massaman curry. Antique-packed Sino-Portuguese townhouse Raya pulls in a loyal following for its
+        well-priced Phuket specialties, such as mŏo hong (pepper-and-garlic-braised pork). At Cookie House, pick up boxes
+        of Phuket’s signature cookies made from freshly pulverised almond paste, egg yolks and butter.</p>
+    <p>At the gourmet end of the local dining spectrum, Suay surprises with fantastic fusion fare featuring mangosteen
+        sôm·đam (spicy green papaya salad) and lamb-chop massaman curry. Blue Elephant hits all the classic notes with
+        its Royal Thai delights served in a glammed-up 1903 mansion.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/Bookhemian-is-one-of-a-growing-number-of-hip-cafes-in-Phuket-Town.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
     <br>
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/Xizhou2-cb1aaaa5270c.jpg"
-         width="70%">
-
-    <p>To spend the night, head to the Linden Centre, a boutique hotel housed in the former home of Yang Pinxiang, a
-        well-off businessman who traded silk and tea on the Tea Horse Road. Under the leviathan Cangshan mountain range,
-        the centre, arrayed across four heritage courtyards, is located amid a rural landscape on the outskirts of the
-        village and owned by long-time China residents Brian and Jeanne Linden. They’ve also recently restored another
-        historic Xizhou mansion as the Linden Commons, a sprawling 1939 building that houses guest accommodation, a
-        garden restaurant and an artisan bakery.
-        Guandu
-
-        With China’s fifth busiest airport, high-end shopping malls and a future as the economic capital of the greater
-        Mekong region, Kunming is one of China’s most dynamic cities, but 8km south of downtown is a surprising area
-        that stands in huge contrast to Kunming’s growth and energy.</p>
-
-    <h2> Baisha </h2>
-    <p>Courtesy of direct flights from China’s eastern seaboard, Lijiang is an incredibly popular destination for
-        domestic travellers – tens of millions visit the old town warren of souvenir shops, boutique inns and karaoke
-        bars every year – but only a handful venture just 10km north to the small town of Baisha. With the audacious
-        profile of Yulong Xueshan (Jade Dragon Snow Mountain) as a backdrop, cycling to Baisha is a pleasant way to get
-        there and to escape from Lijiang, swapping crowded tangles of lanes and canals for wider and quieter streets
-        perfect for independent exploration.</p>
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/GettyImages-154417927_full-fe465b1ca504.jpg"
-         width="70%">
-    <p>Local musicians from Yunnan’s Naxi people play in simple pavilions – Baisha Xiyue or Baisha Fine Music is a
-        classical form unique to the broader Lijiang area – and a courtyard house conceals the Baisha Naxi Embroidery
-        Institute, showcasing and protecting the art of traditional Naxi embroidery. A short walk reveals the Baisha
-        frescoes, more than 50 murals informed by Tibetan Buddhism filling a slightly ramshackle collection of overgrown
-        temples adorned, in season, with cherry blossom.</p>
-
-    <p>Simple restaurants, butchers and spice shops sit next to dusty antique emporia on Baisha’s cobblestoned main
-        street, while a pair of cafes offering the traveller's holy trinity of espresso, wi-fi and freshly-squeezed
-        juice hints at the changes ahead for this ancient Naxi town.</p>
-    <h2>Xizhou</h2>
-    <p>
-        At the southern end of Erhai Lake, Dali Old Town is often overrun with Chinese travellers. Go just 18km north,
-        though, and the village of Xizhou is a quieter and option for experiencing the culture of the local Bai people.
-        It’s certainly not undiscovered – honeymooners being photographed in traditional garb amid Xizhou’s heritage
-        architecture are ubiquitous on spring and summer weekends – but a weekday visit allows relaxed exploration of
-        local markets and the ornate family mansions and temples of early 20th-century traders, along with the chance to
-        try baba (savoury Bai pancakes), available from all good street vendors.</p>
-
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/Xizhou2-cb1aaaa5270c.jpg"
-         width="70%">
-    <p>
-        To spend the night, head to the Linden Centre, a boutique hotel housed in the former home of Yang Pinxiang, a
-        well-off businessman who traded silk and tea on the Tea Horse Road. Under the leviathan Cangshan mountain range,
-        the centre, arrayed across four heritage courtyards, is located amid a rural landscape on the outskirts of the
-        village and owned by long-time China residents Brian and Jeanne Linden. They’ve also recently restored another
-        historic Xizhou mansion as the Linden Commons, a sprawling 1939 building that houses guest accommodation, a
-        garden restaurant and an artisan bakery.</p>
-    <h2>Guandu</h2>
-    <p>
-        With China’s fifth busiest airport, high-end shopping malls and a future as the economic capital of the greater
-        Mekong region, Kunming is one of China’s most dynamic cities, but 8km south of downtown is a surprising area
-        that stands in huge contrast to Kunming’s growth and energy.</p>
+    <h2>Cafe culture</h2>
+    <p>Coffee lovers, you’re in luck. Though this isn’t quite Melbourne or London, Phuket Town has a lively emerging
+        coffee scene and there are plenty of urban-chic spots to get your caffeine fix in style.</p>
+    <p>Sporting lots of exposed brick and wall-mounted bicycles, Th Thalang cafe-gallery Bo(ok)hemian is the perfect example
+        of Phuket Town’s creative buzz. It's the perfect place to while away a few hours over tasty cakes and single-origin
+        espresso with a novel in hand. Across the street, China Inn lures visitors into a beautifully renovated Sino-Portuguese
+        home for tea, coffee and organic-fuelled bites.</p>
+    <p>On Th Yaowarat, Gallery Cafe is a hugely popular yet laid-back hang-out for delicious breakfasts (Thai and European),
+        brews and fresh juices in a revamped yellow townhouse.</p>
     <br>
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/Guandu-Kunming2-1e94df3d64e3.jpg"
-         width="70%">
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/Casa-Blanca-is-just-one-of-a-handful-of-heritage-boutique-hotels-in-Phuket-Town.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <br>
+    <h2> Boutique sleeps </h2>
     <p>
-        Reached by broad boulevards lined with apartment blocks, Guandu manages to remain a compact village within a
-        city, and for recent arrivals from Yunnan’s provinces it’s a less frantic, comforting reminder of their own
-        hometowns. Every weekend, Dai people from the Xishuangbanna Region bordering Laos and Myanmar join with Tibetan
-        speakers from northwest Yunnan or Bai people from around Dali to recreate a taste of home. Scratchy speakers are
-        harnessed for impromptu outdoor karaoke sessions, and Guandu’s elegant bridges and canals are enlivened by elder
-        statesmen of music coaxing tunes from traditional instruments.</p>
-    <p>
-        A trip here is made even more worthwhile for street food fans because of the options for multi-course snacking.
-        Feast on chilli-laced squid, fiery lamb kebabs from Muslim street vendors, and the classic Yunnanese dish of
-        guoqiao mixian, or ‘Crossing the Bridge Noodles’.</p>
+        Phuket Town is known for its excellent-value lodgings, many of which are tucked into refurbished century-old buildings
+        oozing historical charm. Cheap sleeps abound in characterful, European-style hostel dorms, such as those at Ai
+        Phuket Hostel. Comfy dorms are on offer alongside stylish mosaic-tiled doubles at Memory at On On Hotel;
+        this gorgeously remodelled Sino-Portuguese stunner starred as a grimy backpacker haunt in the film adaptation of The Beach.</p>
+    <p>If you're more of a flashpacker, bag one of four arty polished-concrete rooms at boutique-chic The RomManee, which
+        unravels behind a bright turquoise façade on Soi Romanee. An exquisite upper-midrange choice is white-on-white
+        boutique pad Casa Blanca, complete with private pool, all-fresh cafe and Spanish-inspired flourishes.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/Phuket-Towns-Drawing-Room-gallery-has-a-street-art-vibe.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <br>
+    <h2>Art and fashion</h2>
+    <p>Many of Phuket Town's historical shophouses house an eclectic bunch of one-of-a-kind boutiques and local artist-owned
+        studio-galleries. Squeeze past antiquated stone Buddhas to find Thai-vintage-inspired women’s couture at Ranida,
+        or sift through rainbows of fabrics at Ban Boran Textiles.</p>
+    <p>With wavy kaleidoscopic canvases, metallic furniture and soft-booming background bass, street-art-inspired Drawing
+        Room is easily Phuket Town’s most fun gallery. Meanwhile, Mr Zen crafts charismatic abstract portraits and canvases
+        of mythical creatures at shophouse-bound Wua Art Gallery & Studio.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/03/A-mobile-bar-serves-punters-at-Phuket-Towns-Weekend-Market.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <br>
+    <h2>Market magic</h2>
+    <p>There’s nothing like plunging into the depths of a local market to find Phuket’s pulse; several can be found in
+        Phuket Town.</p>
+    <p>The jam-packed Weekend Market, three kilometres southwest of town, is reminiscent of Bangkok’s legendary Chatuchak
+        Weekend Market (only not as massive). You name it, they’ve got it, from knock-off designer handbags to silky
+        moo·ay tai (Thai boxing) shorts, to tasty and affordable evening feeds.</p>
+    <p>Constantly stocked with fresh produce, busy Th Ranong Day Market offers an insight into day-to-day life on this
+        ever-popular island. From Wednesday to Friday (from 4pm), an evening shopaganza unfolds at Indy Market. Travellers
+        can also stock up on quirky souvenirs and vintage clothing flogged by stylish young Thais at Th Thalang’s Sunday
+        Walking St (from 4pm).</p>
 </div>
+<br>
+<br>
+<br>
 <footer>
     <div class="container-fluid">
         <div class="row">

@@ -10,16 +10,13 @@
     <style>
         /*nav bar*/
         /*logo*/
-        .navbar-brand > img {
+        .navbar-brand>img {
             position: absolute;
-            left: calc(50% - 78px);
+            left:calc(50% - 78px);
         }
-
         /*2 ben*/
         .navbar-nav {
-            padding-top: 15px;
-        }
-
+            padding-top: 15px;}
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
             margin-bottom: 0;
@@ -40,14 +37,12 @@
             padding: 0;
             margin: 0;
         }
-
         .dropdown li {
             display: block;
-            width: 150px;
+            width: 160px;
             height: 50px;
 
         }
-
         .dropdown li a {
             text-decoration: none;
             color: white;
@@ -55,17 +50,14 @@
             padding: 16px;
             text-align: justify;
         }
-
         .dropdown a:hover {
             background: transparent;
-            color: white;
+            color: white ;
         }
-
-        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
             background-color: transparent;
         }
-
-        .navbar-inverse .navbar-nav > li > a {
+        .navbar-inverse .navbar-nav>li>a {
             color: white;
         }
 
@@ -74,28 +66,22 @@
             display: none;
             position: absolute;
         }
-
         .dropdown li {
             position: relative;
         }
-
         .dropdown li:hover .dropdown-menu {
             display: block;
         }
-
-        .dropdown .dropdown-menu li a:hover {
+        .dropdown .dropdown-menu li a:hover  {
             background-color: transparent;
-            color: cornflowerblue;
+            color: royalblue;
         }
-
-        .dropdown li:hover {
+        .dropdown li:hover  {
             display: block;
         }
-
         .dropdown-menu li {
             margin-left: 0 !important;
         }
-
         /*Style cho search*/
         input[type=text] {
             width: 180px;
@@ -111,12 +97,29 @@
             transition: width 0.4s ease-in-out;
             margin-right: 20px;
         }
-
         input[type=text]:focus {
             width: 100%;
             color: royalblue;
         }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
 
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
         /*content*/
         #heading1 {
             font-family: 'Lato', sans-serif;;
@@ -126,7 +129,6 @@
             margin-bottom: 0px;
             color: grey;
         }
-
         #heading2 {
             font-family: 'Courgette', cursive;
             font-size: 40px;
@@ -135,7 +137,6 @@
             margin-bottom: 20px;
             color: grey;
         }
-
         .content {
             margin-left: 15%;
             margin-right: 15%;
@@ -143,81 +144,55 @@
             font-style: italic;
             text-align: justify;
         }
-
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-
-        /*footer*/
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        a {
-            color: #959aa0;
-        }
-
-        ul.footer-menu li {
-            display: inline-block;
-            padding-left: 10px;
-        }
     </style>
 </head>
 <body>
-<!-- menu -->
+<!-- /menu -->
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div  class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Video</b> <span class="caret"></span></a>
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Adventure Travel</a></li>
-                        <li><a href="#">Food and drink</a></li>
-                        <li><a href="#">Journey</a></li>
+                        <li><a href="Form destination(trang nho).html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">China</a></li>
-                        <li><a href="#">Korea</a></li>
-                        <li><a href="#">Thailand</a></li>
-                        <li><a href="#">Vietnam</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Hotels</a></li>
-                        <li><a href="#">Flights</a></li>
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a></li>
+                        <li><a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com" target="_blank">Transportation</a></li>
                     </ul>
                 </li>
             </ul>
-            <a style="padding: 0" class="navbar-brand" href="#"><img src="images/cs-lonely-planet.png" height="72"
-                                                                     width="156"/></a>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <form>
-                        <input type="text" name="search" placeholder="Search..">
-                    </form>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img  src="images/cs-lonely-planet.png" height="72" width="156"/></a>
+            <ul  class="nav navbar-nav navbar-right">
+                <li><form>
+                    <input type="text" name="search" placeholder="Search..">
+
+                </form></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- header img -->
-<div id="tl">
+<div style="height: 100vh" id="tl">
     <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/White-lotus-lake-mountluofu_cs.jpg"
-         width="100%" height="auto">
+         width="100%" height="100%">
 </div>
 <!-- content -->
 <!-- heading -->
@@ -331,16 +306,15 @@
         City Inn Yuandong Branch (octhotels.com) is a clean, mid-range hotel with a central location and affordable rooms. Kande International Hotelis a luxury hotel with an unrivalled location opposite West Lake.
     </p>
 </div>
-<!-- /footer -->
 <footer>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2" id="so1">
                 <h5>DESTINATIONS</h5>
-                <a href="">China</a><br>
-                <a href="">Korea</a><br>
-                <a href="">Thailand</a><br>
-                <a href="">Vietnam</a><br>
+                <a href="Form%20destination(trang%20nho).html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
             </div>
 
             <div class="col-lg-2" id="so1">
@@ -357,6 +331,7 @@
                 <a href="">Talk to Lonely Planet</a><br>
                 <a href="">Travel Buddies & for sale</a><br>
             </div>
+
             <div class="col-lg-2" id="so1">
                 <h5>INTERESTS</h5>
                 <a href="">Adventure travel</a><br>
@@ -370,11 +345,14 @@
                 <a href="">Road trips</a>
                 <a href="">Travel on a budget</a>
             </div>
+
             <div class="col-lg-2" id="so1">
                 <h5>TRAVEL BOOKING</h5>
-                <a href="">Hotel</a><br>
-                <a href="">Flight</a><br>
-                <a href="">Insurance</a><br>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
             </div>
 
             <div class="col-lg-2" id="so1">
@@ -643,7 +621,7 @@
         <hr style="color: #959aa0; width: 90%; " text-center>
         <div class="pull-left" id="footertrai">
             <div class="col-lg-3">
-                <img src="anh.png" width="100px" style="margin-left: 60px;">
+                <img src="images/anh.png" width="100px" style="margin-left: 60px;">
                 <p></p></div>
         </div>
         <div>
@@ -658,16 +636,17 @@
                             <li><a href="">Tourism Solutions</a></li>
                             <li><a href="">Terms and Conditions</a></li>
                             <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </nav>
                 <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No part of
                     this site may be reproduced without our written permission.
                 </p>
-                </ul>
             </div>
             <div class="col-lg-2">
-                <a href=""><img src="pin.png" width="30px"></a>
-                <a href=""><img src="tw.png" width="30px"></a>
-                <a href=""><img src="fb.png" width="30px"></a>
+                <a href=""><img src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                <a href=""><img src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                <a href=""><img src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
             </div>
         </div>
     </div>
