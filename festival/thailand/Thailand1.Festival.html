@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,150 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        /*nav bar*/
-        /*logo*/
-        .navbar-brand>img {
-            position: absolute;
-            left:calc(50% - 78px);
-        }
-        /*2 ben*/
-        .navbar-nav {
-            padding-top: 15px;}
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            padding: 10px;
-            z-index: 1;
-            background: transparent;
-            position: absolute;
-            width: 100%;
-            height: 100px;
-            border-color: transparent;
-            font-size: 15px;
-        }
-
-        /*menu*/
-        .dropdown ul {
-            background-color: rgba(256, 256, 256, 0.2);
-            padding: 0;
-            margin: 0;
-        }
-        .dropdown li {
-            display: block;
-            width: 160px;
-            height: 50px;
-
-        }
-        .dropdown li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            padding: 16px;
-            text-align: justify;
-        }
-        .dropdown a:hover {
-            background: transparent;
-            color: white ;
-        }
-        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
-            background-color: transparent;
-        }
-        .navbar-inverse .navbar-nav>li>a {
-            color: white;
-        }
-
-        /*==Dropdown Menu==*/
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-        }
-        .dropdown li {
-            position: relative;
-        }
-        .dropdown li:hover .dropdown-menu {
-            display: block;
-        }
-        .dropdown .dropdown-menu li a:hover  {
-            background-color: transparent;
-            color: royalblue;
-        }
-        .dropdown li:hover  {
-            display: block;
-        }
-        .dropdown-menu li {
-            margin-left: 0 !important;
-        }
-        /*Style cho search*/
-        input[type=text] {
-            width: 180px;
-            box-sizing: border-box;
-            border: 1px solid white;
-            border-radius: 4px;
-            font-size: 15px;
-            background-color: white;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 15px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-            margin-right: 20px;
-        }
-        input[type=text]:focus {
-            width: 100%;
-            color: royalblue;
-        }
-        /*bookings*/
-        #booking a{
-            text-decoration:none ;
-        }
-        /*footer*/
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        footer a {
-            color: #959aa0;
-        }
-
-        ul.footer-menu li {
-            display: inline-block;
-            padding-left: 10px;
-        }
-        /*content*/
-        #heading1 {
-            font-family: 'Lato', sans-serif;;
-            font-size: 100px;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 0px;
-            color: grey;
-        }
-        #heading2 {
-            font-family: 'Courgette', cursive;
-            font-size: 40px;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 20px;
-            color: grey;
-        }
-        .content {
-            margin-left: 15%;
-            margin-right: 15%;
-            font-family: 'Catamaran', sans-serif;
-            font-style: italic;
-            text-align: justify;
-        }
-        .content img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../../css/baiviet.css">
 </head>
 <body>
 <!-- /menu -->
@@ -159,22 +15,20 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="Video.html"><b>Video</b></a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                <li class="dropdown"><a href="../../video/Video.html"><b>Video</b></a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><b>Destination</b> <span
+                        class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="China_destination.html">China</a></li>
-                        <li><a href="Korea_destination.html">Korea</a></li>
-                        <li><a href="Thailand.html">Thailand</a></li>
-                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                        <li><a href="../../destination/china-destination.html">China</a></li>
+                        <li><a href="../../destination/Korea_destination.html">Korea</a></li>
+                        <li><a href="../../destination/Thailand.html">Thailand</a></li>
+                        <li><a href="../../destination/Vietnam_destination.html">Vietnam</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><b>Bookings</b> <span
+                        class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
                         <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
@@ -184,22 +38,20 @@
                                target="_blank">Transportation</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><b>Interest</b> <span
+                        class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="FoodnDr.html">Food and Drink</a></li>
-                        <li><a href="Festival.html">Festival</a></li>
+                        <li><a href="../../foodanddrink/foodanddrink.html">Food and Drink</a></li>
+                        <li><a href="../festival.html">Festival</a></li>
                     </ul>
                 </li>
             </ul>
-            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
-                                                                                    height="72" width="156"/></a>
+            <a style="padding: 0" class="navbar-brand" href="../../index.html"><img
+                    src="../../images/cs-lonely-planet.png" height="72" width="156"/></a>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <form>
-                        <input type="text" name="search" placeholder="Search..">
-                    </form>
+                    <form><input type="text" name="search" placeholder="Search.."></form>
                 </li>
             </ul>
         </div>
@@ -219,24 +71,39 @@
 </div>
 <!-- text -->
 <div class="content">
-    <p>So you might have missed Songkran 2016, or you had an amazing time and want to head straight back to Thailand. Well we've got tips for first-timers, plus a few Thai festivals you might not have known about to get your in the party mood. Don't forget your camera!</p>
+    <p>So you might have missed Songkran 2016, or you had an amazing time and want to head straight back to Thailand.
+        Well we've got tips for first-timers, plus a few Thai festivals you might not have known about to get your in
+        the party mood. Don't forget your camera!</p>
     <br>
 
     <h2> Songkran Festival </h2>
     <h4>What is Songkran?</h4>
-    <p>It's a week-long festival to celebrate Thai New Year and the end of dry season, which is why it's also known as Thailand's Water Festival.Thai locals celebrate by cleansing their Buddha statues and temples - this is where throwing water has originated from. Thai New Year, and this giant water festival, is a huge public holiday for locals and you can definitely expect to get involved - backpackers and holidaymakers are popular targets during the water fights!</p>
+    <p>It's a week-long festival to celebrate Thai New Year and the end of dry season, which is why it's also known as
+        Thailand's Water Festival.Thai locals celebrate by cleansing their Buddha statues and temples - this is where
+        throwing water has originated from. Thai New Year, and this giant water festival, is a huge public holiday for
+        locals and you can definitely expect to get involved - backpackers and holidaymakers are popular targets during
+        the water fights!</p>
     <h4>Where is Songkran celebrated in Thailand?</h4>
-    <p>Everywhere, there are big celebrations in Bangkok, Chiang Mai and Phuket. Bangkok's The Khao San Road is a battle zone during this time, so buy a water pistol and get stuck in! You'll usually find barrels of water in the streets for refilling your ammo.</p>
+    <p>Everywhere, there are big celebrations in Bangkok, Chiang Mai and Phuket. Bangkok's The Khao San Road is a battle
+        zone during this time, so buy a water pistol and get stuck in! You'll usually find barrels of water in the
+        streets for refilling your ammo.</p>
     <h4>When is Songkran Festival?</h4>
     <p>Usually held on April 13th - 15th, however celebrations can go on for as long as a week.</p>
-    <iframe width="900" height="600" src="https://www.youtube.com/embed/7bmWTMMsI2g" frameborder="0" allowfullscreen></iframe>
+    <iframe width="900" height="600" src="https://www.youtube.com/embed/7bmWTMMsI2g" frameborder="0"
+            allowfullscreen></iframe>
     <br>
 
     <h2>Loy Krathong</h2>
     <h4>What is Loy Krathong?</h4>
-    <p>Thailand's Festival of Lights, is a lantern festival (not to be confused with Yi Peng, see below), held to thank the Goddess of Water at the end of the harvest. Loy Krathong in fact means "to float a basket". It's a time to cast off any negative emotions you may have been harbouring and bring luck for the next year. Locals send out small, ornate lanterns or paper boats, filled with incense, candles and flowers onto the rivers.</p>
+    <p>Thailand's Festival of Lights, is a lantern festival (not to be confused with Yi Peng, see below), held to thank
+        the Goddess of Water at the end of the harvest. Loy Krathong in fact means "to float a basket". It's a time to
+        cast off any negative emotions you may have been harbouring and bring luck for the next year. Locals send out
+        small, ornate lanterns or paper boats, filled with incense, candles and flowers onto the rivers.</p>
     <h4>Where is the Festival of Light celebrated in Thailand?</h4>
-    <p>It's celebrated nationally, but festivities are more common in the big cities like Bangkok and Phuket. However, if you really want to get in on the action then head to Chiang Mai - it's known as the place to be during Loy Krathong. Make sure you stay in a riverside hotel - they'll often put on performances and shows for Loy Krathong. Oh, and don't forget to purchase your lantern from local stalls around the time of the festival.</p>
+    <p>It's celebrated nationally, but festivities are more common in the big cities like Bangkok and Phuket. However,
+        if you really want to get in on the action then head to Chiang Mai - it's known as the place to be during Loy
+        Krathong. Make sure you stay in a riverside hotel - they'll often put on performances and shows for Loy
+        Krathong. Oh, and don't forget to purchase your lantern from local stalls around the time of the festival.</p>
     <h4>When is Loy Krathong?</h4>
     <p>t's held annually mid-November.</p>
     <br>
@@ -245,18 +112,33 @@
     <br>
     <h2>Yi Peng</h2>
     <h4>What is Yi Peng?</h4>
-    <p>It's Chiang Mai's Lantern Festival. This is one of the better known festivals in Thailand, where lanterns are sent up into the air to pay respect to Buddha. Similarly to Loy Krathong, it's also said to help you rid your own personal demons. Thousands of paper lanterns are sent into the sky, creating a flock of glowing, floating fires.</p>
+    <p>It's Chiang Mai's Lantern Festival. This is one of the better known festivals in Thailand, where lanterns are
+        sent up into the air to pay respect to Buddha. Similarly to Loy Krathong, it's also said to help you rid your
+        own personal demons. Thousands of paper lanterns are sent into the sky, creating a flock of glowing, floating
+        fires.</p>
     <h4>Where is Yi Peng celebrated in Thailand?</h4>
-    <p>There are two big events in Chiang Mai; one for locals and one for tourists. If you're looking for the lantern release (pictured) go to Mae Jo University, where around 5,000 people gather to let their lanterns escape into the night sky. The tourist event is less crowded and tickets can cost about £70. Families and photographers will probably find it easier to attend the ticketed event - you won't have to battle for your seat or tripod space. But, if you want to see the beautiful ceremonies and colourful paper lanterns for free then head to the Three Kings Monument and Chiang Mai Old Town.</p>
+    <p>There are two big events in Chiang Mai; one for locals and one for tourists. If you're looking for the lantern
+        release (pictured) go to Mae Jo University, where around 5,000 people gather to let their lanterns escape into
+        the night sky. The tourist event is less crowded and tickets can cost about £70. Families and photographers will
+        probably find it easier to attend the ticketed event - you won't have to battle for your seat or tripod space.
+        But, if you want to see the beautiful ceremonies and colourful paper lanterns for free then head to the Three
+        Kings Monument and Chiang Mai Old Town.</p>
     <h4>November, usually at the same time as Loy Krathong.</h4>
     <img src="https://content.skyscnr.com/8d1db9cfa2d6e4bd18f3124cc004b9e1/thai-lantern-fest.png?resize=800px:99999px&quality=75"
          width="70%">
     <br>
     <h2>Lop Buri Festival</h2>
     <h4>What is Lop Buri Festival?</h4>
-    <p>It's also known as the Monkey Banquet Festival, so you can imagine the scene...no? Well it features plenty of macaque monkeys who have set up camp in the Khmer buildings around the town. It's believed that these monkeys bring good luck, as well as tourism business and good fortune to the province. Every year local residents, hoteliers and travellers honour them with a feast. It looks like a Mad Hatter's Tea Party - the monkeys take the fruit, sticky rice and treats, eat them, play with them and stick them where they really shouldn't. However, the naughty table manners are tolerated for the continued good fortune of the region.</h2>
+    <p>It's also known as the Monkey Banquet Festival, so you can imagine the scene...no? Well it features plenty of
+        macaque monkeys who have set up camp in the Khmer buildings around the town. It's believed that these monkeys
+        bring good luck, as well as tourism business and good fortune to the province. Every year local residents,
+        hoteliers and travellers honour them with a feast. It looks like a Mad Hatter's Tea Party - the monkeys take the
+        fruit, sticky rice and treats, eat them, play with them and stick them where they really shouldn't. However, the
+        naughty table manners are tolerated for the continued good fortune of the region.</h2>
     <h4>Where is Lop Buri celebrated in Thailand?</h4>
-    <p>In the Lop Buri Province. The easiest way to get there is by tour, or bus from Bangkok - it's 90km north of the Thai capital. The monkeys' food is usually laid out in front of Pra Prang Sam Yot Temple, while everyone gathers round to photograph, play with and feed the monkeys a little more.</p>
+    <p>In the Lop Buri Province. The easiest way to get there is by tour, or bus from Bangkok - it's 90km north of the
+        Thai capital. The monkeys' food is usually laid out in front of Pra Prang Sam Yot Temple, while everyone gathers
+        round to photograph, play with and feed the monkeys a little more.</p>
     <h4>When is Lop Buri Festival?</h4>
     <p>November - the exact dates for this year have not yet been announced, but in 2015 it was on November 28-29th</p>
     <br>
@@ -265,9 +147,18 @@
     <br>
     <h2>Full Moon Party</h2>
     <h4>What is the Full Moon Party?</h4>
-    <p>Ok, so it's not technically a festival, but it is the best beach party on the planet. The Full Moon parties first started more than 30 years ago, and have evolved to become a 'must do' on most South East Asia itineraries. Every type of music is issued from the booming speakers in each bar, the alcohol is served in fishbowls and you'll probably leave the evening with a few new best friends. Find out how you can make it 'til dawn with our survival guide to Koh Phangan's Full Moon party.</h2>
+    <p>Ok, so it's not technically a festival, but it is the best beach party on the planet. The Full Moon parties first
+        started more than 30 years ago, and have evolved to become a 'must do' on most South East Asia itineraries.
+        Every type of music is issued from the booming speakers in each bar, the alcohol is served in fishbowls and
+        you'll probably leave the evening with a few new best friends. Find out how you can make it 'til dawn with our
+        survival guide to Koh Phangan's Full Moon party.</h2>
     <h4>Where is the Full Moon Party in Thailand?</h4>
-    <p>There are many versions held on sandy beaches across Thailand, but the official (and biggest) is in Haad Rin, on the southeast Thai island of Koh Phangan. If you want to be close to the action and only a short walk from your bed once the party finishes at sunrise, stay in Haad Rin. You'll need to either book in advance or arrive a few days before the event to make sure you have accommodation, as the island is usually booked out on the night. Of course, if you miss Full Moon you could attend Half Moon, or Quarter Moon Parties - there's always something going on.</p>
+    <p>There are many versions held on sandy beaches across Thailand, but the official (and biggest) is in Haad Rin, on
+        the southeast Thai island of Koh Phangan. If you want to be close to the action and only a short walk from your
+        bed once the party finishes at sunrise, stay in Haad Rin. You'll need to either book in advance or arrive a few
+        days before the event to make sure you have accommodation, as the island is usually booked out on the night. Of
+        course, if you miss Full Moon you could attend Half Moon, or Quarter Moon Parties - there's always something
+        going on.</p>
     <h4>When is the Full Moon Party?</h4>
     <p>It's held monthly on Haad Rin Beach.</p>
     <br>
@@ -282,30 +173,23 @@
 <footer>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4" id="so1">
-                <h5>DESTINATIONS</h5>
-                <a href="China_destination.html">China</a><br>
-                <a href="Korea_destination.html">Korea</a><br>
-                <a href="Thailand.html">Thailand</a><br>
-                <a href="Vietnam_destination.html">Vietnam</a><br>
-            </div>
-            <div class="col-lg-4" id="so1">
-                <h5>INTERESTS</h5>
-                <a href="">Festivals</a><br>
-                <a href="">Food and Drink</a><br>
-            </div>
-            <div class="col-lg-4" id="so1">
-                <h5>TRAVEL BOOKING</h5>
-                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+            <div class="col-lg-4" id="so1"><h5>DESTINATIONS</h5>                    <a
+                    href="../../destination/china-destination.html">China</a><br> <a
+                    href="../../destination/Korea_destination.html">Korea</a><br> <a
+                    href="../../destination/Thailand.html">Thailand</a><br> <a
+                    href="../../destination/Vietnam_destination.html">Vietnam</a><br></div>
+            <div class="col-lg-4" id="so1"><h5>INTERESTS</h5>                    <a href="">Festivals</a><br> <a
+                    href="">Food and Drink</a><br></div>
+            <div class="col-lg-4" id="so1"><h5>TRAVEL BOOKING</h5>                    <a href="https://www.booking.com/"
+                                                                                         target="_blank">Hotels</a><br>
                 <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
-                   target="_blank">Flights</a><br>
-                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
-                   target="_blank">Transportation</a><br>
-            </div>
+                   target="_blank">Flights</a><br> <a
+                        href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                        target="_blank">Transportation</a><br></div>
             <hr style="color: #959aa0; width: 90%; " text-center>
             <div class="pull-left" id="footertrai">
-                <div class="col-lg-3">
-                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                <div class="col-lg-3"><a href="../../index.html"> <img src="../../images/cs-lonely-planet.png"
+                                                                       width="100px" style="margin-left: 60px;"></a>
                 </div>
             </div>
             <div>
@@ -319,24 +203,18 @@
                                 <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
                                     Advertising</a></li>
                                 <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
-                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
-                                    Conditions</a></li>
-                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and Conditions</a>
                                 </li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </nav>
-                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
-                        part of this site may be reproduced without our written permission.
-                    </p>
-                </div>
-                <div class="col-lg-2">
-                    <a href="https://www.pinterest.com/lonelyplanet/"><img
-                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
-                    <a href="https://twitter.com/lonelyplanet"><img
-                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
-                    <a href="https://www.facebook.com/lonelyplanet"><img
-                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                    <p style="margin-left: 50px; font-size: 12px;"> This website is built based on website <a
+                            href="https://www.lonelyplanet.com">Lonely Planet</a> for study purposes only. </p></div>
+                <div class="col-lg-2"><a href="https://www.pinterest.com/lonelyplanet/"><img src="../../images/pin.png"
+                                                                                             width="30px"></a> <a
+                        href="https://twitter.com/lonelyplanet"><img src="../../images/tw.png" width="30px"></a> <a
+                        href="https://www.facebook.com/lonelyplanet"><img src="../../images/fb.png" width="30px"></a>
                 </div>
             </div>
         </div>

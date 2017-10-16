@@ -7,171 +7,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        /*nav bar*/
-        /*logo*/
-        .navbar-brand>img {
-            position: absolute;
-            left:calc(50% - 78px);
-        }
-        /*2 ben*/
-        .navbar-nav {
-            padding-top: 15px;}
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            padding: 10px;
-            z-index: 1;
-            background: transparent;
-            position: absolute;
-            width: 100%;
-            height: 100px;
-            border-color: transparent;
-            font-size: 15px;
-        }
-
-        /*menu*/
-        .dropdown ul {
-            background-color: rgba(256, 256, 256, 0.2);
-            padding: 0;
-            margin: 0;
-        }
-        .dropdown li {
-            display: block;
-            width: 160px;
-            height: 50px;
-
-        }
-        .dropdown li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            padding: 16px;
-            text-align: justify;
-        }
-        .dropdown a:hover {
-            background: transparent;
-            color: white ;
-        }
-        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
-            background-color: transparent;
-        }
-        .navbar-inverse .navbar-nav>li>a {
-            color: white;
-        }
-
-        /*==Dropdown Menu==*/
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-        }
-        .dropdown li {
-            position: relative;
-        }
-        .dropdown li:hover .dropdown-menu {
-            display: block;
-        }
-        .dropdown .dropdown-menu li a:hover  {
-            background-color: transparent;
-            color: royalblue;
-        }
-        .dropdown li:hover  {
-            display: block;
-        }
-        .dropdown-menu li {
-            margin-left: 0 !important;
-        }
-        /*Style cho search*/
-        input[type=text] {
-            width: 180px;
-            box-sizing: border-box;
-            border: 1px solid white;
-            border-radius: 4px;
-            font-size: 15px;
-            background-color: white;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 15px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-            margin-right: 20px;
-        }
-        input[type=text]:focus {
-            width: 100%;
-            color: royalblue;
-        }
-        /*bookings*/
-        #booking a{
-            text-decoration:none ;
-        }
-        /*footer*/
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        footer a {
-            color: #959aa0;
-        }
-
-        ul.footer-menu li {
-            display: inline-block;
-            padding-left: 10px;
-        }
-        /*content*/
-        #heading1 {
-            font-family: 'Lato', sans-serif;;
-            font-size: 100px;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 0px;
-            color: grey;
-        }
-        #heading2 {
-            font-family: 'Courgette', cursive;
-            font-size: 40px;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 20px;
-            color: grey;
-        }
-        .content {
-            margin-left: 15%;
-            margin-right: 15%;
-            font-family: 'Catamaran', sans-serif;
-            font-style: italic;
-            text-align: justify;
-        }
-        .content img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/baiviet.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="Video.html"><b>Video</b></a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                <li class="dropdown"><a href="../../video/Video.html"><b>Video</b></a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><b>Destination</b> <span
+                        class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="China_destination.html">China</a></li>
-                        <li><a href="Korea_destination.html">Korea</a></li>
-                        <li><a href="Thailand.html">Thailand</a></li>
-                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                        <li><a href="../../destination/china-destination.html">China</a></li>
+                        <li><a href="../../destination/Korea_destination.html">Korea</a></li>
+                        <li><a href="../../destination/Thailand.html">Thailand</a></li>
+                        <li><a href="../../destination/Vietnam_destination.html">Vietnam</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><b>Bookings</b> <span
+                        class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
                         <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
@@ -181,22 +37,20 @@
                                target="_blank">Transportation</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><b>Interest</b> <span
+                        class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="FoodnDr.html">Food and Drink</a></li>
-                        <li><a href="Festival.html">Festival</a></li>
+                        <li><a href="../../foodanddrink/foodanddrink.html">Food and Drink</a></li>
+                        <li><a href="../../festival/festival.html">Festival</a></li>
                     </ul>
                 </li>
             </ul>
-            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
-                                                                                    height="72" width="156"/></a>
+            <a style="padding: 0" class="navbar-brand" href="../../index.html"><img
+                    src="../../images/cs-lonely-planet.png" height="72" width="156"/></a>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <form>
-                        <input type="text" name="search" placeholder="Search..">
-                    </form>
+                    <form><input type="text" name="search" placeholder="Search.."></form>
                 </li>
             </ul>
         </div>
@@ -204,7 +58,8 @@
 </nav>
 <!-- header img -->
 <div id="tl">
-    <img src="https://lonelyplanetwp.imgix.net/2017/08/GettyImages-597879379_full-d625bf17680e.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="100%" height="660">
+    <img src="https://lonelyplanetwp.imgix.net/2017/08/GettyImages-597879379_full-d625bf17680e.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="660">
 </div>
 <!-- content -->
 <!-- heading -->
@@ -215,80 +70,130 @@
 </div>
 <!-- text -->
 <div class="content">
-    <p>For over 2000 years Koreans have been shaping the landscape around them into pleasing contours and vistas. The arrangement of rocks is a crucial element of local garden design, as is a more natural appearance than the equally venerable styles of gardens in China and Japan.
-    <br>Korean gardens also tend to focus on the activity of walking through the human-made landscape, as much as on the landscape itself.
-    <br>In May 2017, Seoul unveiled the 'sky garden' Seoullo 7017. Blooming across a decommissioned highway, this new park is a contemporary spin on Korean horticultural design that dates back centuries. It's also just one of several diverse and wonderful gardens and parks across South Korea that showcase the green fingers of a country better known for its hi-tech and kimchi.
+    <p>For over 2000 years Koreans have been shaping the landscape around them into pleasing contours and vistas. The
+        arrangement of rocks is a crucial element of local garden design, as is a more natural appearance than the
+        equally venerable styles of gardens in China and Japan.
+        <br>Korean gardens also tend to focus on the activity of walking through the human-made landscape, as much as on
+        the landscape itself.
+        <br>In May 2017, Seoul unveiled the 'sky garden' Seoullo 7017. Blooming across a decommissioned highway, this
+        new park is a contemporary spin on Korean horticultural design that dates back centuries. It's also just one of
+        several diverse and wonderful gardens and parks across South Korea that showcase the green fingers of a country
+        better known for its hi-tech and kimchi.
     </p>
     <br>
 
     <h2> Sky garden </h2>
 
-    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/shutterstock_645997330-44c8ae8850f2.jpg" width="70%">
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/08/shutterstock_645997330-44c8ae8850f2.jpg"
+         width="70%">
 
-    <p>While it's not exactly naturalistic, the principle of strolling through the landscape underpins Seoullo 7017. A road constructed for cars in 1970 has, 17 years later, been transformed into a landscaped pedestrian highway with 17 entry pathways (those numbers also provide an explanation for the park's name).
-	   <br>Dutch firm MVRDV designed this sky garden to be dotted with circular planting beds blooming with over 23,000 lush trees, foliage and flowers in contrasting colours and arranged according to the Korean alphabet. 
-	   <br>The broad edges of the concrete planters double as seating. Circular pavilions house cafes, an information kiosk, viewing platforms, a performance space and even a puppet theatre. Strolling along the 983m-long elevated park, there are glimpses of sharply contrasting urban architectural elements through the trees, including Seoul Station with its fat ribbons of rails; Sungnyemum –the Great South Gate in Seoul's ancient defensive wall – and the buzzing warren of commerce that is round-the-clock Namdaemun Market.</p>
-     
+    <p>While it's not exactly naturalistic, the principle of strolling through the landscape underpins Seoullo 7017. A
+        road constructed for cars in 1970 has, 17 years later, been transformed into a landscaped pedestrian highway
+        with 17 entry pathways (those numbers also provide an explanation for the park's name).
+        <br>Dutch firm MVRDV designed this sky garden to be dotted with circular planting beds blooming with over 23,000
+        lush trees, foliage and flowers in contrasting colours and arranged according to the Korean alphabet.
+        <br>The broad edges of the concrete planters double as seating. Circular pavilions house cafes, an information
+        kiosk, viewing platforms, a performance space and even a puppet theatre. Strolling along the 983m-long elevated
+        park, there are glimpses of sharply contrasting urban architectural elements through the trees, including Seoul
+        Station with its fat ribbons of rails; Sungnyemum –the Great South Gate in Seoul's ancient defensive wall – and
+        the buzzing warren of commerce that is round-the-clock Namdaemun Market.</p>
+
     <h2> Seoul's secret gardens </h2>
 
-    <img src="https://lonelyplanetwp.imgix.net/2017/08/IMG_2947-0756c032b586.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <img src="https://lonelyplanetwp.imgix.net/2017/08/IMG_2947-0756c032b586.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
 
-    <p>Bang in the city centre, Seoullo 7017 makes a very public statement about the importance of nature in the urban environment. But this focus on the landscape is nothing new for Seoul. Some 600 years ago, when the city was first established, it was the Joseon dynasty rather than metropolitan mayors, who were the patrons of garden designers. A key creation from that royal era is the Huwon, a serene and rustic glade nestling behind the World Heritage-listed palace Changdeokgung. The garden, focused around a square lily pond overlooked by a viewing pavilion in which kings and courtiers once read and wrote poetry, is also known commonly as Biwon, meaning 'secret garden'. To view it you must join a tour (two to three daily, places are restricted to 50 people).
-    <br>The Huwon is not Korea's only hidden oasis. A 20 minute subway north of Seoul in the suburban district of Uijeongbu, Secret Garden (or S Garden) is an outdoor terrace tucked away on the 9th floor of the department store Shinsegae. Designed by the Seattle-based firm Olson Kundig, this charming, family-orientated garden is planted with native greenery and scattered with many sotdae, traditional wooden carvings of birds. Other whimsical elements include animal sculptures crafted from wood and found-metal parts by the artist Do-Ho Suh, a sandbox in which kids can dig up fake fossils and a tree house in the shape of a giant bird's nest.
+    <p>Bang in the city centre, Seoullo 7017 makes a very public statement about the importance of nature in the urban
+        environment. But this focus on the landscape is nothing new for Seoul. Some 600 years ago, when the city was
+        first established, it was the Joseon dynasty rather than metropolitan mayors, who were the patrons of garden
+        designers. A key creation from that royal era is the Huwon, a serene and rustic glade nestling behind the World
+        Heritage-listed palace Changdeokgung. The garden, focused around a square lily pond overlooked by a viewing
+        pavilion in which kings and courtiers once read and wrote poetry, is also known commonly as Biwon, meaning
+        'secret garden'. To view it you must join a tour (two to three daily, places are restricted to 50 people).
+        <br>The Huwon is not Korea's only hidden oasis. A 20 minute subway north of Seoul in the suburban district of
+        Uijeongbu, Secret Garden (or S Garden) is an outdoor terrace tucked away on the 9th floor of the department
+        store Shinsegae. Designed by the Seattle-based firm Olson Kundig, this charming, family-orientated garden is
+        planted with native greenery and scattered with many sotdae, traditional wooden carvings of birds. Other
+        whimsical elements include animal sculptures crafted from wood and found-metal parts by the artist Do-Ho Suh, a
+        sandbox in which kids can dig up fake fossils and a tree house in the shape of a giant bird's nest.
     </p>
 
     <h2> Garden of Morning Calm </h2>
 
-    <img src="https://lonelyplanetwp.imgix.net/2017/08/GettyImages-525762045_medium-5883988851c2.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <img src="https://lonelyplanetwp.imgix.net/2017/08/GettyImages-525762045_medium-5883988851c2.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
 
-    <p>Seoul has several other excellent parks and gardens, including those of other royal palaces Gyeongbokgung and Deoksugung, and modern creations such as the award-winning Seonyudo Park fashioned from a former water filtration plant on an island in the Han River.
+    <p>Seoul has several other excellent parks and gardens, including those of other royal palaces Gyeongbokgung and
+        Deoksugung, and modern creations such as the award-winning Seonyudo Park fashioned from a former water
+        filtration plant on an island in the Han River.
         </br>
-        However, garden lovers will be amply rewarded if they head beyond the capital to search out other gorgeous examples of local horticultural design. Korea is often called the 'Land of the Morning Calm', a phrase that some ascribe to the Indian poet Tagore who wrote about the land (then a colony of Japan) in the 1930s. This concept was the inspiration for the 30,000-square-metre Garden of Morning Calm, located about 50km northeast of Seoul. Designed by professor Sang-kyung Hang and opened in 1996, this is Korea's oldest private garden. Surrounded by pine-covered mountains, it has 20 different themed areas full of some 5000 different plants, many of them indigenous to the area. In each of the seasons, there is something different on view, from roses, irises and hydrangeas in summer to chrysanthemums and the spectacular blaze of leaf colours in autumn. Even in winter, the garden dazzles with its Lightning Festival, which sees the bushes and trees bedecked with coloured lights.</p>
-       
+        However, garden lovers will be amply rewarded if they head beyond the capital to search out other gorgeous
+        examples of local horticultural design. Korea is often called the 'Land of the Morning Calm', a phrase that some
+        ascribe to the Indian poet Tagore who wrote about the land (then a colony of Japan) in the 1930s. This concept
+        was the inspiration for the 30,000-square-metre Garden of Morning Calm, located about 50km northeast of Seoul.
+        Designed by professor Sang-kyung Hang and opened in 1996, this is Korea's oldest private garden. Surrounded by
+        pine-covered mountains, it has 20 different themed areas full of some 5000 different plants, many of them
+        indigenous to the area. In each of the seasons, there is something different on view, from roses, irises and
+        hydrangeas in summer to chrysanthemums and the spectacular blaze of leaf colours in autumn. Even in winter, the
+        garden dazzles with its Lightning Festival, which sees the bushes and trees bedecked with coloured lights.</p>
+
 
     <h2> Namiseom Island</h2>
 
-     <img src="https://lonelyplanetwp.imgix.net/2017/08/GettyImages-494787738_high-b8af47ee13b9.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <img src="https://lonelyplanetwp.imgix.net/2017/08/GettyImages-494787738_high-b8af47ee13b9.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
 
-    <p>Around 20km further northeast of the Garden of Morning Calm is Gapyeong (which can be reached on metro trains from Seoul in under an hour), the jumping-off-point for the man-made landscapes of nearby Namiseom Island. Made internationally famous by the 2002 Korean TV drama Winter Sonata, in which its wooded landscapes featured heavily, the crescent-moon-shaped island was bought by Minn Byeong-do, a former of governor of the Bank of Korea, in 1965. Under his stewardship, the island was turned into a park and planted with many trees, including an avenue of majestic Metasequoia (redwoods). Other sections of Namiseom are planted with yellow-leafed ginkgo and cherry trees, which burst into pink and white flowers in spring. The island, which styles itself as the culturally independent Naminara Republic and has its own visa (aka the ticket to access the park), also has 20 different gardens, including one designed to attract butterflies.
+    <p>Around 20km further northeast of the Garden of Morning Calm is Gapyeong (which can be reached on metro trains
+        from Seoul in under an hour), the jumping-off-point for the man-made landscapes of nearby Namiseom Island. Made
+        internationally famous by the 2002 Korean TV drama Winter Sonata, in which its wooded landscapes featured
+        heavily, the crescent-moon-shaped island was bought by Minn Byeong-do, a former of governor of the Bank of
+        Korea, in 1965. Under his stewardship, the island was turned into a park and planted with many trees, including
+        an avenue of majestic Metasequoia (redwoods). Other sections of Namiseom are planted with yellow-leafed ginkgo
+        and cherry trees, which burst into pink and white flowers in spring. The island, which styles itself as the
+        culturally independent Naminara Republic and has its own visa (aka the ticket to access the park), also has 20
+        different gardens, including one designed to attract butterflies.
     </p>
 
     <h2> Gardens of Jeju-do </h2>
 
-    <img src="https://lonelyplanetwp.imgix.net/2017/08/IMG_4865-4530e0699c63.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <img src="https://lonelyplanetwp.imgix.net/2017/08/IMG_4865-4530e0699c63.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
 
-    <p>TConnected to the mainland by flights and ferries is subtropical Jeju-do, South Korea's top domestic holiday destination. With its humid climate and rich volcanic soils, the island provides a chance for gardeners to work with different types of plants. Developed from scratch over 30 years by a determined local farmer, Jeju's Spirited Garden showcases a collection of hundreds of bonsai, or bunjae as they are called in Korean. The lovingly crafted miniature trees are framed in a garden with ponds full of colourful koi carp, waterfalls and Jeju's signature black volcanic stones.
+    <p>TConnected to the mainland by flights and ferries is subtropical Jeju-do, South Korea's top domestic holiday
+        destination. With its humid climate and rich volcanic soils, the island provides a chance for gardeners to work
+        with different types of plants. Developed from scratch over 30 years by a determined local farmer, Jeju's
+        Spirited Garden showcases a collection of hundreds of bonsai, or bunjae as they are called in Korean. The
+        lovingly crafted miniature trees are framed in a garden with ponds full of colourful koi carp, waterfalls and
+        Jeju's signature black volcanic stones.
         </br>
-       The island's ancient culture and geology also inspired Jeju Stone Park. Covering 970,000 square kilometres, the park illustrates that hard landscaping elements, including ponds, tumuli, rocks and statues, are as crucial in creating a garden as foliage. Follow trails through the park to discover the reflecting Sky Pond, naturally face-shaped rocks and stone carvings based on the 18,000 deities of Jeju, a field of giant pots for storing kimchi, and an army of dol hareubang (grandfather rocks), phallic stone statues believed to ward off evil and encourage fertility.</p> 
+        The island's ancient culture and geology also inspired Jeju Stone Park. Covering 970,000 square kilometres, the
+        park illustrates that hard landscaping elements, including ponds, tumuli, rocks and statues, are as crucial in
+        creating a garden as foliage. Follow trails through the park to discover the reflecting Sky Pond, naturally
+        face-shaped rocks and stone carvings based on the 18,000 deities of Jeju, a field of giant pots for storing
+        kimchi, and an army of dol hareubang (grandfather rocks), phallic stone statues believed to ward off evil and
+        encourage fertility.</p>
 </div>
 <!-- /footer -->
 <footer>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4" id="so1">
-                <h5>DESTINATIONS</h5>
-                <a href="China_destination.html">China</a><br>
-                <a href="Korea_destination.html">Korea</a><br>
-                <a href="Thailand.html">Thailand</a><br>
-                <a href="Vietnam_destination.html">Vietnam</a><br>
-            </div>
-            <div class="col-lg-4" id="so1">
-                <h5>INTERESTS</h5>
-                <a href="">Festivals</a><br>
-                <a href="">Food and Drink</a><br>
-            </div>
-            <div class="col-lg-4" id="so1">
-                <h5>TRAVEL BOOKING</h5>
-                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
-                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
-                   target="_blank">Flights</a><br>
-                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
-                   target="_blank">Transportation</a><br>
-            </div>
+            <div class="col-lg-4" id="so1"><h5>DESTINATIONS</h5>                <a
+                    href="../../destination/china-destination.html">China</a><br> <a
+                    href="../../destination/Korea_destination.html">Korea</a><br> <a
+                    href="../../destination/Thailand.html">Thailand</a><br> <a
+                    href="../../destination/Vietnam_destination.html">Vietnam</a><br></div>
+            <div class="col-lg-4" id="so1"><h5>INTERESTS</h5>                <a href="">Festivals</a><br> <a href="">Food
+                and Drink</a><br></div>
+            <div class="col-lg-4" id="so1"><h5>TRAVEL BOOKING</h5>                <a href="https://www.booking.com/"
+                                                                                     target="_blank">Hotels</a><br> <a
+                    href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                    target="_blank">Flights</a><br> <a
+                    href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                    target="_blank">Transportation</a><br></div>
             <hr style="color: #959aa0; width: 90%; " text-center>
             <div class="pull-left" id="footertrai">
-                <div class="col-lg-3">
-                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                <div class="col-lg-3"><a href="../../index.html"> <img src="../../images/cs-lonely-planet.png"
+                                                                       width="100px" style="margin-left: 60px;"></a>
                 </div>
             </div>
             <div>
@@ -302,24 +207,18 @@
                                 <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
                                     Advertising</a></li>
                                 <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
-                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
-                                    Conditions</a></li>
-                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and Conditions</a>
                                 </li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </nav>
-                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
-                        part of this site may be reproduced without our written permission.
-                    </p>
-                </div>
-                <div class="col-lg-2">
-                    <a href="https://www.pinterest.com/lonelyplanet/"><img
-                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
-                    <a href="https://twitter.com/lonelyplanet"><img
-                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
-                    <a href="https://www.facebook.com/lonelyplanet"><img
-                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                    <p style="margin-left: 50px; font-size: 12px;"> This website is built based on website <a
+                            href="https://www.lonelyplanet.com">Lonely Planet</a> for study purposes only.</p></div>
+                <div class="col-lg-2"><a href="https://www.pinterest.com/lonelyplanet/"><img src="../../images/pin.png"
+                                                                                             width="30px"></a> <a
+                        href="https://twitter.com/lonelyplanet"><img src="../../images/tw.png" width="30px"></a> <a
+                        href="https://www.facebook.com/lonelyplanet"><img src="../../images/fb.png" width="30px"></a>
                 </div>
             </div>
         </div>

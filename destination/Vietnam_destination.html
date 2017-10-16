@@ -7,216 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        /*nav bar*/
-        /*logo*/
-        .navbar-brand > img {
-            position: absolute;
-            left: calc(50% - 78px);
-        }
-
-        /*2 ben*/
-        .navbar-nav {
-            padding-top: 15px;
-        }
-
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            padding: 10px;
-            z-index: 1;
-            background: transparent;
-            position: absolute;
-            width: 100%;
-            height: 100px;
-            border-color: transparent;
-            font-size: 15px;
-        }
-
-        /*menu*/
-        .dropdown ul {
-            background-color: rgba(256, 256, 256, 0.2);
-            padding: 0;
-            margin: 0;
-        }
-
-        .dropdown li {
-            display: block;
-            width: 160px;
-            height: 50px;
-
-        }
-
-        .dropdown li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            padding: 16px;
-            text-align: justify;
-        }
-
-        .dropdown a:hover {
-            background: transparent;
-            color: white;
-        }
-
-        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-            background-color: transparent;
-        }
-
-        .navbar-inverse .navbar-nav > li > a {
-            color: white;
-        }
-
-        /*==Dropdown Menu==*/
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-        }
-
-        .dropdown li {
-            position: relative;
-        }
-
-        .dropdown li:hover .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown .dropdown-menu li a:hover {
-            background-color: transparent;
-            color: royalblue;
-        }
-
-        .dropdown li:hover {
-            display: block;
-        }
-
-        .dropdown-menu li {
-            margin-left: 0 !important;
-        }
-
-        /*Style cho search*/
-        input[type=text] {
-            width: 180px;
-            box-sizing: border-box;
-            border: 1px solid white;
-            border-radius: 4px;
-            font-size: 15px;
-            background-color: white;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 15px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-            margin-right: 20px;
-        }
-
-        input[type=text]:focus {
-            width: 100%;
-            color: royalblue;
-        }
-
-        /*Style cho search*/
-        input[type=text] {
-            width: 180px;
-            box-sizing: border-box;
-            border: 1px solid white;
-            border-radius: 4px;
-            font-size: 15px;
-            background-color: white;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 15px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-            margin-right: 20px;
-        }
-
-        input[type=text]:focus {
-            width: 100%;
-            color: royalblue;
-        }
-
-        /*footer*/
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        a {
-            color: #959aa0;
-        }
-
-        ul.footer-menu li {
-            display: inline-block;
-            padding-left: 10px;
-        }
-
-        /*content*/
-        #content a {
-            text-decoration: none;
-            color: black
-        }
-
-        #content a:hover {
-            color: darkblue
-        }
-    </style>
+    <link rel="stylesheet" href="../css/destination.css">
 </head>
 <body>
 <!-- /menu -->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="Video.html"><b>Video</b></a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="China_destination.html">China</a></li>
-                        <li><a href="Korea_destination.html">Korea</a></li>
-                        <li><a href="Thailand.html">Thailand</a></li>
-                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
-                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
-                        </li>
-                        <li>
-                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
-                               target="_blank">Transportation</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="FoodnDr.html">Food and Drink</a></li>
-                        <li><a href="Festival.html">Festival</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
-                                                                                    height="72" width="156"/></a>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <form>
-                        <input type="text" name="search" placeholder="Search..">
-                    </form>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<nav class="navbar navbar-inverse">    <div class="container-fluid">        <div class="collapse navbar-collapse" id="myNavbar">            <ul class="nav navbar-nav">                <li class="dropdown">                    <a href="../video/Video.html"><b>Video</b></a>                </li>                <li class="dropdown">                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>                    <ul class="dropdown-menu">                        <li><a href="china-destination.html">China</a></li>                        <li><a href="Korea_destination.html">Korea</a></li>                        <li><a href="Thailand.html">Thailand</a></li>                        <li><a href="Vietnam_destination.html">Vietnam</a></li>                    </ul>                </li>                <li class="dropdown">                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>                    <ul class="dropdown-menu">                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>                        </li>                        <li>                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"                               target="_blank">Transportation</a></li>                    </ul>                </li>                <li class="dropdown">                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>                    <ul class="dropdown-menu">                        <li><a href="../foodanddrink/foodanddrink.html">Food and Drink</a></li>                        <li><a href="../festival/festival.html">Festival</a></li>                    </ul>                </li>            </ul>            <a style="padding: 0" class="navbar-brand" href="../index.html"><img src="../images/cs-lonely-planet.png" height="72" width="156"/></a>            <ul class="nav navbar-nav navbar-right">                <li>                    <form>                        <input type="text" name="search" placeholder="Search..">                    </form>                </li>            </ul>        </div>    </div></nav>
 <!-- header img -->
 <div id="tl" style="height: 100vh">
     <img src="images/mucangchai.jpg" width="100%" height="100%"/></div>
@@ -267,22 +62,22 @@
 
         <div class="row">
             <div class="col-lg-3">
-                <img src="images/Halong.jpg" class="img-responsive" style="width: 263px; height: 197px;" alt="Image"/>
-                <a href="Vietnam1.html"><h4>Halong Bay</h4>
+                <img src="../images/Halong.jpg" class="img-responsive" style="width: 263px; height: 197px;" alt="Image"/>
+                <a href="../articles/vietnam/Vietnam1.html"><h4>Halong Bay</h4>
                     <h4>is emerald waters and islands</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="images/condao1.jpg" class="img-responsive" style="width: 263px; height: 197px;" alt="Image"/>
-                <a href="Vietnam2.html"><h4>Con Dao Islands </h4>
+                <a href="../articles/vietnam/Vietnam2.html"><h4>Con Dao Islands </h4>
                     <h4>a tropical escape</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="images/sondoong.jpg" class="img-responsive" style="width: 263px; height: 197px;" alt="Image"/>
-                <a href="Vietnam3.html"><h4>Phong Nha - Ke Bang National Park </h4></a>
+                <a href="../articles/vietnam/Vietnam3.html"><h4>Phong Nha - Ke Bang National Park </h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="https://www.vietnamgrouptour.com/images/detailed/2/Church_in_HCM.jpeg" class="img-responsive" style="width: 263px; height: 197px;" alt="Image"/>
-                <a href="Vietnam4.html"><h4>Ho Chi Minh City</h4>
+                <a href="../articles/vietnam/Vietnam4.html"><h4>Ho Chi Minh City</h4>
                 <h4>What to see and do in 48 hours</h4></a>
             </div>
         </div>
@@ -297,22 +92,22 @@
                 <img style="height: 197px; width: 263px"
                      src="https://pbs.twimg.com/media/C9mKTXvUwAQB5KI.jpg"
                      class="img-responsive" alt="Image">
-                <a href="VNfestival1.html"><h4>Mid-Autumn Festival in Vietnam</h4></a>
+                <a href="../festival/vietnam/VNfestival1.html"><h4>Mid-Autumn Festival in Vietnam</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="http://file.qdnd.vn/data/images/3/2017/03/31/huuduong_ta/153%201.jpg?w=500"
                      class="img-responsive" style="height: 197px; width: 263px" alt="Image">
-                <a href="VNfestival2.html"><h4>Hung King Commemoration</h4></a>
+                <a href="../festival/vietnam/VNfestival2.html"><h4>Hung King Commemoration</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="http://s3.amazonaws.com/op24-forum-images/9447/532b8954e40050378ad29f672f657c5a.jpg"
                      style="height: 197px; width: 263px" alt="Image">
-                <a href="VNfestival3.html"><h4>Vu Lan Festival</h4></a>
+                <a href="../festival/vietnam/VNfestival3.html"><h4>Vu Lan Festival</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="https://cothebechuabiet.files.wordpress.com/2013/10/the1bb9di-trang-tre1babb-em-lnkid-bc3a9-cc3b3-bie1babft-mc3a0u-c491e1bb8f-lc3a0-mc3a0u-c491e1bb8f-trong-te1babft-vie1bb87t-nam-c3b4ng-c491e1bb93.jpg"
                      style="height: 197px; width: 263px" alt="Image">
-                <a href="VNfestival4.html"><h4>Tet Holiday</h4></a>
+                <a href="../festival/vietnam/VNfestival4.html"><h4>Tet Holiday</h4></a>
             </div>
         </div>
     </div>
@@ -327,23 +122,23 @@
                 <img style="height: 197px; width: 263px"
                      src="https://lonelyplanetwp.imgix.net/2011/03/vietnam-food-market-produce.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
                      class="img-responsive" alt="Image">
-                <a href="VNfood1.html"><h4>Vietnam on a plate</h4>
+                <a href="../foodanddrink/vietnam/VNfood1.html"><h4>Vietnam on a plate</h4>
                     <h4>a tour of Vietnam's best regional dishes</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="https://i.pinimg.com/originals/42/5b/25/425b25307e823709e6abf10c444f5c5a.jpg"
                      class="img-responsive" style="height: 197px; width: 263px" alt="Image">
-                <a href="VNfood2.html"><h4>Hanoi's street foods</h4></a>
+                <a href="../foodanddrink/vietnam/VNfood2.html"><h4>Hanoi's street foods</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="http://3.bp.blogspot.com/-SzZef7ORuUY/Te_UEVXAqYI/AAAAAAAABDY/NiH0wuB66KQ/s1600/DSC_0990.jpg"
                      style="height: 197px; width: 263px" alt="Image">
-                <a href="VNfood3.html"><h4>Vietnamese coffee</h4></a>
+                <a href="../foodanddrink/vietnam/VNfood3.html"><h4>Vietnamese coffee</h4></a>
             </div>
             <div class="col-lg-3">
                 <img src="http://whereto.vn/custom/domain_1/articles/fullsize/article14531/hoi-an-banh-mi-was-commented-a-pretty-magical-sandwich-by-one-bbc-journalist-photo-internet-tin8-2.jpg"
                      style="height: 197px; width: 263px" alt="Image">
-                <a href="VNfood4.html"><h4>10 Best Hoi An dishes</h4></a>
+                <a href="../foodanddrink/vietnam/VNfood4.html"><h4>10 Best Hoi An dishes</h4></a>
             </div>
         </div>
     </div>
@@ -356,7 +151,7 @@
         <div class="row">
             <div class="col-lg-4" id="so1">
                 <h5>DESTINATIONS</h5>
-                <a href="China_destination.html">China</a><br>
+                <a href="china-destination.html">China</a><br>
                 <a href="Korea_destination.html">Korea</a><br>
                 <a href="Thailand.html">Thailand</a><br>
                 <a href="Vietnam_destination.html">Vietnam</a><br>
@@ -377,7 +172,7 @@
             <hr style="color: #959aa0; width: 90%; " text-center>
             <div class="pull-left" id="footertrai">
                 <div class="col-lg-3">
-                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                    <a href="../index.html"> <img src="../images/cs-lonely-planet.png" width="100px" style="margin-left: 60px;"></a>
                 </div>
             </div>
             <div>
@@ -398,17 +193,17 @@
                             </ul>
                         </div>
                     </nav>
-                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
-                        part of this site may be reproduced without our written permission.
+                    <p style="margin-left: 50px; font-size: 12px;"> This website is built based on website <a
+                            href="https://www.lonelyplanet.com">Lonely Planet</a> for study purposes only.
                     </p>
                 </div>
                 <div class="col-lg-2">
                     <a href="https://www.pinterest.com/lonelyplanet/"><img
-                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                            src="../images/pin.png" width="30px"></a>
                     <a href="https://twitter.com/lonelyplanet"><img
-                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                            src="../images/tw.png" width="30px"></a>
                     <a href="https://www.facebook.com/lonelyplanet"><img
-                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                            src="../images/fb.png" width="30px"></a>
                 </div>
             </div>
         </div>

@@ -7,149 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        /*nav bar*/
-        /*logo*/
-        .navbar-brand>img {
-            position: absolute;
-            left:calc(50% - 78px);
-        }
-        /*2 ben*/
-        .navbar-nav {
-            padding-top: 15px;}
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            padding: 10px;
-            z-index: 1;
-            background: transparent;
-            position: absolute;
-            width: 100%;
-            height: 100px;
-            border-color: transparent;
-            font-size: 15px;
-        }
-
-        /*menu*/
-        .dropdown ul {
-            background-color: rgba(256, 256, 256, 0.2);
-            padding: 0;
-            margin: 0;
-        }
-        .dropdown li {
-            display: block;
-            width: 160px;
-            height: 50px;
-
-        }
-        .dropdown li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            padding: 16px;
-            text-align: justify;
-        }
-        .dropdown a:hover {
-            background: transparent;
-            color: white ;
-        }
-        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
-            background-color: transparent;
-        }
-        .navbar-inverse .navbar-nav>li>a {
-            color: white;
-        }
-
-        /*==Dropdown Menu==*/
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-        }
-        .dropdown li {
-            position: relative;
-        }
-        .dropdown li:hover .dropdown-menu {
-            display: block;
-        }
-        .dropdown .dropdown-menu li a:hover  {
-            background-color: transparent;
-            color: royalblue;
-        }
-        .dropdown li:hover  {
-            display: block;
-        }
-        .dropdown-menu li {
-            margin-left: 0 !important;
-        }
-        /*Style cho search*/
-        input[type=text] {
-            width: 180px;
-            box-sizing: border-box;
-            border: 1px solid white;
-            border-radius: 4px;
-            font-size: 15px;
-            background-color: white;
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 15px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-            margin-right: 20px;
-        }
-        input[type=text]:focus {
-            width: 100%;
-            color: royalblue;
-        }
-        /*bookings*/
-        #booking a{
-            text-decoration:none ;
-        }
-        /*footer*/
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #f2f2f2;
-            padding: 25px;
-        }
-
-        footer a {
-            color: #959aa0;
-        }
-
-        ul.footer-menu li {
-            display: inline-block;
-            padding-left: 10px;
-        }
-        /*content*/
-        #heading1 {
-            font-family: 'Lato', sans-serif;;
-            font-size: 100px;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 0px;
-            color: grey;
-        }
-        #heading2 {
-            font-family: 'Courgette', cursive;
-            font-size: 40px;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 20px;
-            color: grey;
-        }
-        .content {
-            margin-left: 15%;
-            margin-right: 15%;
-            font-family: 'Catamaran', sans-serif;
-            font-style: italic;
-            text-align: justify;
-        }
-        .content img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/baiviet.css">
 </head>
 <body>
 <!-- /menu -->
@@ -158,16 +16,16 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="Video.html"><b>Video</b></a>
+                    <a href="../../video/Video.html"><b>Video</b></a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="China_destination.html">China</a></li>
-                        <li><a href="Korea_destination.html">Korea</a></li>
-                        <li><a href="Thailand.html">Thailand</a></li>
-                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                        <li><a href="../../destination/china-destination.html">China</a></li>
+                        <li><a href="../../destination/Korea_destination.html">Korea</a></li>
+                        <li><a href="../../destination/Thailand.html">Thailand</a></li>
+                        <li><a href="../../destination/Vietnam_destination.html">Vietnam</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -186,13 +44,14 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="FoodnDr.html">Food and Drink</a></li>
-                        <li><a href="Festival.html">Festival</a></li>
+                        <li><a href="../../foodanddrink/foodanddrink.html">Food and Drink</a></li>
+                        <li><a href="../festival.html">Festival</a></li>
                     </ul>
                 </li>
             </ul>
-            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
-                                                                                    height="72" width="156"/></a>
+            <a style="padding: 0" class="navbar-brand" href="../../index.html"><img
+                    src="../../images/cs-lonely-planet.png"
+                    height="72" width="156"/></a>
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <form>
@@ -218,29 +77,36 @@
             Chinese New Year, so called because the most important activity during the night of the event is watching
             various wonderful Chinese lanterns. And because every household eats yuanxiao (a rice ball stuffed with
             different fillings) on that day, it is called Yuan Xiao Festival. For its rich and colorful activities,
-            it is regarded as the most recreational among all the Chinese festivals and a day for appreciating the bright
+            it is regarded as the most recreational among all the Chinese festivals and a day for appreciating the
+            bright
             full moon, and family reunion.</p>
-        <p>With a history of over 2,000 years, various traditional customs and activities are held during Lantern Festival
+        <p>With a history of over 2,000 years, various traditional customs and activities are held during Lantern
+            Festival
             appeal to people of different ages, including watching lanterns and fireworks, guessing lantern riddles,
             performing folk dances, and eating yuanxiao.</p>
 
         <h2> Watching Lanterns </h2>
         <br>
-        <img src="http://l7.alamy.com/zooms/f41544eecd044d61bfbbe773a963cb7d/pengzhou-china-bright-red-lanterns-and-other-chinese-new-year-decorations-e4p250.jpg" width="70%">
+        <img src="http://l7.alamy.com/zooms/f41544eecd044d61bfbbe773a963cb7d/pengzhou-china-bright-red-lanterns-and-other-chinese-new-year-decorations-e4p250.jpg"
+             width="70%">
         <br>
         <p>During the Han Dynasty (206 BC - 220 AD), Buddhism flourished in China. So in order to popularize Buddhism,
             one of the emperors gave an order to light lanterns in the imperial palace to worship and show respect for
-            Buddha on the 15th day of the first lunar month. During the Tang (618 - 907), Song (960 - 1279), Ming (1368 - 1644)
+            Buddha on the 15th day of the first lunar month. During the Tang (618 - 907), Song (960 - 1279), Ming (1368
+            - 1644)
             and Qing (1644 - 1911) dynasties, lighting lanterns became a tradition for Chinese people.</p>
-        <p>Today, when the festival comes, red lanterns can be seen in the street, in each house, and store. In the parks,
-            lanterns of various shapes and types attract countless visitors. Visitors marvel that various lanterns so vividly
+        <p>Today, when the festival comes, red lanterns can be seen in the street, in each house, and store. In the
+            parks,
+            lanterns of various shapes and types attract countless visitors. Visitors marvel that various lanterns so
+            vividly
             demonstrate traditional Chinese folklore.</p>
 
         <h2> Guessing Lantern Riddles </h2>
         <br>
         <img src="http://images.china.cn/attachement/jpg/site1007/20130225/001422373e191294fc1f10.jpg" width="70%">
         <br>
-        <p>Beginning from the Song Dynasty (960 - 1279), guessing riddles is regarded as an indispensable part of the Lantern
+        <p>Beginning from the Song Dynasty (960 - 1279), guessing riddles is regarded as an indispensable part of the
+            Lantern
             Festival. People write all kinds of riddles on pieces of paper, and paste them on colorful lanterns to let
             visitors guess. If one has an answer to a riddle, he can pull the paper to let organizers verify the answer.
             Gifts are presented to the people who get the right answers.</p>
@@ -255,9 +121,11 @@
             development. In north China, the lion dance focuses on skills, and in the south the lion dance pays more
             attention to the animal resemblance. One actor manipulates a small lion made of quilts resembling a real
             one, and with two persons acting like a big lion, one manages the head part and the other, the rest. Under
-            the guidance of a director, the lions sometimes jump, leap, and do difficult acts such as walking on stilts.</p>
+            the guidance of a director, the lions sometimes jump, leap, and do difficult acts such as walking on
+            stilts.</p>
         <p>Because the acting is always amusing, spectators enjoy it very much. According to ancient custom, the lion
-            is a symbol of boldness and strength that can protect people, so by performing the lion dance, everyone prays
+            is a symbol of boldness and strength that can protect people, so by performing the lion dance, everyone
+            prays
             for an auspicious and happy life.</p>
         <br>
         <img src="http://www.chinaexpeditiontours.com/upload/201209070145073125.jpg" width="70%">
@@ -272,14 +140,17 @@
         <img src="http://p1.img.cctvpic.com/photoworkspace/contentimg/2016/02/18/2016021817333227052.jpg" width="70%">
         <br
         <p>Yuanxiao, also called tangyuan, is a dumpling ball made of sticky rice flour stuffed with different fillings.
-            Eating yuanxiao has become an essential part of the festival. The methods for making Yuanxiao differ by region
+            Eating yuanxiao has become an essential part of the festival. The methods for making Yuanxiao differ by
+            region
             and fillings include sugar, rose petals, sesame, sweetened bean paste, and jujube paste. Some do not have
             fillings. Because tangyuan can be boiled, fried or steamed, and each has a unique taste, it is very popular.
             Yuanxiao is round in shape so it is endowed with the meaning of reunion, harmony and happiness. During the
             night of the festival, family members sit together to taste yuanxiao and appreciate the full moon.</p>
-        <p>Besides these activities, there is Welcoming Zigu (a kind and poor girl in folklore), in which women make straw
+        <p>Besides these activities, there is Welcoming Zigu (a kind and poor girl in folklore), in which women make
+            straw
             and cloth images of Zigu and say consoling words to her expressing people's goodness and their pity for
-            poor. Because appreciating the lanterns offers a good chance for young boys and girls to communicate with each
+            poor. Because appreciating the lanterns offers a good chance for young boys and girls to communicate with
+            each
             other, the Lantern Festival is also regarded as Chinese Valentine's Day.</p>
     </div>
     <!-- /footer -->
@@ -288,10 +159,10 @@
             <div class="row">
                 <div class="col-lg-4" id="so1">
                     <h5>DESTINATIONS</h5>
-                    <a href="China_destination.html">China</a><br>
-                    <a href="Korea_destination.html">Korea</a><br>
-                    <a href="Thailand.html">Thailand</a><br>
-                    <a href="Vietnam_destination.html">Vietnam</a><br>
+                    <a href="../../destination/china-destination.html">China</a><br>
+                    <a href="../../destination/Korea_destination.html">Korea</a><br>
+                    <a href="../../destination/Thailand.html">Thailand</a><br>
+                    <a href="../../destination/Vietnam_destination.html">Vietnam</a><br>
                 </div>
                 <div class="col-lg-4" id="so1">
                     <h5>INTERESTS</h5>
@@ -309,7 +180,8 @@
                 <hr style="color: #959aa0; width: 90%; " text-center>
                 <div class="pull-left" id="footertrai">
                     <div class="col-lg-3">
-                        <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                        <a href="../../index.html"> <img src="../../images/cs-lonely-planet.png" width="100px"
+                                                         style="margin-left: 60px;"></a>
                     </div>
                 </div>
                 <div>
@@ -330,17 +202,17 @@
                                 </ul>
                             </div>
                         </nav>
-                        <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
-                            part of this site may be reproduced without our written permission.
+                        <p style="margin-left: 50px; font-size: 12px;"> This website is built based on website <a
+                                href="https://www.lonelyplanet.com">Lonely Planet</a> for study purposes only.
                         </p>
                     </div>
                     <div class="col-lg-2">
                         <a href="https://www.pinterest.com/lonelyplanet/"><img
-                                src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                                src="../../images/pin.png" width="30px"></a>
                         <a href="https://twitter.com/lonelyplanet"><img
-                                src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                                src="../../images/tw.png" width="30px"></a>
                         <a href="https://www.facebook.com/lonelyplanet"><img
-                                src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                                src="../../images/fb.png" width="30px"></a>
                     </div>
                 </div>
             </div>
