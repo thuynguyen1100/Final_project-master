@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Thailand Food </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2012/05/Krua-Apsorn-a-shophouse-based-restaurant-in-Bangkok.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Beyond the street stalls </h3>
+    <p id="heading2"> Where else to eat in Bangkok </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Read just about any article about eating in Bangkok, and you’ll find gushing references to the glories of the city’s street food. While much of the food sold from mobile carts is tasty, it’s far from the only great eating to be had in the Thai capital. The Bangkok of today is home to a vast spectrum of eateries, many of which are more convenient, cleaner and more delicious than the humble street stall.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2012/05/An-hors-d%E2%80%99oeuvre-at-nahm-an-upscale-Thai-restaurant-in-Bangkok.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">An hors d’oeuvre at nahm, an upscale Thai restaurant in Bangkok. Image by Austin Bush</p>
+    <br>
+    <h2> Fine dining </h2>
+    <p>Think Thai food and fine dining are mutually exclusive concepts? Think again. With Bangkok now home to award-winning restaurants like nahm and Bo.lan, there’s never been a better time to opt for a Thai-style splurge. And those used to dining in cities like New York City or London will find the prices a bargain. Still, if it’s too much of a burden on the budget, consider dining at lunch, when many of Bangkok’s most revered upmarket eateries offer some fantastic set-lunch specials.</p>
+    <p> And because Bangkok is such a cosmopolitan place these days, fine dining isn’t limited to Thai cuisine. Eat Me does fantastic Asian fusion, while Little Beast is lauded for its sophisticated American-influenced fare. Alternatively, if you don’t like to make decisions, consider the fountains of chocolate and lavish fresh seafood spreads of Bangkok’s mind-blowingly decadent hotel-based buffets. The Four Season’s Sunday Brunch is the top pick (be sure to book weeks in advance), but for something different, consider the South Asian-themed buffet at Rang Mahal or the music-based Sunday Jazzy Brunch at the Sheraton Grand Sukhumvit.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2012/05/Krua-Apsorn-a-shophouse-based-restaurant-in-Bangkok.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Krua Apsorn, a shophouse-based restaurant in Bangkok. Image by Austin Bush / Lonely Planet</p>
+
+    <h2>Shophouse restaurants</h2>
+    <p>Some of the best food in Bangkok is found in the long-standing, family-owned restaurants located in aged, typically open-fronted, Sino-Portuguese shophouses. The cooks at such places have likely been serving the same dish, or limited repertoire of dishes, for several decades, and really know what they're doing. The food may cost slightly more than on the street, but the setting is usually more comfortable and hygienic, not to mention the fact that you're eating a piece of history.</p>
+    <p>At lunch, seek out a rahn kow gaang (rice-and-curry shop), which sell a selection of pre-made dishes; just point, and your choice will be ladled over hot rice. Ratana, located at Bangkok’s Nang Loeng Market is a classic example of this. For dinner, consider visiting a rahn ahhahn tahm sang (food-to-order shop). Especially prevalent in Bangkok’s Chinatown, this genre can often be recognised by a display of raw ingredients – Chinese kale, tomatoes, chopped pork, fresh or dried fish, noodles, eggplant, spring onions. As the name implies, dishes are made to order.</p>
+    <p>Other recommended shophouse-based eateries include the longstanding (and royal family-frequented) Krua Apsorn, or if you’re feeling decadent, Jay Fai, home to some of Bangkok’s best (and most expensive) fried noodle dishes.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2012/05/Dishing-up-curries-at-Ratana-a-curry-stall-at-Bangkok%E2%80%99s-Nang-Loeng-Market.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Dishing up curries at Ratana, a curry stall at Bangkok’s Nang Loeng Market. Image by Austin Bush / Lonely Planet</p>
+    <br>
+    <h2> Food court </h2>
+    <p>For residents of Bangkok, eating is usually as important a part of a shopping expedition as the actual shopping is. Thus every mall worth its escalators has some sort of food court. Not so long ago, Bangkok’s food courts were the abode of budget-oriented Thais: the food was cheap and the settings bland. However, in recent years, Bangkok food courts have moved upmarket, and the setting, cuisine and service have elevated accordingly. Relatively inexpensive by western standards, clean, and boasting English-language menus, mall-based food courts are also among Bangkok’s most user-friendly introductions to Thai cuisine for foreign visitors.</h2>
+    <p>Our favourite Bangkok food courts include MBK Food Island, the biggest and arguably best; the new Eatthai, where you’ll find branches of several ‘famous’ stalls and restaurants; and Food Republic, probably Bangkok’s most attractive food court.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2012/05/Tropical-fruit-flavoured-ice-cream-at-iberry-Bangkok.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Thai chains</h2>
+    <p>While they are often best avoided in other countries, chain restaurants in Thailand can be downright tasty. One of the more popular options among Thais is sugee, aka sukiyaki, aka do-it-yourself hotpot. Coca Suki has been around for decades and has several branches around town. Tha Siam, with locations in several malls (including MBK Center), is a good place to sample Thai-style ‘boat’ noodles, so-called because they used to be sold from boats along the canals and rivers of central Thailand.</h2>
+    <p>For something sweet, try the domestically influenced ice cream flavours such as mangosteen or mango with chili at iberry, which has a branch in Siam Paragon.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2012/05/Preparing-Thai-dishes-at-a-cooking-school-in-Bangkok.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Do-it-yourself</h2>
+    <p>Lastly, you’re not likely to have access to a kitchen while in Bangkok, but this doesn’t mean you can’t make your own Thai meal.</p>
+    <p>A visit to a Thai cooking school has become a must-do for many Bangkok itineraries, and, and a typical course usually ends with a meal consisting of your own handiwork. Courses range in price and value, but a typical half-day course should include a basic introduction to Thai ingredients and flavours or visit to a market, and a hands-on chance to prepare and cook at least four dishes. Most schools offer a revolving cast of dishes that change on a daily basis, making it possible to study for a week without repeating a dish, if desired. Recommended venues include Amita Thai Cooking Class, Helping Hands and Silom Thai Cooking School.</p>
+    <p align="center">This article was originally published in January 2012, and updated by Austin Bush in 2014.</p>
+    <br>
+    <br>
+    <br>
+
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2015/05/4099148495_093c32121d_b.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="100%" height="660">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Essential regional cuisine of China </h3>
+    <p id="heading2"> Tourist Attraction in China </p>
+    <p align="center"><i> Source: PHILLIP TANG </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Everyone has their own idea of Chinese cuisine, whether it’s informed by adventurous cookbook readings or late night trips to local take-out restaurants. You can get a taste of China’s long history through the cuisine of each region, whose leaping Buddhas, lion heads and lychee pork brims brim with stories from the Silk Road, Portuguese traders and wayward monks. The culinary discoveries to be had across China are nearly endless, but this list of notable noms should give any hungry traveller a great head start.
+    <br>
+
+    <h2> Cantonese Dim Sum </h2>
+
+    <p>There is unique thrill in entering a Hong Kong dim sum restaurant and seeing the parade of women pushing carts laden with bamboo steamers. Turning up with a rumbling tum? No problem, pick a steamer straight off the cart, like the crowd pleasing, juicy siumai (pork, prawn and Chinese black mushroom dumplings identifiable with an orange spot). Then you can move on to some silky scallop and snow-pea sprout dumplings with a splash of red wine vinegar. Or cheong fun – long folded rice noodles studded with prawns (variations include chicken and bitter melon) and drizzled in sweet soy sauce and shallot-infused oil. At Tim Ho Wan the speciality is baked char siu bao (barbecue pork buns).
+    <br>Dim sum magic really happens with the atmospheric details – the noisy entourage of carts that accompany the pots of jasmine tea on white tablecloths, a menu card filled with stamps for every dish you have picked, and a cavernous room decked out with red and gold dragons. This is how dim sum restaurants started a millennium ago, as teahouses for Silk Road travellers. Dumplings began as a complement to the tea drinking (literally yum cha, another name for dim sum).
+	   </p>
+     
+    <h2> Fújiàn ‘Buddha’s Temptation’ </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2015/05/4099148495_093c32121d_b.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>The Chinese know Fújiàn cuisine – especially from the province's capital, Fúzhōu – as subtle and clean. This style of cooking, also known as Min cuisine, lets the natural seafood and woodland flavours of mushrooms and bamboo shoots come through with little salt and a splash of punchy shrimp oil. Fújiàn cuisine can be as simple as an oyster omelette (try it at Lóngtóu Fishball) or complex as its most famous dish, ‘Buddha Jumps Over The Wall’ (or ‘Buddha’s Temptation’), supposedly named after a monk who was tempted to abandon vegetarianism after one whiff of this sumptuous dish. The recipe does contain pork tendon and plentiful other rare ingredients including sea cucumber, quail eggs and ginseng (as well as abalone and shark fin which, apart from being inhumane and unsustainable, doesn’t add a great deal with all the other flavours). Eating shark fin is not recommended, as preparing the dish involves cutting the fin off the shark and then throwing the shark back into the water for it to die a painful and lingering death.
+    <br>It takes one or two days to prepare this complex delicious soup. It is also, unsurprisingly, not cheap. An easier way to be dazzled by the sour and sweet flavour showcase of Fújiàn is with its thick soup, gēng. This can be as simple as mussels cooked in chicken soup.
+    <br>Another worthy dish from Fúzhōu is the sculptural lìzhī ròu (lychee pork, though the dish does not contain lychees). A key marker of Fújiàn cuisine is precise cutting, which is used here to make fine criss-cross marks in pork tenderloin pieces to resemble lychee skin, then fried and cooked with water chestnuts in a sour and sweet tomato marinade for the lychee colour.
+    </p>
+
+    <h2> Macau Egg Tarts </h2>
+    <img src="https://lonelyplanetwp.imgix.net/2015/05/3602639460_3e09bd763a_b.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>Most dim sum dessert carts are brightened up with dan gao (or dàntà) – golden shortcrust pastry tarts with a brilliant yellow egg custard. Perfect dan gao have a subtly bronzed top, crumbly pastry and an eggy custard that is still oozy and warm in your mouth. The custard tends to have a slightly savoury leaning and is less one-note sweet than those you will find in bakeries and dim sum joints outside of China. Try a variety at Lord Stow’s Bakery.
+    <br>The origin of dan gao is in the Portuguese pastel de nata, which is scorched and dappled brown in a flakier pastry. Macau is in the south of China, just across the Pearl River Delta from Hong Kong, and was a former Portuguese colony. Traders set up shop from the 1550s until 1999 and this fusion food only caught on in the last century, showing off that Chinese knack for adaptability.
+       </p>
+       
+
+    <h2> Běijīng roast duck</h2>
+
+     <img src="https://lonelyplanetwp.imgix.net/2015/05/c.jpg?fit=min&q=40&sharp=10&vib=20&w=1470 width="70%">
+
+    <p>This is not the Peking duck you might know. Běijīng’s most famous dish is fattier and juicier than the roast duck served up in the West. Some chefs add malt sugar to the skin so that it glows golden brown once roasted. The crispy skin duck is worth travelling to China’s capital for, especially if you get to meander through a crumbling maze of hútòng (ancient alleys lined with courtyard homes) to Lìqún Roast Duck Restaurant.
+    <br>Peking duck was a royal dish from the 13th century and commoners couldn’t get their hands on it until the early 1900s, when former imperial cooks started their own roast duck restaurants beyond the palace walls. Today you can try it roasted in ovens fired by fruit-tree wood at Qiánmén Quánjùdé Roast Duck Restaurant for a unique fragrance to the meat. You’ll be given savoury pancakes, into which you pile slices of duck and sides such as fermented bean paste, cucumbers and green onions.
+    </p>
+
+    <h2> Sìchuān málà rabbit </h2>
+
+    <p>Sìchuān is a damp environment – turning hot and steamy in summer and cold and clammy in winter. Many Chinese believe that chili (introduced by the Portuguese from South America in the 16th century) became so popular here as a means to drive out this moisture from the body, but the practice also had significant culinary impact. Combine red hot chilies and Sìchuān peppercorns with rabbit and you have a flavour bomb. The chili scorches, but the peppercorns numb, giving the Sìchuān flavour combination the name málà (‘numbing and spicy’) and getting your taste buds hooked. It’s the same trick used in kung pao chicken (gōng bǎo jī dīng), a stir fry of diced chicken with raw peanuts, chili and those very important numbing peppercorns – often omitted in the West. A similar dish is the popular mápó dòufu, soft tofu with málà sauce, which you can try at Chén Mápó Dòufu.
+    <br>The story of Sìchuānese food can also feature deep, smoky star anise and cloves played against sweet sesame paste. A complex málà rabbit (or optionally crayfish) should combine grassy tones – cardamom and ginger – to go with the flowery Sìchuān peppercorns and bright chili. And let’s not forget that pungent garlic that will have your mouth singing all night. Try it at Zìgòng Càiguǎn.
+    </p> 
+
+     <h2> Jiāngsū ‘Lion head’ meatballs </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2015/05/3420419122_6ff5047e82_o.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>The Jiāngsū province is known as the ‘land of fish and rice’ and focuses on fine details that are as eye-popping as they are taste bud-tingling ­–peacock sculptures at the table are carved from melons, for example. Also known as sū cài, the cuisine of Jiangsu does beautiful things with river fish and other seafood.
+        <br>One reason to book a ticket straight to Huáiyáng, Sūzhōu or the university town of Nánjīng is the abundance of shīzi tóu (lion head) meatballs. Pork and crabmeat are baked in a casserole into fat meatballs with ginger, wombok Chinese cabbage and green onions, which balance out the optional dollop of crab roe and stops the dish from feeling heavy. Variations include adding soy sauce to the broth, darkening the lion heads, or adding tofu for moister lion heads.
+        <br>Fierce Shànghǎi pushes up against Jiāngsū and sometimes claims the lion heads as their own (adding vermicelli noodles), making it a popular dish at places such as Xian Yue Hien.
+    </p> 
+
+    <h2>Xī'ān yángròu pào mó and Chinese burgers</h2>
+    <p>Xī'ān is where many weary traders from Turkey, Iran and Egypt finished their long caravan journeys along the ancient Silk Road, bringing their must-have dishes and recipes with them. Today walk the streets of Xī'ān’s old Muslim Quarter, dotted with mosques, and you’ll still find their descendants, pounding out sesame and peanut brittle (huāshēng gāo), roasting lamb skewers (yángròu chuànr) or whole eggplants over hot coals, and stirring pots of lamb stew with steam rising to the heavens. Perfect winter warmers.
+        <br>But perhaps Chinese and Chinese Muslim (Hui) tastes meet best in yángròu pào mó, a stew of fine vermicelli noodles clinging to soft mutton. It’s an everyday dish with the straight-up flavours sitting obviously in your bowl – streaks of chili paste and dollops of pickled garlic. Grab a stool at the Muslim Family Restaurant, take a toasted disc of pita-like bread and break off pieces into the broth as you eat. For another interesting combo, try a ‘Chinese Burger’ (ròu jiā mó), which takes the flatbread and stuffs it full of mutton stewed with chili and cumin (the very taste of the Middle East).
+    </p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

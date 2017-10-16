@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2015/04/hangukjip-jeonju_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="100%" height="660">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> 48 hours in Jeonju: Korea's foodie capital </h3>
+    <p id="heading2"> Tourist Attraction in South Korea </p>
+    <p align="center"><i> Source: REBECCA MILNER </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Jeonju is one of South Korea's top destinations, though it remains under the radar for international travellers. The largest city in the country's southwest, Jeonju has a vibrant historic district and a fantastic food scene: 'eat once in Jeonju and you'll be spoiled for life', Koreans say.
+    <br>In 2012 the city was designated a Unesco City of Gastronomy. Though the city itself sprawls, the main attractions are mostly clustered in one area, making Jeonju a manageable and highly recommended weekend getaway.
+    <br>Here you can wander cobblestone lanes, graze food stalls, spend the night in a hanok (traditional home) and join the locals for a deliciously boozy night out. Check out our itinerary to make the most out of 48-hours in this Korean foodie wonderland.
+    </p>
+    <br>
+
+    <h2> Day One </h2>
+    <h3> Morning </h3>
+    <img src="https://lonelyplanetwp.imgix.net/2015/04/jeonju-hanok-village-flickr.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Start your tour of Jeonju in the historic centre, the city's Hanok Maeul. Distinguished by their elegant, sloping slate roofs, hanok are the traditional houses of the Korean upper class; maeul means village. This is one of the largest collections of hanok in the country: there are literally hundreds, side-by-side, their outer walls forming a maze of alleys. It's more than enough to make you feel entirely encapsulated in an alternative Korea – not one that is entirely antique (many buildings have been restored or rebuilt) but one that is aesthetically opposed to neon. Some hanok are still private homes, but most are now guesthouses, restaurants, boutiques or artisan workshops. If you need a caffeine hit, there are also numerous coffee shops. Story makes a delicious latte.
+       <br>At the heart of the maeul is Gyeonggijeon, a shrine originally built in 1410 (and last rebuilt in 1614) to hold a portrait of Yi Seong-gye, the founder of Korea's Joseon dynasty, whose family hailed from Jeonju. There are also small museums, including the Traditional Wine Museum, which houses an old still where you can see how the traditional local liquor is made. However, the best way to experience the village is just to wander through the crooked lanes, some just wide enough for two people to pass.   </p>
+
+    <h3> Afternoon </h3>
+    <img src="https://lonelyplanetwp.imgix.net/2015/04/rm-kor10-jeonju004_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=14700" width="70%">
+    <p>Just about every other person in Hanok Maeul is carrying something fried or grilled on a stick: in the last few years the village has become a street food hot spot. Some of the dishes on offer, like the fluffy, brown sugar-filled hotteok (pancake) at Jeondong Hotteok (75 Eunhaeng-ro), fit in with the traditional vibe of the neighborhood.
+    <br> Others, like the baguettes stuffed with spicy pork at Gilgeoriya (124 Gyeonggijeon-gil) are totally modern concoctions. You can also find meatballs, mandu (dumplings), churros and deep fried squid. After getting your fill, you can revive yourself with tea at Gyodong Dawan (65-5 Eunhaeng-ro), the first business to set up in the village. It's still a wonderfully quiet place, specialising in a rare, golden-coloured tea once reserved for kings.
+    <br>If you're looking to pick up local crafts, like hanji, Korea's hardy traditional paper made from mulberry pulp, try the Handicraft Exhibition Hall. Demiseam (100-7 Hanji-gil) sells handmade clothes coloured with natural dyes.
+    </p>
+
+    <h3> Evening </h3>
+
+    <img src="https://lonelyplanetwp.imgix.net/2015/04/makgeolli-flickr.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Jeonju loves its makgeolli (a milky spirit made from fermented rice) and locals will tell you it is a food, not a beverage. The city has no less than seven 'makgeolli towns' – bar strips that specialise in locally produced versions of the tipple. Makgeolli bars have a curious arrangement: you pay for the drink, which comes in huge copper kettles, and the food is thrown in for free. It's best done in a group of at least four, because the more kettles you get through, the more dishes you get to sample. At some joints, the food is more like an afterthought, but at Yetchon Makgeolli (8 Jungsanjungang-ro), arguably Jeonju's most famous makgeolli bar, the food is good enough to steal the show. It's deservedly popular though, so be prepared to queue.
+    <br>There are naturally some fantastic places to stay inside Hanok Maeul, like Seunggwangje, a hanok guesthouse owned by the grandson of the last Joseon dynasty king. At Cho Ga Jib, (25 Omokdae-gil, Wansan-gu; 063 288 2403) on the edge of the village, you can stay in a 100-year-old thatched roof commoners' house. Though neither of these traditional guesthouses are expensive, if you're really watching your budget, try Carpe Diem, a hostel just outside the Hanok Maeul.
+    </p>
+
+    <h2> Day Two </h2>
+    <h3> Morning </h3>
+    <img src="https://lonelyplanetwp.imgix.net/2015/04/rm-kor10-jeonju006_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Makgeolli is famous for leaving you with a monster hangover, but fortunately Koreans have come up with a cure: kongnamul gukbap (bean sprout and rice soup). The best place to get a fix is Hyundai-ok, a tiny counter joint inside Nambu Market (63 Pungnammun 2-gil, Wansan-gu, hours vary per shop).
+    <br>The ideal time to visit is between 9-10am – in between breakfast and lunch – when the line is shortest. It's worth taking an hour to explore the labyrinthine market itself. Look for the stairway that leads to the second floor, which has a handful of hipster cafes. There's also a popular night market here on Friday and Saturday nights with even more food stalls.
+       </p>
+       
+
+    <h3> Afternoon </h3>
+
+     <img src="https://lonelyplanetwp.imgix.net/2015/04/rm-kor10-jeonju005_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Stretch your legs and climb up to Omokdae, a hillside pavilion that offers panoramic views of the Hanok Maeul, the Jeonju skyline and the surrounding hills. Across the footbridge from the pavilion is another village within the city: Jaman Art Village. This 'moon village' – a euphemistic term for hillside shantytowns that sprung up after the Korean War – has been given new life with colourful murals and sculptures. A number of artists have also moved into the neighborhood, opening up galleries and cafes. Don't miss Kkojittappong (31 Jamandong 2-gil), a terrace cafe, serving sandwiches and juice, with playful installations that seem designed for selfie-shoots.
+    <br>From here, switch gears and hike up to the top of Martyr's Mountain. It's the final resting place of 13 Korean Catholics who were executed during a period of persecution in the late 18th century. You'll see crosses on the hills and a humble church on top. Despite the somber history, it's a favorite local sunset spot, with even better views over the valley than Omokdae. To get here, walk south down Girin-ro and look for a sign (in English) on the left.
+    </p>
+
+    <h3> Evening </h3>
+
+    <img src="https://lonelyplanetwp.imgix.net/2015/04/rm-kor10-jeonju001_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>It would be a crime to visit Jeonju and not sample the city's signature dish, bibimbap. This dish of rice topped with egg, vegetables and chilli sauce is among Korea's most recognised exports. The city has a particular way of serving it, making use of the fresh, flavourful greens and sprouts (rendered into jelly) that the surrounding farmland provides. There are countless places that serve bibimbap (and the best places are hotly debated), but you can't go wrong with Hanguk-jip (119 Eojin-gil, Wansan-gu).
+        </br>
+     After dinner, toast the city with a bottle of Jeonju moju, a sweet local liquor seasoned with cinnamon. Take a bottle (or two, it's not very strong) to the public gazebo perched on top of Jeonju Stream, the city's central waterway.</p> 
+
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vietnamese coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="http://3.bp.blogspot.com/-SzZef7ORuUY/Te_UEVXAqYI/AAAAAAAABDY/NiH0wuB66KQ/s1600/DSC_0990.jpg"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Vietnamese coffee </h3>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Strong and flavourful Vietnamese coffee makes converts as quickly as it raises pulses. French colonists might
+        have introduced coffee to Vietnam, but the morning cup of ca phe soon became a local habit. With variations
+        that make use of yoghurt, eggs and even fruit, Vietnamese coffee has developed a style of its own.</p>
+    <h2>Same but different</h2>
+    <p>The preparation process, as well as the blend of beans, helps give Vietnamese coffee its particular style.
+        Coarsely ground beans go into a French drip filter (called a phin), which sits on top of the cup. The beans
+        are weighted down with a thin lid, hot water is added to the phin, and then the water slowly trickles through
+        into the cup. Most people drink the resulting dark, strong brew with sweetened condensed milk, a practice
+        that began because the French couldn't easily acquire fresh milk. In the north of Vietnam, this mixture is
+        referred to as ca phe nau (brown coffee), while in the south it’s called ca phe sua (milk coffee).</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Vietnam-coffee-phin.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <br>
+    <h2> Types of coffee</h2>
+    <p>Vietnam has far more to offer in the caffeine department than just coffee with milk. Below are a few more
+        unique variations to look out for.</p>
+    <h3>Yoghurt coffee (sua chua ca phe)</h3>
+    <p>Like coffee, yoghurt was originally brought to Vietnam by the French and has been adopted into local culinary
+        tradition. Rich and creamy, it’s served with various toppings, from fresh mango to fermented rice – and even
+        coffee. This might sound like an odd combination, but the rich yoghurt pairs amazingly well with a drizzle of
+        black coffee – just stir and sip.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Vietnam-coffee-yoghurt-coffee.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>Egg coffee (ca phe trung) </h3>
+    <p>Egg yolk whipped with condensed milk into an airy froth meets dark coffee in this rich concoction: think of it
+        as a Vietnamese take on tiramisu. Egg coffee first made the scene in the 1940s, when milk was scarce and egg
+        yolks provided a convenient replacement.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Vietnam-coffee-egg-coffee.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>Coffee smoothie (sinh to ca phe)</h3>
+    <p>In recent years, coffee has even found its way into smoothies. Popular juice shops perk up creamy blends of
+        fresh fruit with a touch of Vietnamese coffee, sometimes tossing in yoghurt or cashews. In Hanoi, try sinh to
+        ca phe chuoi bo (coffee blended with banana and avocado). In Ho Chi Minh City, go for sinh to ca phe sapoche
+        (coffee blended with sapodilla, a tropical fruit with a custard-like taste). Both are delicious ways to get
+        your caffeine fix and your vitamins at the same time.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Vietnam-coffee-avocado-shake.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Where to drink</h2>
+    <p>Hanoi remains the undisputed centre of cafe culture in Vietnam. While modern-style coffee shops have grown in
+        popularity, traditional sidewalk cafes still fill up from morning to night with drinkers of all ages, who
+        linger for hours over a single glass. However, you can find quality coffee all over Vietnam. In Ho Chi Minh
+        City, coffee is usually served in taller glasses and is slightly cheaper.</p>
+    <h3>For the experience: Trieu Viet Vuong</h3>
+    <p>Known as ‘Coffee Street’, this stretch of Hanoi’s historic Hai Ba Trung District might contain more cafes per
+        block than anywhere else in Vietnam, ranging from family-run shops to more fashionable places popular with
+        teenagers. Hanoian favourite Cafe Tho (117 Trieu Viet Vuong), which has been here for three decades, brews a
+        powerful cup that still draws consistent crowds.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Vietnam-coffee-outdoor-cafe.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>For dessert: Cafe Giang</h3>
+    <p>No trip to Hanoi is complete without a taste of egg coffee at the place it was invented. Cafe Giang (39 Nguyen
+        Huu Huan), on the edge of Hanoi’s Old Quarter, was the first to begin whipping up this drink/dessert in the
+        1940s. Since then the atmosphere has changed as little as the recipe. While the tiny stools here might not be
+        the most comfortable, the drink itself is top notch. Those who don’t drink coffee can sample the egg foam with
+        sweetened mung beans or cocoa.</p>
+    <h3>For the view: Cafe Pho Co</h3>
+    <p>Accessed via an entrance concealed in the back of a shop, a spiral staircase leads up to Hanoi’s Cafe Pho Co
+        and a stunning view of Hoan Kiem Lake. From the quiet balcony overlooking the lake and surrounding streets,
+        you can enjoy a coffee while watching the seemingly never-ending stream of traffic pass by.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Vietnam-coffee-lake-view.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>For a blast from the past: Cafe La Tamia</h3>
+    <p>A retro cafe in Ho Chi Minh City, La Tamia (38/05 Tran Khac Chan) offers visitors a glimpse into old Saigon.
+        Relax on a vintage sofa or browse the cafe owner’s collection of antique TVs and gramophones while enjoying
+        your iced coffee.</p>
+    <h2>Drink like a local</h2>
+    <p>A few coffee-drinking tips for your Vietnam trip:</p>
+    <h3>Milky way</h3>
+    <p>Don’t even try to ask for decaf. If you prefer your coffee mild, do as the Vietnamese do and order ca phe
+        bac xiu, coffee with lots of extra condensed milk.</p>
+    <h3>Sweet spot</h3>
+    <p>As condensed milk is sweetened, there is no white coffee without sugar. True coffee connoisseurs should opt
+        for ca phe den (black coffee). A touch of sugar will bring out the complex flavours, just as it does with
+        dark chocolate. However, if you want to ensure that your drink isn’t too sweet, ask for it duong (less sugar).</p>
+    <h3>Avoid hunger</h3>
+    <p>Cafes in Vietnam don’t typically serve food. Some newer cafes do offer quick eats, but you’re better off
+        following the local custom of eating first and then heading to a cafe to relax. In a pinch, you can always
+        nibble on hat huong duong (sunflower seeds).</p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

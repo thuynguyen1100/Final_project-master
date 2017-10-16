@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/HKWALLS-2-e232f061818d.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Celebrating street art </h3>
+    <p id="heading2"> Eight festivals for the urban art form </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Street art has taken over the world and spray-painted it red, blue and yellow. Across the globe, urban centres are becoming giant, colourful canvases for all kinds of artists – and this creativity has in turn inspired a flurry of festivals.</p>
+    <p>From Europe’s largest urban art festival in Banksy’s hometown of Bristol to the comic book-inspired POW!WOW! in Hawaii, these are just some of the fabulous celebrations you can find in our new Street Art book.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/Upfest-ac4808a699a2.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Upfest – Bristol, UK</h2>
+    <p>Hailed as the largest street and urban art festival in Europe, Upfest (upfest.co.uk) draws artists from all over the world to Bristol – renowned for its street art and the rumoured birthplace of Banksy – in July to paint at the festival’s home in Bedminster. Using the streets, walls, boards, double-decker buses, vans, cars and even a New York subway train as their canvas, more than 300 artists bring their brushes here each year.</p>
+    <p>Upfest remains true to its roots as a platform for some of the world’s most creative artists to get together and paint live in front of thousands of people, with the artwork remaining in situ until the following year. Held over one weekend, the festival also includes workshops, musical performances and other types of live entertainment. A portion of the money raised goes towards the charity NACOA, which assists children whose parents suffer from alcoholism.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/Nuart-337cd6829526.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2> Nuart – Stavanger, Norway </h2>
+    <p>Norway’s third-largest city probably isn’t the first place you’d look for one of the world’s oldest street art festivals, and yet that’s exactly what you’ll find in Stavanger. Since 2001, the renowned Nuart Festival (nuartfestival.no) has provided an annual platform for the world’s best urban artists to exhibit their creativity. From the first week of September a team of local and international street artists leave their mark on the city’s walls – both indoor and out – creating one of Europe’s most dynamic and constantly evolving public art events.</p>
+    <p>The festival includes a series of citywide exhibitions, events, performances, debates and workshops, by some of the world’s leading practitioners and emerging names in street art. In 2016, a new partnership with local bus company Kolumbus also led to the introduction of eight ‘street art buses’ – mobile artworks that bring street art even closer to the heart of the city.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/POWWOW-ab4f01be7f05.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>POW! WOW! – Hawaii, USA</h2>
+    <p>The name ‘POW! WOW!’ was inspired by the colour-filled pages of comic books – ‘POW!’ being the impact of the art, and ‘WOW!’ being the reaction of the viewer. Together, the words pay homage to the Native American pow wow, a gathering that celebrates culture, music, art and community. The main event of the POW! WOW! (powwowhawaii.com) calendar takes place over a week in February in the Kaka’ako district of Honolulu. The festival brings together more than a hundred international and local artists to create murals and installations in public spaces.</p>
+    <p>Since its beginnings in Hawaii, POW! WOW! has expanded across the globe, taking the festival to Taiwan, Japan, California, Washington D.C., Massachusetts and Texas. The organisation has grown into a global network responsible for art exhibitions, lectures, schools for art and music, creative community spaces, concerts and live art installations worldwide.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/MB6-Street-Art-1708e4949e1e.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>MB6: Street Art – Marrakesh, Morocco</h2>
+    <p>In 2016, the Marrakesh Biennale included urban art as part of its integral programming for the first time since its inauguration in 2004. Twelve leading local and international street artists were invited to Morocco to participate in the Biennale as part of the MB6: Street Art project (mb6streetart.org). The focus on public art is indicative of the inclusive motivations behind the festival, allowing audiences of all backgrounds to engage with artistic works across the cityscape.</p>
+    <p>The murals are located in key public spaces, including the rooftops of the souks in the Medina, the area around the palace, and walls across the Mellah and Gueliz districts. The project also included the installation of North Africa’s largest mural, a 6400 sq metre work by Italian artist Giacomo Bufarini (aka ‘RUN’), painted on the ground of the Moulay Hassan Square in Essaouira. The artwork depicts two figures communicating across borders, echoing the rich musical heritage in Essaouira while also addressing the migration crisis.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/Bloop-34d93bff30cf.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>BLOOP – Ibiza, Spain</h2>
+    <p>BLOOP International Proactive Art Festival (bloop-festival.com) is an independent initiative that showcases art, technology, music, education and gastronomy. The month-long festival has run in July and August every year since 2011, covering the streets of Ibiza in murals, interactive installations, paintings, video mappings, sculptures, parties, workshops, exhibitions and more.</p>
+    <p>One of the main activities within this fiesta is OpenAir.Gallery, which currently exhibits more than 20 murals by artists from around the world. The gallery is open year-round, embodying the festival’s ethos: ‘art is for everybody’. After six consecutive years, the festival is now considered a tourist attraction in its own right, with something for everyone from art lovers through to partygoers visiting Ibiza for its renowned nightlife.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/HKWALLS-2-e232f061818d.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>HKwalls – Hong Kong, China</h2>
+    <p>The HKwalls festival (hkwalls.org) adds a much-needed street art element to Hong Kong Arts Month, held annually in March. HKwalls invites local and international artists to create large-scale works on the streets of the city. The festival celebrates creativity, originality and freedom of expression, actively connecting and building relationships between artists and the community through high-quality public art.</p>
+    <p>Each year, HKwalls selects one area of Hong Kong to focus on, with artists painting as many exterior walls, gates and windows as possible throughout the district. During the festival, HKwalls also hosts a number of supplementary events and activities including exhibitions, film screenings and public workshops. Works from the 2015 and 2016 iterations of the festival, which took place in the Sheung Wan, Stanley Market and Sham Shui Po neighbourhoods, are still visible to visitors.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/Artscape-1d99925a4acf.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Artscape – Gothenburg, Sweden</h2>
+    <p>The 2016 Artscape festival (artscape.se) was one of the most ambitious urban art projects ever undertaken in Scandinavia, joining other established events in the region such as Nuart in Norway. Over four weeks in July and August, 20 international, national and local artists joined forces to create large-scale art in every single borough of Sweden’s second-largest city, Gothenburg. Artscape seeks to promote public art for everyone, believing that the advertising jungle of the modern cityscape needs competition, and that great art shouldn’t be confined to galleries and museums. The festival was another important step for the Swedish urban art scene. It brings into the mainstream an art form that is still very much on the outer, in a country influenced by a conservative view of the purposes of public space and a long-standing ‘zero tolerance’ policy towards any kind of aerosol-based art.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/04/Start-Festival-2385d0557a67.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>St+art Festival – New Delhi, India</h2>
+    <p>St+art (st-artindia.org) is a not-for-profit organisation bringing large-scale street art to public spaces across India. Since 2014, St+art has promoted annual festivals throughout the country, including in New Delhi, Mumbai, Hyderabad and Bangalore, with the aim of moving art from the galleries to the streets, making it accessible to a much wider audience.</p>
+    <p>The fourth iteration of the festival took place in New Delhi at the beginning of 2016, in collaboration with the Ministry of Urban Development. It featured the creation of the first open-air street-art zone in India, the Lodhi Colony Art District. This vision of a pedestrian-friendly neighbourhood transformed into an open-air art museum wowed locals and helped to reinvent the idea of public spaces in Indian cities.</p>
+    <p>The colony now exhibits 26 major new artworks by globally renowned artists running along the Meharchand Market Road and Khanna Market Road, and has become a tourist destination in its own right.</p>
+    <br>
+    <br>
+    <br>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

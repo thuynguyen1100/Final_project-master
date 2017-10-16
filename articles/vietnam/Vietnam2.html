@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Con Dao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand > img {
+            position: absolute;
+            left: calc(50% - 78px);
+        }
+
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;
+        }
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown li {
+            display: block;
+            width: 150px;
+            height: 50px;
+
+        }
+
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+
+        .dropdown a:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+            background-color: transparent;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown .dropdown-menu li a:hover {
+            background-color: transparent;
+            color: cornflowerblue;
+        }
+
+        .dropdown li:hover {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+        a {
+            color: #959aa0;
+        }
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div id="tl" style="height: 100vh">
+    <img src="images/condao1.jpg" width="100%" height="100%"/>
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Con Dao Islands </h3>
+    <p id="heading2"> are tropical escape </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Isolated from the mainland, the Con Dao Islands are one of Vietnam's star attractions. Long the Devil’s Island of
+        Indochina, the preserve of political prisoners and undesirables, it now turns heads thanks to its striking natural
+        beauty. Con Son, the largest of this chain of 15 islands and islets, is ringed with lovely beaches, coral reefs
+        and scenic bays, and remains partially covered in thick forests. In addition to hiking, diving and exploring
+        deserted coastal roads and beaches, there are excellent wildlife-watching opportunities such as the black giant
+        squirrel and endemic bow-fingered gecko.</p>
+    <br>
+    <h2> Take a morning stroll in Con Son town </h2><br>
+    <p>The islands' tiny capital is a delight to explore on foot, with (almost) traffic-free streets, a couple of
+        traffic lights (which don’t work) and a solitary gas station (which closes for a siesta). This is Vietnam in
+        the slow lane.
+    </p>
+    <p>Begin with an early morning stroll along the town’s spectacular promenade, with a horizon-filling turquoise
+        ocean on one side and a roster of handsome ochre French colonial buildings to admire on the other. You’ll pass
+        the old Gallic customs house where Camille Saint-Saëns composed his opera Brunhilde in 1895.
+    </p>
+    <img src="images/condao6.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>Family on a motorcycle ride past a colonial house </i></p><br>
+    <p>Next up, take a peek inside Con Son Market, where you’ve the option of a local breakfast (think rice porridge
+        or noodles) and a glass of drip-fed, treacle-thick Vietnamese coffee. If you’re thinking more along the lines
+        of a cappuccino and an omelette, head to Infiniti Cafe & Lounge instead, which has an arty vibe and a great
+        street terrace.
+    </p>
+
+    <h2> Discover the islands' terrible past</h2><br>
+    <p>For a good overview of the islands, their environment (the Con Dao are important nesting grounds for sea turtles
+        and there are 11 endemic trees) and their role as a concentration camp, drop by the modern Con Son Museum.
+        This will prepare you for a tour of the prisons themselves.</p>
+    <p> There were once 11 jails. The largest was Phu Hai, where political rebels and criminals were herded together
+        naked in the French period; today the dank rooms are filled with emaciated, chained mannequins. This prison
+        acted as a revolutionary university for leaders of the People's Army of Vietnam and Vietnamese Communist Party,
+        many of whom were incarcerated here by the French and Americans.</p>
+    <img src="images/condao2.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>The infamous Tiger Cages</i></p><br>
+     <p>The most difficult prisoners were singled out for particularly gruesome treatment in the infamous neighbouring
+        Tiger Cages, where they were kept in open-roofed pens, beaten with sticks and doused with lime (which burns the skin). O
+        ver 20,000 prisoners died in Con Dao</p>
+
+    <h2> Reflect on the beach </h2>
+    <p>After a disturbing look into Con Dao's past, lighten your mood with a trip to the beach. Grab a scooter and buzz
+        up to the north of Con Son island, past towering granite hills and fishermen’s houses wrapped in wild
+        bougainvillea. Nestling in a niche in the coastline close to the airport is the glorious cove of Dam Trau,
+        flanked by rocky promontories, blessed with soft pale sand and fringed by casuarina and pandan trees. Feast on
+        ocean-fresh seafood (try the crab) at one of the shacks on the shore.</p>
+    <img src="images/condao3.jpg"width="70%"/>
+    <p style="font-size: 10px" align="center"><i>Beautiful Dam Trau beach</i></p><br>
+    <p>On the return leg you could drop by the uber-luxurious Six Senses resort (Angelina and Brad stayed here in 2011),
+        which occupies a stunning sheltered beach, for a sundowner, or even a gourmet meal. Alternatively, dine in the
+        family-owned Thu Ba in Con Son town for delicious Vietnamese dishes (including plenty of choices for vegetarians).
+        The English-speaking owner will guide you through the menu and make suggestions.
+    </p>
+
+    <h2> Hike the national park</h2>
+    <p>Drop by the National Park management office at 29 Vo Thi Sau, Con Son town and get a (free) permit for entering
+        the national park. There are many trails but some are closed during dry season (November to February) because of
+        the risk of forest fire.</p>
+    <img src="images/condao4.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>The green, mountainous landscape of the interior is great for hiking</i></p><br>
+    <p>The two most popular are the hike to the rocky bay of Ong Dung (where there’s good snorkelling on a fine coral
+        reef offshore) and the steep climb up to So Ray, an abandoned plantation with fine views over the islands – it’s
+        now home to a large troop of long-tailed macaque monkeys (watch they don’t steal your lunch!). In the forest keep
+        an eye out for other wildlife, including black giant squirrels and monitor lizards.</p>
+
+    <h2> Dive Vietnam's best reefs</h2>
+    <p>The Con Dao islands' reefs are unquestionably the best in Vietnam, with healthy soft and hard coral, and there are
+        also a few wrecks to explore (including a 65m Thai freight ship). You can expect to see a good variety of tropical
+        marine life: parrot fish, triggerfish and perhaps a turtle. The best conditions are between January and June but
+        diving is possible year-round.</p>
+    <img src="images/condao5.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>The clear waters around the Con Dao Islands provide excellent diving conditions </i>< /p><br>
+    <p>Professional dive schools include Dive! Dive! Dive!, a long-established operation run by Larry, who knows the seas
+        around Con Dao better than his backyard. The Con Dao Dive Center is another great outfit. Prices are comparable
+        whoever you book with: two-dive packages cost around US$140; snorkelling trips about US$40.</p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

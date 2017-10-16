@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/N%C3%A1m-pr%C3%ADk-n%C3%B9m-as-served-at-a-restaurant-in-northern-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="100%">
+
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Top 10 </h3>
+    <p id="heading2"> Must-try Northern Thai dishes </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Think you know Thai food? Think again. Thailand's cuisine takes a different form every time it crosses a provincial border, and the dishes of Thailand's northern provinces are no exception.</p>
+    <p>Northern Thai food is a world away from the dishes you’ve probably encountered at your local Thai restaurant at home – or even in Bangkok for that matter. The food of the north is indicative of the region's seasonal and relatively cool climate, not to mention a love for pork, veggies and all things deep-fried.</p>
+    <p>Traditionally, the residents of Thailand's north ate almost exclusively kôw nĕe•o, sticky rice, known in the local dialect as kôw nêung. Coconut milk rarely makes its way into the northern kitchen, and northern Thai cuisine is probably the most seasonal and least spicy of Thailand's regional schools of cooking, often relying on bitter or other dried spice flavours.</p>
+    <p>Paradoxically (and unfortunately), it can be quite difficult to find authentic local food in northern Thailand. Outside of Chiang Mai and the other large cities in the region, there are relatively few restaurants serving northern-style dishes, and the vast majority of authentic local food is sold from stalls in 'to go' bags. However, if you manage to come across a restaurant serving northern-style food, read on for ten top dishes worth trying. </p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Gaang-hang%E2%80%A2lair-as-served-at-a-restaurant-in-Mae-Hong-Son.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Gaang hang•lair as served at a restaurant in Mae Hong Son, Thailand. Image by Austin Bush / Lonely Planet</p>
+
+    <h2> Gaang hang-lair </h2>
+    <p>Burmese in origin (hang is a corruption of the Burmese hin, meaning curry), this curry, which unites fatty pork belly, a mild spice mixture, and fresh ginger and garlic, is a regular at festivals and ceremonies – and restaurants – in northern Thailand. Try a bowl at Mae Si Bua, in Mae Hong Son.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/G%C5%8Fo%E2%80%A2ay-%C4%91%C4%95e%E2%80%A2o-s%C3%B9%E2%80%A2k%C7%92h%E2%80%A2tai-as-served-in-Sukhothai-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Gŏo•ay đĕe•o sù•kǒh•tai as served in Sukhothai, Thailand. Image by Austin Bush / Lonely Planet</p>
+    <br>
+    <h2>Gŏo-ay đĕe-o sù-kǒh-tai</h2>
+    <p>Sukhothai’s signature dish combines noodles, a slightly sweet broth, pork, par-boiled long beans and bean sprouts, and garnishes of ground peanuts and thinly-sliced fresh herbs. Compare and contrast bowls at neighbouring noodle shacks Jayhae and Ta Pui in Sukhothai.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/J%C3%AEn-%C4%91%C3%BAp-as-served-at-Muu-Thup-a-northern-Thai-restaurant-in-Mae-Sariang-Mae-Hong-Son-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Jîn đúp as served at Muu Thup, a northern Thai restaurant in Mae Sariang, Mae Hong Son, Thailand. Image by Austin Bush / Lonely Planet </p>
+    <br>
+    <h2>Jîn đúp</h2>
+    <p>Take a tough, grainy cut of beef, marinade it, grill it, then thwack it with a sledgehammer until tender and you have jîn đúp, one of the more unique dishes in the northern Thai culinary repertoire. Try it at</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/K%C3%B4w-g%C3%A2n-j%C3%AEn-as-served-at-a-restaurant-in-northern-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Kôw gân jîn as served at a restaurant in northern Thailand. Image by Austin Bush / Lonely Planet</p>
+    <h2>Kôw gân jîn</h2>
+    <p>An intimidating, yet popular (and delicious) snack in Mae Hong Son, this dish consists of rice mixed with blood and minced pork, steamed in a banana leaf package and served with a generous drizzle of garlic oil.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/Beef-k%C3%B4w-soy-at-Suthatsinee-Kitchen-Chiang-Mai.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Beef kôw soy at Suthatsinee Kitchen, Chiang Mai. Image by Austin Bush / Lonely Planet</h2>
+    <h2>Kôw soy</h2>
+    <p>Kôw soy, arguably the most famous northern Thai dish, combines wheat-and-egg noodles and a rich, fragrant curry broth. The dish is closely linked to Chiang Mai, and was probably introduced to northern Thailand by travelling Chinese merchants. Supplement your noodles with chunks of pickled vegetables and slices of shallot, and season the dish with a squeeze of lime and ground chilies fried in oil. A balanced bowl is available at Khao Soi Prince in Chiang Mai.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/K%C3%A0%E2%80%A2n%C5%8Fm-jeen-n%C3%A1m-ng%C3%A9e%E2%80%A2o-as-served-at-a-stall-in-northern-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Kà•nŏm jeen nám ngée•o as served at a stall in northern Thailand. Image by Austin Bush / Lonely Planet</p>
+    <br>
+    <h2>Kà-nŏm jeen nám ngée-o</h2>
+    <p>Available across northern Thailand is this dish of fresh rice noodles served with a pork-and tomato-based broth. A meaty, rich bowl can be got at Paa Suk, in Chiang Rai.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/L%C3%A2hp-k%C3%B4o%E2%80%A2a-as-served-at-a-restaurant-in-northern-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Lâhp kôo•a as served at a restaurant in northern Thailand. Image by Austin Bush / Lonely Planet </p>
+    <br>
+    <h2>Lâhp kôo-a</h2>
+    <p>Literally 'fried lâhp', this dish takes the famous Thai minced-meat 'salad' sometimes known as larb (or larp or laap) and sees it fried with a unique mixture of dried spices. Try the version at Pu Som Restaurant in Nan.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/N%C3%A1m-pr%C3%ADk-n%C3%B9m-as-served-at-a-restaurant-in-northern-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Nám prík nùm as served at a restaurant in northern Thailand. Image by Austin Bush / Lonely Planet</p>
+    <br>
+    <h2>Nám prík nùm</h2>
+    <p>This dish revolves around long green chillies, shallots and garlic that are grilled until tender and fragrant, then mashed into a stringy and spicy paste. Served with sticky rice, parboiled veggies and deep-fried pork crackling, it’s one of the most beloved dishes in northern Thailand. Try it at Phu-Lae, in Chiang Rai.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/A-dish-of-n%C3%A1m-pr%C3%ADk-%C3%B2rng-as-served-at-an-open-air-restaurant-in-Lampang.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p>A dish of nám prík òrng as served at an open-air restaurant in Lampang. Image by Austin Bush / Lonely Planet</p>
+    <br>
+    <h2>Nám prík òrng</h2>
+    <p>Another legendary northern Thai nám prík, or chilli dip, this dish revolves around tomatoes and minced pork. Like other northern Thai-style dips, it’s eaten with sticky rice, vegetables and herbs, and, of course, deep-fried pork crackling. The version served at Banpleng Restaurant, in Mae Hong Son, is particularly good.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2015/06/S%C3%A2i-%C3%B2o%E2%80%A2a-as-served-at-a-restaurant-in-Chiang-Rai.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p align="center">Sâi òo•a as served at a restaurant in Chiang Rai. Image by Austin Bush / Lonely Planet</p>
+    <br>
+    <h2>Sâi òo•a</h2>
+    <p>This grilled pork sausage, seasoned with copious fresh herbs, may have you reconsidering your beloved Bratwurst or your cherished Cumberland. A unique version is available at Mae Hae, a longstanding restaurant in Lampang.</p>
+    <p>Last updated in August 2017.</p>
+    <br>
+    <br>
+    <br>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

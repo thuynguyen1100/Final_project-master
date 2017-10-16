@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/Thailands-Ang-Thong-National-Marine-Park-is-perfect-for-kayaking.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Secret Ko Pha-Ngan </h3>
+    <p id="heading2"> the Thai isle beyond the famous full moon parties </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>In the late 1970s, Ko Pha-Ngan was a pristine paradise that beckoned the intrepid. Its innocent days may be long gone, but don’t let that deter you: this Thai gulf isle offers much more outside the full moon parties that made it famous.</p>
+    <p>Avoid the full moon and the smaller but still-raucous half-moon party periods and the island’s charms are brought to the fore, awaiting exploration and discovery. It’s easier to get a room, prices are more reasonable and there are far fewer people on the island, meaning a greater chance of eking out solitude and tranquility.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/Ko-Pha-Ngans-Bottle-Beach-feels-a-world-away-from-Hat-Rin.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <h2> Beaches </h2>
+    <p>Ko Pha-Ngan is fringed with delightful bays, inlets, coves and beaches. And if you side-step the full moon and half moon shenanigans, you may even find them largely deserted. The beach at the fishing village of Chalok Lam on the north shore may not be a top draw, but it’s quiet and a growing band of good dining options are clustered along the beachfront street. You can reach the small beach of Kat Khom by scooter or on foot northeast from Chalok Lam and continue hiking east over the hills to Hat Khuat (Bottle Beach), a popular choice for swimming and snorkelling; you can also get here by boat from Chalok Lam or Thong Nai Pan to the east.</p>
+    <p>For seclusion, aim for the isolated beaches on the east coast, including Than Sadet, Hat Yuan and Hat Thian. Hat Yuan is accessible by long-tail boat from Hat Rin, from where you can continue to Hat Thian and other small coves and beaches along the east coast. A smooth new road runs to lovely Than Sadet, also on the east coast, but the sense of seclusion survives. Linked by road, west coast beaches including Hat Yao, Hat Salad and Ao Mae Hat are the place for sunset views over to Ang Thong National Marine Park.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/Guanyin-Temple-is-one-of-Ko-Pha-Ngans-most-intriguing-temples.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <h2>Temples</h2>
+    <p>Ko Pha-Ngan’s temples provide a tranquil sanctuary and an opportunity for reflection. One of the most intriguing shrines on the island is the colourful Guanyin Temple, dedicated to the Buddhist goddess of compassion. It's located 1.5km south of Chalok Lam on the left hand side of the cross-island road from Thong Sala as you head north, just before you reach the temple of Wat Paa Sang Tham. It's also worth checking out Wat Khao Tham, which sits among the dense foliage of trees high on a tranquil hill near Ban Tai – don’t miss the temple hall at the top of the steps that houses a sleeping Buddha. A bulletin board at the temple details a popular meditation retreat; see its website (kowtahm.com) for details. Other temples on the island include Wat Phu Khao Noi and Wat Pho. When visiting Buddhist temples, remember to change out of your beach clothes.
+    </p>
+    <br>
+
+    <h2>Diving and snorkelling</h2>
+    <p>There’s a more laid-back diving scene on Ko Pha-Ngan than on nearby Ko Tao, but there’s no shortage of professional, competitively-priced dive operations with courses from novice to instructor level as well as free-diving. Dive groups tend to be smaller, too. Recommended dive outfits include Haad Yao Divers and Lotus Diving, and Apnea Koh Pangan (apneakohphangan.com) for free-diving.</p>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/Thailands-Ang-Thong-National-Marine-Park-is-perfect-for-kayaking.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Ang Thong National Marine Park</h2>
+    <p>Some of Thailand’s dreamiest images unfold among this photogenic archipelago of over 40 jungle-clad limestone islands, poking from an ethereal emerald sea 32km from Ko Pha-Ngan. This ‘Bowl of Gold’, as it's name means, is usually off-limits during the November and December monsoon rains. Take sturdy shoes, especially for the climb up to the popular Viewpoint which offers one of the most stunning vistas in all of Thailand.</p>
+    <br>
+    <h2>National Parks and waterfalls</h2>
+    <p>Almost 90% of Ko Pha-Ngan is comprised of unspoiled tropical forest, with a whopping 40% protected national park land harbouring an abundance of wildlife. Although much of this forest is not open to exploration, some exhilarating hikes await. The Nam Tok Phaeng waterfall is protected by a national park and is a pleasant reward after a short but challenging hike. After a dip in the waterfall, it’s worth making the 15-minute climb up a root-choked path (along the Phaeng-Domsila Nature Trail) to the Domsila Viewpoint for its ranging views. The two-to-three-hour trail then continues on through the jungle in a loop past other waterfalls before bringing you back to the start point. It’s also possible to continue up to Khao Ra, the highest mountain on the island at 625m. Take water, and switch your flip-flops for decent walking shoes.</p>
+    <p>West of Than Sadet, Nam Tok Than Sadet waterfall features boulders carved with the royal insignia of Rama V, Rama VII and Rama IX. All waterfalls slow to a trickle during the dry season, so if you want to see them in full spate, visit between October and January.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/Nam-Tok-Phaeng-is-just-one-of-several-waterfalls-on-Ko-Pha-Ngan-Thailand.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Other activities</h2>
+    <p>Restless? You can take your pick from activities including kayaking, paddleboarding, wakeboarding, round-island boat trips, Thai boxing, fishing, yoga, meditation and more on Ko Pha-Ngan; many resorts and accommodation options can arrange all this for you. If you’re hiring a scooter to get around the island, go slow - especially in the rain - and watch out for sand or gravel on the roads when braking.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/Sample-a-typical-shrimp-pad-Thai-at-one-of-many-good-restaurants-on-Ko-Pha-Ngan-Thailand.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Dining and drinking</h2>
+    <p>Visit outside the full moon and you won’t have to queue for a table or be forced to dine elbow-to-elbow with other travellers when you get one. For splendid Thai food and a charming perch right on the beach, check out Fisherman’s Restaurant (book ahead to score the long-tail boat table on the sand). For a head-spinning range of Belgian brews, head to the Belgian Beer Bar (seetanu.com) in Sri Thanu on the west coast.</p>
+    <br>
+    <br>
+    <br>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

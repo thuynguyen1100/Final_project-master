@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Homepage</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Lantern Festival</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        /* Hide the carousel text when the screen is less than 600 pixels wide */
-        @media (max-width: 600px) {
-            .carousel-caption {
-                display: none;
-            }
-        }
-
-        .carousel-inner img {
-            width: 100%; /* Set width to 100% */
-            margin: auto;
-        }
-
         /*nav bar*/
         /*logo*/
-        .navbar-brand > img {
+        .navbar-brand>img {
             position: absolute;
-            left: calc(50% - 78px);
+            left:calc(50% - 78px);
         }
-
         /*2 ben*/
         .navbar-nav {
-            padding-top: 15px;
-        }
-
+            padding-top: 15px;}
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
             margin-bottom: 0;
@@ -52,14 +37,12 @@
             padding: 0;
             margin: 0;
         }
-
         .dropdown li {
             display: block;
             width: 160px;
             height: 50px;
 
         }
-
         .dropdown li a {
             text-decoration: none;
             color: white;
@@ -67,17 +50,14 @@
             padding: 16px;
             text-align: justify;
         }
-
         .dropdown a:hover {
             background: transparent;
-            color: white;
+            color: white ;
         }
-
-        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
             background-color: transparent;
         }
-
-        .navbar-inverse .navbar-nav > li > a {
+        .navbar-inverse .navbar-nav>li>a {
             color: white;
         }
 
@@ -86,28 +66,22 @@
             display: none;
             position: absolute;
         }
-
         .dropdown li {
             position: relative;
         }
-
         .dropdown li:hover .dropdown-menu {
             display: block;
         }
-
-        .dropdown .dropdown-menu li a:hover {
+        .dropdown .dropdown-menu li a:hover  {
             background-color: transparent;
             color: royalblue;
         }
-
-        .dropdown li:hover {
+        .dropdown li:hover  {
             display: block;
         }
-
         .dropdown-menu li {
             margin-left: 0 !important;
         }
-
         /*Style cho search*/
         input[type=text] {
             width: 180px;
@@ -123,17 +97,14 @@
             transition: width 0.4s ease-in-out;
             margin-right: 20px;
         }
-
         input[type=text]:focus {
             width: 100%;
             color: royalblue;
         }
-
         /*bookings*/
-        #booking a {
-            text-decoration: none;
+        #booking a{
+            text-decoration:none ;
         }
-
         /*footer*/
         /* Add a gray background color and some padding to the footer */
         footer {
@@ -148,6 +119,35 @@
         ul.footer-menu li {
             display: inline-block;
             padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -203,118 +203,84 @@
         </div>
     </div>
 </nav>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div style="height: 100vh" class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img height="100%" src="images/carousel.jpg" alt="Image">
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <div class="item">
-            <img height="100%"
-                 src="https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop="
-                 alt="Image">
-            <div class="carousel-caption">
-            </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://i.pinimg.com/originals/80/34/8c/80348c13e4fc1849b296df124acd85c8.jpg" width="100%" height="100%">
+    <!-- content -->
+    <!-- heading -->
+    <div>
+        <h3 id="heading1"> Lantern Festival </h3>
+        <p align="center"><i> Source: Lonely Planet </i></p>
     </div>
-    <!-- /video -->
-    <div style="height: 100vh" class="container text-center">
-        <br> <br> <br> <br>
-        <p style="font-size: 35px">Video</p><br><br><br><br><br>
-        <div class="row">
-            <div class="col-lg-4">
-                <iframe width="380" height="210" src="https://www.youtube.com/embed/rZztMpGC42s" frameborder="0"
-                        allowfullscreen>
-                </iframe>
-                <br> <br>
-                <p style="font-size: 20px; text-decoration: none">Introducing Vietnam</p>
-            </div>
-            <div class="col-lg-4">
-                <iframe width="380" height="210" src="https://www.youtube.com/embed/V9K2RP7OowU" frameborder="0"
-                        allowfullscreen></iframe>
-                <br> <br>
-                <p style="font-size: 20px">Discover Thailand: hiking in Si Phang Nga National Park</p>
-            </div>
-            <div class="col-lg-4">
-                <iframe width="380" height="210" src="https://www.youtube.com/embed/LyR2-hriJFo" frameborder="0"
-                        allowfullscreen></iframe>
-                <br> <br>
-                <p style="font-size: 20px">Forbidden City - Beijing</p>
-            </div>
-        </div>
-    </div>
-    <!-- /Destinations -->
-    <div style="height: 100vh" class="container text-center">
-        <br> <br> <br> <br>
-        <p style="font-size: 35px">Destinations</p><br><br><br>
-        <div class="row">
-            <div class="col-sm-7">
-                <img src="images/Halong.jpg" width="100%">
-                <p style="font-size: 10px"> June is prime time to visit Halong Bay</p>
-            </div>
-            <div class="col-sm-5">
-                <a style="font-weight: bold">Vietnam</a>
-                <h1 style="line-height: 40px; text-align: center;text-decoration: none;">Halong Bay is emerald waters
-                    and islands</h1>
-                <p style="text-align: justify">One of the great natural wonders of Asia, Halong Bay is the single most
-                    popular side trip from
-                    Hanoi. The beauty of the bay and its 3000 islands is so awesome that an excursion there should be
-                    considered an essential part of any visit to Northern Vietnam. A one or two day trip also makes a
-                    delightful
-                    and inexpensive romantic getaway if you meet someone special.It is 165kms from Hanoi, after 3.5
-                    hours en-route,
-                    you will be rewarded with some of the most spectacular and memorable sightseeing of your trip. The
-                    boat
-                    trip take you as far from shore as possible, and simply meander among the islands, fjords and
-                    inlets.
-                    <a href="Vietnam1.html"> Read more </a></p>
-            </div>
-        </div>
-    </div>
-    <!-- /Bookings -->
-    <div style="height: 100vh" id="booking" class="container text-center">
-        <br><br><br><br><br><br><br><br>
-        <p style="font-size: 35px">Bookings</p><br><br><br>
-        <div class="row" style="margin-bottom: 20px">
-            <div class="col-sm-4">
-                <a href="https://www.booking.com/" target="_blank">
-                    <img src="images/bed.png" height="64" width="64"/>
-                    <h3>Book a room</h3>
-                    <p>Rest your weary head between adventure</p>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">
-                    <img src="images/plane.png" height="64" width="64"/>
-                    <h3>Book a flight</h3>
-                    <p>Find the best fare and last minute deals</p>
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
-                   target="_blank">
-                    <img src="images/car.png" height="64" width="64"/>
-                    <h3>Get a car</h3>
-                    <p>Get the most quality car at the most reasonable price</p>
-                </a>
-            </div>
-        </div>
+    <!-- text -->
+    <div class="content">
+        <p>Falling on the 15th day of the first lunar month, Lantern Festival is the first significant feast after
+            Chinese New Year, so called because the most important activity during the night of the event is watching
+            various wonderful Chinese lanterns. And because every household eats yuanxiao (a rice ball stuffed with
+            different fillings) on that day, it is called Yuan Xiao Festival. For its rich and colorful activities,
+            it is regarded as the most recreational among all the Chinese festivals and a day for appreciating the bright
+            full moon, and family reunion.</p>
+        <p>With a history of over 2,000 years, various traditional customs and activities are held during Lantern Festival
+            appeal to people of different ages, including watching lanterns and fireworks, guessing lantern riddles,
+            performing folk dances, and eating yuanxiao.</p>
+
+        <h2> Watching Lanterns </h2>
+        <br>
+        <img src="http://l7.alamy.com/zooms/f41544eecd044d61bfbbe773a963cb7d/pengzhou-china-bright-red-lanterns-and-other-chinese-new-year-decorations-e4p250.jpg" width="70%">
+        <br>
+        <p>During the Han Dynasty (206 BC - 220 AD), Buddhism flourished in China. So in order to popularize Buddhism,
+            one of the emperors gave an order to light lanterns in the imperial palace to worship and show respect for
+            Buddha on the 15th day of the first lunar month. During the Tang (618 - 907), Song (960 - 1279), Ming (1368 - 1644)
+            and Qing (1644 - 1911) dynasties, lighting lanterns became a tradition for Chinese people.</p>
+        <p>Today, when the festival comes, red lanterns can be seen in the street, in each house, and store. In the parks,
+            lanterns of various shapes and types attract countless visitors. Visitors marvel that various lanterns so vividly
+            demonstrate traditional Chinese folklore.</p>
+
+        <h2> Guessing Lantern Riddles </h2>
+        <br>
+        <img src="http://images.china.cn/attachement/jpg/site1007/20130225/001422373e191294fc1f10.jpg" width="70%">
+        <br>
+        <p>Beginning from the Song Dynasty (960 - 1279), guessing riddles is regarded as an indispensable part of the Lantern
+            Festival. People write all kinds of riddles on pieces of paper, and paste them on colorful lanterns to let
+            visitors guess. If one has an answer to a riddle, he can pull the paper to let organizers verify the answer.
+            Gifts are presented to the people who get the right answers.</p>
+        <p>Because this intellectual activity is exciting, people from all walks of life enjoy it.</p>
+
+        <h2>Folk Dances: Lion Dance, and Walking on Stilts</h2>
+        <br>
+        <img src="http://www.lexica.it/wp-content/uploads/2014/06/31.jpg" width="70%">
+        <br>
+        <p>Derived from the Three Kingdoms Period (220-280), the lion dance is an excellent traditional art that adds
+            fun to any celebration including the Lantern Festival. Two performing types have formed during its long
+            development. In north China, the lion dance focuses on skills, and in the south the lion dance pays more
+            attention to the animal resemblance. One actor manipulates a small lion made of quilts resembling a real
+            one, and with two persons acting like a big lion, one manages the head part and the other, the rest. Under
+            the guidance of a director, the lions sometimes jump, leap, and do difficult acts such as walking on stilts.</p>
+        <p>Because the acting is always amusing, spectators enjoy it very much. According to ancient custom, the lion
+            is a symbol of boldness and strength that can protect people, so by performing the lion dance, everyone prays
+            for an auspicious and happy life.</p>
+        <br>
+        <img src="http://www.chinaexpeditiontours.com/upload/201209070145073125.jpg" width="70%">
+        <br>
+        <p>Walking on stilts, another folk art, traces its origins to the Spring and Autumn period (770BC - 476BC).
+            Performers not only walk on stilts by binding them to their feet, but also do some breathtakingly difficult
+            moves. As actors impersonate different characters like monks, clowns, and fishermen and perform vivid and
+            humorous acts, the art amuses many people.</p>
+
+        <h2> Eating Yuanxiao </h2>
+        <br>
+        <img src="http://p1.img.cctvpic.com/photoworkspace/contentimg/2016/02/18/2016021817333227052.jpg" width="70%">
+        <br
+        <p>Yuanxiao, also called tangyuan, is a dumpling ball made of sticky rice flour stuffed with different fillings.
+            Eating yuanxiao has become an essential part of the festival. The methods for making Yuanxiao differ by region
+            and fillings include sugar, rose petals, sesame, sweetened bean paste, and jujube paste. Some do not have
+            fillings. Because tangyuan can be boiled, fried or steamed, and each has a unique taste, it is very popular.
+            Yuanxiao is round in shape so it is endowed with the meaning of reunion, harmony and happiness. During the
+            night of the festival, family members sit together to taste yuanxiao and appreciate the full moon.</p>
+        <p>Besides these activities, there is Welcoming Zigu (a kind and poor girl in folklore), in which women make straw
+            and cloth images of Zigu and say consoling words to her expressing people's goodness and their pity for
+            poor. Because appreciating the lanterns offers a good chance for young boys and girls to communicate with each
+            other, the Lantern Festival is also regarded as Chinese Valentine's Day.</p>
     </div>
     <!-- /footer -->
     <footer>

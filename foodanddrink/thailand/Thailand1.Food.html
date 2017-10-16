@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thailand Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2015/11/Pile-of-durians-these-spiky-green-cannonballs-are-incredibly-healthy.-Image-by-Anita-Isalska.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Durian 101 </h3>
+    <p id="heading2"> Everything you need to know about Southeast Asia's ‘King of Fruits’ </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>In Southeast Asia, you don’t need to go looking for durian. The powerful odour of this boulder-like fruit will find you. Many travellers lose their appetite when the boisterously ripe whiff of durian stings their nostrils. But hold your nose: sampling the iconic ‘King of Fruits’ is a rite of passage and allows you to tap into intriguing aspects of Asian food cultures.</p>
+    <p>After all, it’s not just the nutritious qualities of durian that make them so highly prized. The fruit’s significance is also reflected in idiom: in Indonesia, unexpected windfalls are compared to ripe durian toppling from a tree. Selecting and eating durian is part science, part art-form, and marvellously sociable. Here’s everything you need to know about this most notorious of Asian delicacies.</p>
+    <br>
+    <br>
+
+    <h2> Meet the durian </h2>
+    <p>The durian’s distinctive smell is reflected by an equally odd appearance. Durian are spiky green cannonballs; their barbs, duri in Bahasa Malaysia and Bahasa Indonesia, give the fruit its name. The largest weigh up to 3kg, as heavy as a bowling ball. And for many, a bowling ball sounds altogether easier to digest than this polarising fruit, often described with a euphemistic ‘it’s an acquired taste’.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/11/Pile-of-durians-these-spiky-green-cannonballs-are-incredibly-healthy.-Image-by-Anita-Isalska.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <p>The prickly greenish skin encloses seeds wrapped in sticky yellow flesh. This edible pulp ranges from butter-soft and creamy to amber-coloured and stringy. To fans, the flavour of durian is warm, nutty, with a back-of-the-throat tang reminiscent of cheese or onions. For durian detesters, it’s a different story: the onion flavour is eye-watering, the fruity over-ripeness cloying, all overshadowed by the pong of raw sewage – hardly tasting notes you’d see on a wine menu.</p>
+    <h2>How to pick the perfect durian</h2>
+    <p>Selecting good durian is almost an art form. Steve Khong, a former durian orchard owner with decades of experience nibbling this pungent fruit (now manager of Belum Eco Resort in Malaysia) was happy to share the basics.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/11/Trust-the-experts-when-selecting-durian-like-this-seller-in-Perak.-Image-by-Anita-Isalska.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <p>‘First, the stem has to be very green, very fresh looking,’ he advises. ‘Secondly, you have to pick up the durian and smell it.’ A powerful fragrance is the sign of a good durian.</p>
+    <p>Gauging the weight of these hefty fruits is another way to check you’re finding a fresh one. But it’s a complicated business, admits Steve. ‘If a durian is very heavy, there are two possibilities: a thick skin, or very big seeds, meaning the flesh is very thin.’ If you don’t have time for a Master’s degree in durian, lean on the expertise of locals. ‘If you encounter an honest seller, he will give you the right durian!’ laughs Steve.</p>
+    <br>
+    <h2>Taking the first bite</h2>
+    <p>For a local experience, try durian straight from a fruit stall, where you’ll see vendors chopping fruit apart with cleavers. Once the vendor has slashed the fruit open, revealing all that yellow pearly flesh, use your fingers to scoop out one of the slippery seed pods, wrapped in silky, gloopy pulp. Pop it in your mouth and the flesh will practically melt off (discard the hard, inedible seed).</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/11/A-freshly-opened-durian-irresistible-to-passing-bees-and-flies.-Image-by-Anita-Isalska.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p>Western gag reflexes often revolt at durian’s strong root vegetable taste. If you’re trying it for the first time, have a few adjectives ready – ‘powerful’, ‘unique’, ‘delicious’ – just in case your face betrays your reaction too vividly. Remember, this is the king of fruits you’re sucking on, so give it some royal respect.</p>
+    <p>Fresh durian at an orchard, with a milder scent and flavour, is more likely to slip down easily; ask locally for a recommended stall. Be aware of regional variations: Thai durian are plucked from the tree before they’re ripe, and tend to be gentler on the tastebuds. Malaysians prefer their durian strongly flavoured and wait for them to drop from the tree, meaning they’re stronger by the time they reach stalls and supermarkets.</p>
+    <br>
+    <h2> Durian for health and happiness </h2>
+    <p> So is all this durian fondling (and tastebud adjustment) worth it? Durian is a sugary fruit, but that slippery flesh is also rich in raw fats, protein and potassium. It’s also a good source of vitamin C; and who needs fresh orange juice when you could guzzle onion-tinged custard-coloured pulp, straight from a thorny wrapper?</p>
+    <img src="https://lonelyplanetwp.imgix.net/2015/11/Some-durian-on-a-tree-branch-mind-your-head-these-weighty-fruits-have-a-long-way-to-fall.-Image-by-Anita-Isalska.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <p> In Southeast Asia durian is considered a ‘heating food’; you may notice a warm sensation lapping at your belly from the first bite. Traditionally durian is followed by cool, sometimes lightly salted, water. Alternatively, nibble mangosteen, a fruit thought to balance durian with a refreshing effect. Conveniently, they ripen during the same season as durian.</p>
+    <br>
+    <h2> Durian dos and don’ts </h2>
+    <p> If you think this gustatory experience should come with a health warning, it does – several, in fact. Pregnant women, people with heart problems and the frail are advised to avoid durian. Eating durian with hard liquor is also considered a no-no; it leads to an uncomfortably bloated belly. Accompanying durian with beer is thought to create a fermenting effect that may make you unpopular on long-distance bus journeys.</p>
+    <p> And while durian fans love to welcome a new convert, don’t expect approving murmurs from everyone you encounter. Durian sellers are ubiquitous in Southeast Asia, but establishments welcoming this whiffy fruit certainly aren’t. You’ll see ‘no durian’ signs plastered everywhere from Bangkok hotels to Singapore’s MRT (metro).</p>
+    <p> Even durian with a mild fragrance (yes, they exist) develop a strong odour 24 hours after dropping from the tree. The smell emanates through food wrapping, shopping bags – even reinforced concrete (probably), and hotel owners find it impossible to exorcise from their furnishings.</p>
+    <h2> Dessert durian </h2>
+    <p> Maybe a pure hit of durian was too much. Luckily durian graces menus in a variety of forms. Street food in Melaka, Malaysia makes a feature of layering durian into cendol, a shaved-ice dessert lavished with sugar syrup, coconut and green pandan-flour noodles. Pastry puff, glutinous rice and ice cream desserts can all be crammed and drizzled with durian-flavoured ganache and are found across Malaysia, Indonesia and Singapore. Dried durian chips are highly popular in the Philippines.</p>
+    <p> Durian-flavoured dodol, a kind of toffee, is palatable though it packs a punch. Best of all it’s wrapped, processed and wonderfully portable for your journey home. After all, now that you’ve gone to the trouble of experiencing durian, you wouldn’t want your friends and family to miss out...</p>
+    <br>
+    <br>
+    <br>
+
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

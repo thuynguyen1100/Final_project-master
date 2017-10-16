@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2015/02/Train-made-of-ice-at-Harbin-Ice-and-Snow-World.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> 10 fascinating facts </h3>
+    <p id="heading2"> about Harbin, China's ice festival city </p>
+    <p align="center"><i> Source: Lonely Planet</i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>An avalanche of visitors descends on Harbin for the annual Ice & Snow Festival. And it's well worth braving the cold: the sculptures are often record-breaking in size and night illuminations of the ice add a surreal kaleidoscope of colour to northeastern China's bitter winters (minus 13C on a good day).</p>
+    <p>But there are plenty more reasons to relish a visit to Harbin, capital of China's Heilongjiang province. From Russian architectural stylings in the city to Siberian tigers in its surrounds, these 10 facts are sure to pique your interest in China's ice festival city.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/02/A-dreaming-snow-maiden-at-Sun-Island-art-exhibition-1.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Harbin hosts China's chilliest festival</h2>
+    <p>From January through to mid-March, Harbin hosts the International Ice & Snow Festival. Exhibitions of snow and ice sculptures, kept pristine by subzero temperatures, are dotted across multiple locations. The biggest – and priciest to attend – is Harbin Ice and Snow World (en.hrbicesnow.com), which showcases the flashiest and most neck-craning sculptures. For a less hectic experience there are exhibitions at Sun Island (a short taxi ride across the Songhua River) and Zhaolin Park. Down-lined jackets, thick gloves and even balaclavas are recommended if you plan on ogling the ice art. The mercury can drop as low as -35°C, so take regular breaks to thaw your nose in the festival's coffee huts.</p>
+    <br>
+    <h2> This festival has serious pedigree </h2>
+    <p>Ice sculpting isn't uncommon in north Asia's numbingly cold winters, from Sapporo in Japan to Korea's Taebaeksan Mountain Snow Festival. Harbin's sculptures have been dazzling visitors for 31 years. Today the festival area covers 750,000 sq m and themed zones present glistening renditions of architectural wonders, folklore and traditional crafts. Some border on the surreal, so step back and enjoy the chubby snow fairies, dragons and towering igloos.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/02/Ice-towers-at-the-biggest-event-Harbins-Ice-and-Snow-World.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>The sculptures break records</h2>
+    <p>The tallest ice carving in recent years was the Crystal Castle. At 48m high, this structure was just shy of the height of Paris’ Arc de Triomphe. 2015's festival had an ice Kremlin, enormous seated Buddha, snow-rendered whales and supersized Chinese fishermen, glistening bluish white during the day and illuminated magenta and neon green after dusk. Ice art here is serious business. Master sculptors mostly use ice blocks cut from the Songhua River, but deionised water is also frozen when artists need ice with perfect clarity.</p>
+    <br>
+    <h2>There's more than wacky ice exhibitions</h2>
+    <p>The Songhua River, frozen solid in midwinter, becomes a playground at festival time. Biking, skating, miniature tanks, ponies and almost every conceivable mode of transport set revellers spinning across the Songhua's frozen surface. And not everything has a steep entry fee. While the bigger and more elaborate ice sculpture displays require a ticket (ranging from ¥150 to ¥300), ice carvings are dotted across the city, especially around the riverside and along pedestrian-only Zhongyang Dajie.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/02/Train-made-of-ice-at-Harbin-Ice-and-Snow-World.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Trains made this town</h2>
+    <p>Harbin was a sleepy backwater until the building of the Chinese Eastern Railway line (1897-1901) thrust it into the spotlight. As its value as a trading post skyrocketed, there were tussles to control Harbin. The Russians, who negotiated the building of the railway line, lost it to the Japanese in the Russo-Japanese war (1904-5), though Russian immigration and influence continued to trickle in. Today Harbin is a main port-of-call along the Trans-Manchurian Railway, linking the Chinese capital, Beijing with Chita in Eastern Siberia, where the line joins the Trans-Siberian Railway all the way to Russia's capital, Moscow.</p>
+    <br>
+    <h2>Russian flair spices the city</h2>
+    <p>First-time visitors might rub their eyes at the neoclassical stylings and cobblestoned pedestrian zones, especially in Harbin's old town. Russians streamed into Harbin to flee the Bolsheviks during the Russian Revolution, gradually shaping the town with Russian flavours and architecture. To this day, you're just as likely to chow down on pelmeni (Russian dumplings) as their Chinese equivalent. Sample some Russian flavour at train-themed Caféxpress (Xitoudao Dajie), decked out with a treasure chest of vodkas, and look out for souvenir shops along Zhongyang Dajie packed with Russian kitsch. But before you imagine you're in Red Square, remember than 5903km and a five-hour time difference separate Harbin and Moscow.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/02/Church-of-St-Sophia-3.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>One church outlasted them all</h2>
+    <p>The gilded Orthodox churches of Harbin, steadily built up by the Russians, were ransacked during China's Cultural Revolution. But one gem remains: the magnificent Church of St Sophia has been polished from its dark green onion domes to the golden spire-top crosses. This 1907 church may have been stripped of its interior splendours – today it's a museum hosting a photographic exhibition about Harbin history – but it's a striking reminder of the city's Russian heritage and an unmissable photo op for visitors to the city.</p>
+    <br>
+    <h2>Harbin has rich Jewish history</h2>
+    <p>The biggest Jewish community in the Far East made Harbin their home. In the 1920s, about 20,000 Jews, mainly Russian, moved to the city. Mostly they fled persecution in Russia and, despite Harbin's challenging conditions, they thrived, building two synagogues along the way. Many fled during the First and Second World Wars and the community dwindled with the last Harbin Jew dying in 1985 – but the synagogues still stand, and you can find traces of Harbin's Jewish history at the Huangshan Jewish Cemetery in Harbin's eastern suburbs.</p>
+    <br>
+    <h2>The city basks in summer</h2>
+    <p>Don't let the ice fool you. Come summertime, locals flock to the riverside, splashing in the Songhua River and lapping ice cream on the promenade. Temperatures reach the upper 20s°C – good enough to sunbathe, for sure. If you're here in warm weather, slather on sunblock and follow the crowds to Sun Island Park's shady gardens and highly splashable waterparks.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2015/02/Playful-white-tiger-cubs-at-the-Siberian-Tiger-Park.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <p>Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome text</h2>
+    <p>Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome text</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2017/09/Restaurant-car-sm-1969e55c732f.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+    <br>
+    <h2>Siberian tigers are right at home</h2>
+    <p>Siberian (or Manchurian) tigers prowl these parts. And 15km north of Harbin, conservationists are hard at work to help these snarling felines roar another day. In the Siberian Tiger Park, dozens of these mighty beasts stalk the grounds. First you board a minibus that rattles through the enclosures, with predators like shaggy lions and rare white tigers padding right up to the windows. Then you can amble at your own pace past tiger enclosures, as well as cheetah and the crossbred 'liger' (part lion, part tiger). Animal lovers may wish to look away while onlookers drop strips of meat through the fencing. A 'menu' outside the zoo advertises the option to buy live prey to feed the tigers, too. Be advised that you may find the conditions in which the animals live here distressing.</p>
+    <br>
+    <br>
+    <br>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

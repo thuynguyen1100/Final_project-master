@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/liqun-peking-duck.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="100%" height="660">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> What to eat in Beijing </h3>
+    <p id="heading2"> Tourist Attraction in China </p>
+    <p align="center"><i> Source: PHILLIP TANG </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Mongolian lamb, Sichuan-style chilli-spiked crayfish and flaky flatbreads with sweet wafts of fried spring onions cooked before you. Beijing showcases the best of China's (and neighbouring) flavours, with a few surprising additions of its own. You’ll find Beijing’s food is as headstrong as its residents, not shying away from frying, garlic, chilli, fermented soybean and anything else that brings out bold flavours.
+    <br>Rice is big in the south, where it grows easily in temperate climes, but China’s capital presides from the often-frigid north, where wheat is grown and filling tummy warmers such as dumplings and hand-pulled noodles are key staples to keeping happy in sub-zero temperatures. Don't leave the Chinese capital without trying these iconic Beijing dishes. </p>
+    <br>
+
+    <h2> Peking roast duck (北京烤鸭, Běijīng kǎoyā) </h2>
+     <img src="https://lonelyplanetwp.imgix.net/2014/09/liqun-peking-duck.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Beijing's most famous dish, Peking roast duck is crispy on the outside and juicy on the inside, and served sliced. You’ll be given light pancakes, into which you pile a slice of duck and accompanying sides like fermented bean paste, cucumbers and spring onions. Peking duck was first mentioned in royal cookbooks during the Yuan dynasty (13th century), but didn’t come to the fore until the early 1900s, when former imperial cooks began opening roast duck restaurants outside the palace walls. To prepare the duck, chefs first inflate the bird by blowing air between the skin and body. They then prick the skin and pour boiling water over the duck. Some chefs add malt sugar to the skin so that it glows golden brown once roasted.
+    <br>Try it
+
+<br>Lìqún Roast Duck Restaurant
+<br>Qiánmén Quánjùdé Roast Duck Restaurant
+<br>Dàdǒng Roast Duck Restaurant
+<br>Biànyífāng
+	   </p>
+     
+    <h2> Dumplings (饺子, jiǎozi) </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/beijing-dumplings.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Dumplings have a delicate wheat-flour skin around warm, moist prawn or pork contents. More surprising ingredients include sweet corn and yam, while the perfect dumpling has a contrasting crunch of chestnut or garlic chives. The crescent-moon dumplings are served steamed, fried or in a soup, sold by the number of dumplings or weight – a jiǎng (about six dumplings) or bàn jīn (about 30, enough for two people or a solo dumpling fiend). Use your chopsticks to share from the one platter–the Chinese way. On your table you’ll find black rice-vinegar and smoky chilli-oil to drizzle into your little dipping sauce dish. Be ready for the juicy dumpling contents to burst with flavour in your mouth. You’ll be poured a hot bowl of jiǎozi tāng, which is the broth in which dumplings are boiled and a mere palate cleanser for the next tasty morsel of love.
+    <br>Try it
+   <br>Bǎoyuán Dumpling Restaurant
+<br>Niúgē Jiǎozi
+<br>Yáojì Chǎogān
+<br>Zuǒ Lín Yòu Shè
+<br>Dūyīchù
+<br>Bǎihé Vegetarian Restaurant
+    </p>
+
+    <h2> Zhájiàng noodles (炸酱面, Zhájiàngmiàn) </h2>
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/zhajiangmian.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>Firm, drained, hand-pulled wheat noodles are topped with minced-pork in a smoky yellow-soybean paste reduction in this classic Beijing noodle dish. To balance out the addictive saltiness of the chunky sauce, fresh vegetables are laid to the side - julienned cucumber, crunchy radish and, in modern Beijing, juicy bean sprouts or edamame (fresh soybeans). You lovingly turn the toppings through the noodles to reach the flavour-to-noodle ratio of your liking and quietly slurp away. Vegetarian versions swap the pork for tofu. Zhájiàng noodles is a much loved and copied dish - Koreans know it is as the ubiquitous jajangmyeon.
+       </p>
+       
+
+    <h2> Beijing Imperial Cuisine (宫廷菜, gōngtíng cài) </h2>
+
+     <img src="https://lonelyplanetwp.imgix.net/2015/05/c.jpg?fit=min&q=40&sharp=10&vib=20&w=1470 width="70%">
+
+    <p>Dine like the Emperor of the Qing dynasty (1644-1911) and his court did on dishes with fantastic names ('Buddha jumps over the wall'), fables, intricate displays (vegetables carved into dragons, fish and roses), claims of medicinal qualities (skin-beautifying deer tendon) and fresh, indulgent, peculiarly Chinese ingredients (scallops, abalone, bamboo shoots, ginseng). Each restaurant will have different recipes depending on the family they originated from. These dishes may sound familiar but are meticulously prepared, such as juicy honey prawns slow-roasted in a stone stove until their shells are crunchy but melt in the mouth. Imperial cuisine can be a pricey banquet, but worth splashing out on for the lavish historical atmosphere (Summer Palace dining anyone?) and the fresh ingredients served up on fine china, jade or other precious dinnerware. The dishes are made to be light and shared so that you are able to try multiple dishes, much like a degustation.
+    </p>
+
+    <h2> Flatbread (饼 bǐng) </h2>
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/Black-sesame-ShaoBing.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>Golden-toasted flatbreads and pastries come in many tasty forms in China’s capital and make a filling street food cooked on the spot or a shareable restaurant starter. The most common bǐng served up in Beijing include:
+    <h4>Cōng yóubǐng 葱油饼</h4>
+    <br>So simple – a glistening crepe-like disc laced with spring onions. Yet the texture of the dough is complex, flaky and chewy. The whole thing is unashamedly fried to really let that savoury onion flavour pop. Slice them up to share and you can see why some claim that the idea for Italian pizza came from these little flatbreads.
+    <h4>Xiànrbǐng 馅饼</h4>
+    <br>Beijing's pan-fried ‘pie’ has a golden-toasted, thin-and-crispy crust stuffed with rich, minced lamb and spring onions.
+    <h4>Jiānbǐng 煎饼</h4>
+    <br>A large dough crepe folded into a crispy hot pocket. This 2000-year-old breakfast favourite is cooked on a hot plate, brushed with chili, garlic, soybean paste and egg around a báocuì (薄脆; crispy fried cracker), and scattered with fresh spring onions and coriander.
+    <h4>Shāobǐng 烧饼</h4>
+    <br>A flaky sweet pastry filled with red bean or black sesame paste and sprinkled with sesame seeds. A street snack commonly washed down with mung-bean milk. They also come in savoury meat varieties.
+    <h4> Moon cakes (月饼, yuè bĭng)</h4>
+    <br>The classic yuè bĭng is a sweet biscuity cake with a dense filling of red bean- or lotus-paste around an egg yolk ‘moon’. No sweet snack looks as prosperous and self-contained as round moon cakes branded with Chinese symbols glazed in the tops. A Mid-Autumn Festival favourite.
+    </p> 
+
+     <h2> Barbecue skewers (串儿, chuàn’r) </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/beijing-skewers.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+
+    <p>Beijing has adopted the Chinese-Muslim lamb skewer from Xinjiang and evolved it. Now everything can be skewered and roasted at street hawker stands. Point to what you want and they’ll baste and barbecue it, stopping only to ask if you like it spicy (là) or not (bùlà). Yes, the wafting sweet smoke from charcoal-roasted prawns is definitely summoning. And you could go easy with shiitake mushrooms, squid, chicken or fatty beef. But you’re in Beijing and the buzz and dazzling lights of the market might just convince you to try spicy shark, snake, starfish, seahorses or sheep’s testicles. First check that your chuàn’r isn’t an endangered species.
+    </p> 
+
+    <h2>Beijing lamb hot pot (涮羊肉, shuàn yángròu)</h2>
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/hotpot.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>This bubbling copper pot of soup is cooked at your table by you and your friends, adding fresh meat and veg. It’s a warming Beijing favourite and has been for over a 1000 years, much loved by the Qing royal family. Choose what raw vegetables and lamb (or other meat, fish balls or mushrooms) you would like on your platter to cook for yourself in the pot. Traditionalists choose cabbage and tofu as a minimum, while adding garlic and onion to give some punch to the meat broth. Then drop in ingredient-by-ingredient what you would like to cook and eat. The cuts of lamb come finely sliced in rolls and only need a few seconds dipped into the broth to cook. Each person scoops out their goodies with a slotted spoon (or just chopsticks) and eats it with a dipping sauce, which can include sesame oil, savoury BBQ and fermented soybean. At the end, add the noodles to the soup to draw up the flavours.
+    </p>
+
+     <h2>Mung-bean milk (豆汁, dòuzhī)</h2>
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/mung-bean-milk.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>Love or hate it. One of Beijing’s most famous and unique flavours is a grey-green drink that locals have proudly adored since the Liao dynasty (907-1125). Sometimes translated as ‘soymilk’, Beijing’s dòuzhī is actually made from mung beans, has a mild sourness to it and isn’t sweet like soymilk. You’ll find dòuzhī throughout the city, from street stalls to restaurants, and it warrants a taste to find out if you are a dòuzhī lover or hater. To help mung-bean milk go down, try it with the usual accompaniment of strips of spicy pickles. Beijingers swear by the health benefits of protein- and fiber-rich dòuzhī and claim that it cools you down on a stifling Beijing summer’s day and warms you up in winter.
+    </p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

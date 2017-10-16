@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand > img {
+            position: absolute;
+            left: calc(50% - 78px);
+        }
+
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;
+        }
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+
+        .dropdown a:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+            background-color: transparent;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown .dropdown-menu li a:hover {
+            background-color: transparent;
+            color: royalblue;
+        }
+
+        .dropdown li:hover {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+
+        /*bookings*/
+        #booking a {
+            text-decoration: none;
+        }
+
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2010/12/hk-dimsum-yumcha_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="100%" height="660">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Hong Kong's most unique dining experiences </h3>
+    <p id="heading2"> Tourist Attraction in China </p>
+    <p align="center"><i> Source: PIERA CHEN </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Hong Kong’s chefs are a versatile bunch who can move with ease between different culinary traditions, bringing
+        together not only old and new, Chinese and Western, but haute and humble, coffee and tea.
+        <br>Their skills and creativity, and the city’s love of food, have given rise to many one-of-a-kind dining
+        experiences.
+        <br>Here are some of our favourite uniquely Hong Kong dining experiences, from fabulous street food to
+        Michelin-recommended delights.
+    </p>
+    <br>
+
+    <h2> Gourmet hawker </h2>
+
+    <p>Hong Kongers will eat absolutely anything as long as it justifies its place on a table, any table. So to avoid
+        paying exorbitant rent and focus on the food instead, savvy restaurateurs have been hawking their dishes in
+        government-run food courts, offering fine dining at unfashionably low prices. Among these gourmet hawkers, ABC
+        Kitchen (Queen St Cooked Food Market, 38 Des Voeux Rd W) stands out for its authentic Western menu. Inside the
+        frenzied, fluorescent-lit expanse, which the eatery shares with other operators, ABC regulars slurp up
+        bouillabaisse made with fresh local seafood, wolf down the crispiest cochinillo asado (roast sucking pig), and
+        inhale fluffy soufflé, all for the price of an entree served under crystal chandeliers.
+    </p>
+
+    <h2> Cheapest starred eatery </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2010/12/tim-ho-wan-hk-flickr.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <p>Similarly, at the world’s cheapest Michelin-starred restaurant, Tim Ho Wan, layfolk get to sample food fit for
+        emperors. Owner Mr Mak was a dim sum chef at three-starred Lung King Heen of the Four Seasons before going it
+        alone. Now, cooped up inside his glorious hole, in a haggard part of town, he recreates his magic – the famed
+        barbecued pork buns (char siu baau), over 750 of which are sold a day. There are beef balls infused with dried
+        mandarin peel and fragrant osmanthus flower jelly for anyone who can afford a US$1.50-$3 for a basket of dim sum
+        and, crucially, who will wait the same number of hours. The lines at Tim Ho Wan are heart-stopping. When you
+        arrive, a smiling Mrs Mak will hand you a number. Then go fly a kite, learn Cantonese opera, or plant some
+        roses, and check back after 90 minutes.
+    </p>
+
+    <h2> Chinese molecular gastronomy </h2>
+
+    <p>Foam and powder may not be everyone’s comfort food, but molecular gastronomy does enjoy a following in Hong Kong.
+        Bo Innovation, which deconstructs classic Chinese dishes and reassembles them in visually and gastronomically
+        surprising ways, is among the few that impress. Xiao long bao (pork dumplings), for example, are blobs of
+        ginger-infused pork soup encased in a transparent wrapper that, when consumed, explode into the juiciest pork
+        dumplings.
+    </p>
+
+
+    <h2> Fantasy dining</h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/09/yinyang-coastal-kitchen.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <p>A new trend in Hong Kong involves special bespoke menus, seasonal foods grown within a few metres of your table
+        and a lot of love. Ying Yang Coastal is the brainchild of chef Margaret Xu, a self-taught cook who loves food
+        and loves ingredients. She grows or self-sources much of the food she cooks, whether the fresh herbs greening up
+        her patio space or the fish she roasts having caught it earlier that morning. The idea here is simple: a bespoke
+        meal at a private table. Recipes are often the chef's takes on older Hong Kong cuisine or unique to the fishing
+        village near the kitchen. You book in advance and spend the evening with Margaret. You take a taxi to her
+        kitchen-stroke-dining room, located on a very secluded beach some way from the bustle of Hong Kong Island.
+        Candles are lit, doors thrown open to allow in a fresh harbour breeze and chat is had whilst Margaret and her
+        sous-chef chop, boil and roast. You watch, even partake, in the creation of the meal and each course is enjoyed
+        more because it is infused with the chef's love and laughter. You come away friends with Margaret and having had
+        one of the most memorable meals of your life.
+    </p>
+
+    <h2> Soy sauce Western </h2>
+
+    <p>'Soy sauce Western' (si-yau sai-chaan) is the endearing name locals give to a style of cooking that features
+        Western dishes prepared with (some say too much) Chinese wisdom. It’s believed to have been invented by the sous
+        chef of a foreign trading company during the Qing dynasty, and influenced by the shashlik, zakuska, and borscht
+        of Russians who had fled to Shanghai and opened cafes. Western recipes are liberally adapted, such as by
+        replacing dairy ingredients with soy and Worcester sauce (many Chinese were lacto-intolerant). Tai Ping Koon is
+        known for its smoked pomfret, roast pigeon and turkey-sized souffle. At Queen’s Cafe, the borscht and baked pork
+        chop over rice are perennial favourites.</p>
+
+    <h2> Tea cafes </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2010/12/mido-hong-kong-flickr.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+         width="70%">
+
+    <p>Tea cafes (chaa chaan teng) appeared in the 1940s as cheap and cheery neigbourhood joints serving Western-style
+        snacks and beverages to locals who couldn’t afford scones and Earl Grey. Since then, their menus have evolved to
+        include an embarrassment of quick-and-easy selections, Chinese and pseudo-Western. But they’re best known for
+        their ‘pantyhose’ milk tea - a strong and silky brew made from black tea and crushed egg shells. It's filtered
+        through a bag that hangs like a stocking (hence the name) and consumed with evaporated milk. It’s sometimes
+        mixed with three parts coffee to create the popular drink yin yeung, or tea-coffee. Pak Kung Cafe and Mido Cafe
+        serve a mean cup of yin yeung amid nostalgic mid-century surrounds.</p>
+
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

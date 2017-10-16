@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/00/image.jpg"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Full Moon Party </h3>
+    <p id="heading2"> in Koh Phangan</p>
+    <p align="center"><i> Source: http://www.kosamui.com/ </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Koh Phangan Full Moon Party has become a world-famous institution, but its ancestral home remains the crescent cove of Haad Rin Beach on the southernmost tip of Phangan Island. More than 12 powerful sound systems turn the 800-metre beach into possibly the most popular open-air nightclub in the world once a month, with a lively festival-like atmosphere, great music and huge quantities of alcohol. This one-of-a-kind event is routinely listed on bucket lists as one of the essential experiences in Thailand which absolutely must be seen to be believed.</p>
+    <p>As many as 30,000 party people gather on the famous strip of sand to party in the glow of the Earth’s nearest celestial neighbour, right through the night and into the dawn. Due to the cost of cleaning up after such carnage, the local community implemented a 100 baht entry fee to access the beach on the night of Koh Phangan Full Moon Party.</p>
+    <p> Some textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome textSome text </p>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/BucketComponent/ListingContainer/014/image.jpg"
+         width="70%">
+    <br>
+    <h2>Koh Phangan Full Moon Party dates for 2017</h2>
+    <ul>
+        <li>Tuesday 05 September 2017</li>
+        <li>Friday 06 October 2017</li>
+        <li>Friday 03 November 2017</li>
+        <li>Sunday 03 December 2017</li>
+    </ul>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/BucketComponent/ListingContainer/00/image.jpg"
+         width="70%">
+    <br>
+    <p>You can see local and international DJs at the many bars and stages set up on the shoreline, playing anything from dubstep to drum and bass, house to hip-hop, techno to trance and reggae to rock and pop classics. Generally speaking, the beach bars standing on the side of the beach closest to Haad Rin Town play party pop (this is also where you will find the huge flaming swing that anyone is welcome to try) and, as you walk down the beach, the music becomes heavier with more underground dance tracks and heavier bass. It is traditional to paint yourself up in neon bodypaint and there are plenty of UV strip lights around making bodies sparkle and glow through the night.</p>
+    <p>The beverage of choice is, of course, the ‘bucket’. This consists of a bottle of hard liquor (usually either whiskey, vodka or local sugarcane rum like Sangsom or Hong Thong), a bottle of Red Bull and some ice, occasionally also including mixers to water it down a little. Intended for sharing, the colourful plastic buckets usually have half a dozen straws sticking out them for you and your friends to enjoy them together. They cost about 200-300 baht each and are available almost everywhere.</p>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/BucketComponent/ListingContainer/03/image.jpg"
+         width="70%">
+    <br>
+    <p>Koh Phangan Full Moon Party kicks off quite early in the evening, but it is highly recommended to arrive late – about 22:00 at the earliest – if you want to have any hope of making it through to the morning. This is when most people will start turning up and the party will really get into high gear, with fire shows, glow sticks and glow-in-the-dark body paint.</p>
+    <p>If you need a break from the intense partying, just head to the restaurants in Haad Rin a block back from the beach. There are even designated areas where those who have passed out drunk are gathered together and watched over by police for their own safety and security.</p>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/BucketComponent/ListingContainer/06/image.jpg"
+         width="70%">
+    <br>
+    <h2>Get ready to party</h2>
+    <p>If you are planning to enjoy a Full Moon Party on Koh Phangan, there are certain preparations you should arrange ahead of time. Most of them are pretty obvious:</p>
+    <ol>
+        <li>Accommodation</li>
+        <p>We recommend that you book a hotel as close to Haad Rin as possible to make it easier for you to get home afterwards. It is possible to stay elsewhere on the island and even on Koh Samui, but closer is always better. Note that the best/closest hotels start getting booked to capacity about a week before the party, so it is best to prepare well in advance.</p>
+        <li>Details of your accommodation</li>
+        <p>Taxis to more remote hotels on Koh Phangan operate throughout the night and boats are available to take you to Koh Samui if you choose to stay there, but trying to explain where you’re staying to the driver when you’ve had a few too many buckets of booze can be a challenge. Snag a few business cards at the front desk of your hotel to make life a lot easier.</p>
+        <li>A copy of your passport</li>
+        <p>You are legally obliged to carry ID with you in Thailand, but you should definitely not take your actual passport to a Full Moon Party. Leave that locked in your room and just take a photocopy.</p>
+        <li>Friends</li>
+        <p>Aside from the fact that it’s more fun to party with company, it’s helpful to have people you trust around you so that you can look out for each other.</p>
+        <li>Flipflops</li>
+        <p>It doesn’t take too long for the soft sand of Haad Rin to become littered with broken plastic and glass, both of which can make a mess of unprotected feet. Make sure your footwear is cheap and easily replaceable, though, so that losing it is not a big problem.</p>
+        <li>Water</li>
+        <p>The more hydrated you are, the longer you’ll be able to party and the less painful the hangover will be. It is highly advisable to drink plenty of water before and during the Full Moon Party – perhaps even a small bottle of the stuff between each booze bucket.</p>
+        <li>Money</li>
+        <p>With the likelihood of getting black-out drunk quite high and pickpockets known to work the crowd, you should carry as little of value on you as possible. You will naturally need some cash to buy drinks, though, with about 3,000 baht being more than adequate, even if are a big drinker. Make sure it is in small denominations and that you have enough set aside for the taxi back to your hotel.</p>
+    </ol>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/BucketComponent/ListingContainer/04/image.jpg"
+         width="70%">
+    <br>
+    <h2>Getting To the Full Moon Party from Koh Samui</h2>
+    <p>It is possible and even quite a popular option to go to the Full Moon Party while staying on Koh Samui, not least because many hotels on Koh Phangan insist that you book at least a three-night stay during the party period. However, this means crossing an 8 km stretch of the Gulf of Thailand. There are two ways you can do this.</p>
+    <h4>Ferries</h4>
+    <p>There are regular ferry services operating between a Koh Samui and Koh Phangan’s Thong Sala Pier. The boats are large, comfortable and safe, though not very quick. The last sailings of the day are at 12:30 from Maenam Pier (a 20-minute voyage), 16:30 from Bangrak Pier (30 minutes) and 19:00 from Nathon Pier (30 minutes). For the return trip, the first services of the day are at 07:00 to Nathon Pier (a one-hour trip, though the 07:20 service to the same destination takes only 30 minutes), 08:00 to Bangrak Pier (30 minutes) and 11:00 to Maenam Pier (20 minutes). While tickets can be purchased at the pier, we recommend booking in advance online at http://www.ferrysamui.com/koh-phangan. Both the outbound and return journey cost 300 baht each. The main disadvantage to this option is that it makes the wait between leaving the party and getting to a comfortable bed to sleep it off quite a long one. It also makes leaving early more difficult since you still have to wait for the morning ferry and you have nowhere comfortable to stay while you wait for the boat. It is, however, a very safe and cheap choice.</p>
+    <h4>Speedboat</h4>
+    <p>Speedboats make the run between Fisherman’s Village in Bophut and Haad Rin (and back again) throughout the night of the Full Moon Party. The cost per person is much higher than for the ferry (usually around 900 baht, though you may be able to haggle a little), but the journey is quite quick, taking around 10-20 minutes, depending on the conditions. While this option does give you the flexibility to arrive and leave as you please, the majority of the speedboat operators are unregulated. They have a reputation for overcrowding their boats and providing little or no safety equipment, making this a significantly more risky choice. You can charter a boat from a reputable travel and tours office, which will limit the number of passengers and provide life vests, but this is often more expensive and may require sticking to a more rigid timetable.</p>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/BucketComponent/ListingContainer/07/image.jpg"
+         width="70%">
+    <br>
+    <h2>Please note</h2>
+    <p>Most people who go to a Full Moon Party on Koh Phangan have a great and entirely safe time, particularly if they take appropriate precautions. Generally speaking, behaving with the same caution you would exercise if you were going for a night out in your home town should be enough, though there are a few additional hazards to be aware of.</p>
+    <ul>
+        <li>With such alcohol-fuelled pandemonium, there are bound to be accidents. Health & Safety precautions are almost non-existent at Full Moon Parties, but there are first aid stations along the beach and several pharmacies in town.</li>
+        <li>Police search incoming traffic for illegal drugs. Several Hawaiian-shirted police officers wander through the crowd looking for drug offenders, so do not be foolish and ask for trouble. Buckets are powerful enough.</li>
+        <li>Speedboats ferrying revellers over from Koh Samui can be dangerously overcrowded, so make sure to wear a lifejacket. For preference, stay in a hotel on Koh Phangan.</li>
+        <li>Do not take valuables along, if it can be helped. If you absolutely have to then carry them in tight-fitting clothing as pickpockets are not unknown at these events.</li>
+        <li>Do not take valuables along, if it can be helped. If you absolutely have to then carry them in tight-fitting clothing as pickpockets are not unknown at these events.</li>
+        <li>It gets hot surprisingly quickly after sunrise, so be prepared with sun lotion and protective clothing.</li>
+        <li>It is extremely inadvisable to accept any food, drink or other ingestible items offered to you by a stranger.</li>
+        <li>If the full moon happens to coincide with a Buddhist holy day, the party will be postponed, usually only by one day. All such holy days are completely dry, with no alcohol sales anywhere in the country.</li>
+    </ul>
+    <img src="http://static.asiawebdirect.com/m/.imaging/1270x846/website/phuket/portals/kosamui-com/homepage/ko-phangan/full-moon-party/allParagraphs/00/image.jpg"
+         width="70%">
+    <br>
+    <br>
+    <br>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

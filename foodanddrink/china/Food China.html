@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Macau</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/seafood-stew-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="100%" height="100%">
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> What to eat in Macau </h3>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>African chicken, baked egg tarts, samosas, pork-and-olive fried rice. In Macau, Portugal meets China with a dash
+        of southeast Asia and a sprinkling of Africa. Macanese cuisine is, quite literally, a blend of all the places
+        that Portuguese traders visited along the 16th century maritime route from East Asia to Lisbon. </p>
+    <p>Don't be surprised to find European dishes like salted cod and stewed rabbit followed by pork buns and rice on
+        any menu here.A stunning mixture of foods that are at once familiar and exotic, Macanese cooking effortlessly
+        combines ingredients like tumeric, ginger, papaya and curry with the grounded familiarity of meat and fish grilled
+        to crispy perfection over charcoal. Here's a hit list of the best things to eat in Macau.</p>
+
+    <h2> Portuguese fried rice </h2>
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/portuguese-fried-rice-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>Fried rice like never before: hopped up on European ingredients. This moreish rice is infused with prawns,
+        bacon bits, egg, asparagus, chicken and olives.
+        <br>Try it
+
+        <br>A Lorcha
+        <br>Antonio
+    </p>
+
+    <h2> Egg tarts </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/egg-tart-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>The Macanese version of the pastel de nata is a light, fluffy affair with less sugar than its Lisbon counterpart.
+        This makes it all-too-easy to chow down several, especially when fresh from the oven.
+        <br>Try it
+        <br>Lord Stow's Bakery
+        <br>Margaret's Cafe e Nata
+    </p>
+
+    <h2>Garlic prawns </h2>
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/garlic-prawns-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%">
+    <p>What it says on the tin, except so much more delicious. Hefty doses of fresh garlic, heaps of butter and a generous
+        splash of white wine, all flash stir-fried into a thickened, irresistible sauce.
+        <br>Try it
+        <br>Espaco Lisboa
+        <br>Miramar
+        <br>A Lorcha
+    </p>
+
+
+    <h2> Pork chop bun </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/pork-chop-bun-macau-scaredykat-flickr.jpg?fit=min&q=40&sharp=10&vib=20&w=1470 width="70%">
+    <p>Macau's favourite snack food is perfect in its simplicity: a fresh Portuguese bread roll stuffed with a gleaming
+        fried pork chop. No extras needed - this bad boy does the job without frills.
+        <br>Try it
+        <br>Tai Lei Loi
+    </p>
+    <h2> Spicy charcoal-grilled chicken </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/charcoal-chicken-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470 width="70%">
+    <p>Succulent whole chicken grilled over charcoals until the skin is delightfully crispy and burnt around the edges,
+        then chopped Chinese-style and served with french fries.
+        <br>Try it
+        <br>A Lorcha
+        <br>Banza
+    </p>
+    <h2> Stir-fried clams </h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/clams-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470 width="70%">
+    <p>Fresh clams stir-fried in a wok with spring onion, generous doses of garlic and white wine make these among the
+        best you’ll have in your life (really).
+        <br>Try it
+        <br>A Lorcha
+        <br>Litoral
+        <br>Restaurante Fernando
+    </p>
+    <h2> Serradura</h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/serradura-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470 width="70%">
+    <p>The name of this dessert means ‘sawdust’ but don’t be fooled: it’s a rich vanilla custard layered and topped with
+        crushed Marie biscuits and served chilled.
+        <br>Try it
+        <br>A Lorcha
+        <br>Serrdura
+        <br>Antonio
+    </p>
+    <h2> Grilled fish</h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/grilled-fish-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470">
+    <p>Sea bass, sardines, bacalhau (cod): you name the fish and they will grill it in Macau. This is almost always done
+        on an open-air charcoal grill and the fish are served whole, with head, eyeball, crisp skin and all.
+        <br>Try it
+        <br>A Lorcha
+        <br>Miramar
+        <br>O Manuel
+    </p>
+    <h2> Seafood stew</h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/seafood-rice-stew-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470">
+    <p>Fresh octopus, clams, hunks of cod, more clams, crab and mussels are thrown into a thick broth, oftentimes with
+        rice and fresh vegetables like asparagus and Chinese greens. The result is this stew that is seriously difficult
+        to stop eating.
+        <br>Try it
+        <br>Clube Militar de Macau
+        <br>Miramar
+        <br>Espaco Lisboa
+    </p>
+    <h2> African chicken</h2>
+
+    <img src="https://lonelyplanetwp.imgix.net/2014/10/african-chicken-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=1470">
+    <p>A whole chicken, cooked in a luxurious sauce of garlic, tomato, piri piri chillis and coconut milk, this dish is
+        a not-so-spicy version of piri piri chicken or Brazliian barbecued chicken.
+        <br>Try it
+        <br>Antonio
+        <br>O Porto Interior
+        <br>O Porto Interior
+    </p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

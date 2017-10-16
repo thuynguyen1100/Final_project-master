@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ho Chi Minh city</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://www.vietnamgrouptour.com/images/detailed/2/Church_in_HCM.jpeg"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Ho Chi Minh City</h3>
+    <p id="heading2"> What to See and Do in 48 hours</p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Welcome to one of Asia's most compelling cities. Ho Chi Minh City is the energetic commercial hub of modern
+        Vietnam, with wide boulevards, grand colonial buildings, fascinating cultural sights, and a vibrant tangle
+        of narrow laneways – all framed by a kinetic river of traffic. From noodle breakfasts to temple visits,
+        art tours and cocktails with a view, here’s how to make the mostof two days in former Saigon.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/HCMC-notre-dame-cathedral.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <br>
+    <h2>Day One</h2>
+    <h3>Morning</h3>
+    <p>Pull up a stool at Ben Thanh market for a hearty breakfast of herb-laden pho (noodle soup) and ca phe sua da
+        (iced coffee with milk). From Ben Thanh's iconic clock tower, it's a short stroll to Ho Chi Minh City's Fine
+        Arts Museum, a building displaying the elegant architecture of French colonial times. Conduct your own exploration
+        of the galleries, which showcase centuries-old statuary and contemporary art inspired by the tragedy of war.
+        Or visit with expat Sophie Hughes, who runs in-depth four-hour tours of the city's art scene. From the heritage
+        of the Fine Arts Museum, continue to the soaring modernity of the 68-storey Bitexco Financial Tower. Ascend
+        to the 48th-floor Saigon Skydeck for views of the impetuous growth of Vietnam's economic capital. From the
+        tower, make your way north along the Saigon River to the 3A Alternative Art Area. Crammed with cafes, galleries
+        and retailers, the hip laneways are also punctuated with colourful street art. Cool down with a Tra Mojito
+        (iced lemon and mint tea) at the Plantrip Cha teahouse.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/HCMC-street-art.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <br>
+    <h3> Afternoon</h3>
+    <p>Continue along bustling Ly Tu Trong to Ho Chi Minh City's commercial hub and have lunch at the Secret Garden
+        – negotiate your way down an alley and up six flights of rickety stairs to this outdoor restaurant atop an
+        art deco apartment building. A few chickens peck away happily in the restaurant's rooftop herb garden, views
+        extend across the city, and the home-style Vietnamese food is rustic and full of flavour. The fresh sodas are
+        excellent – try the zingy ginger and lemongrass. After lunch, walk about 350m to the colonial red-brick elegance
+        of Notre Dame Cathedral. Across from the cathedral, check out the interior of Ho Chi Minh City's glorious
+        Central Post Office, which was built between 1886 and 1891. Highlights of the Gustave Eiffel–designed building
+        include wall-covering historic maps of the city. Then continue across 30/4 Park to the nearby Reunification Palace,
+        which is accessed by walking through iron gates that were cast aside by Communist tanks when the city fell
+        to the North Vietnamese Army on 30 April 1975. Four decades on, the building's 1960s architecture and memory-packed
+        halls make for one of the city's most intriguing attractions. Don't miss the basement, a labyrinth of tunnels
+        filled with maps, situation rooms and 1960s telecommunications gear.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/HCMC-central-post-office.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>Evening</h3>
+    <p>It's now time for someone else to do the work, so jump on the back of a motorbike or scooter on a tour to explore
+        the city after dark – coursing through the neon-lit excitement of Saigon's evening traffic could be the most
+        fun you'll ever have on two wheels. Both Vespa Adventure and XO Tours incorporate lots of street food into
+        their nightly adventures. A highlight is grilled seafood and ice-cold 333 beer in the District 2 neighbourhood;
+        your two-wheeled discovery of the city could also include raucous rock clubs or bohemian music cafes. For a
+        final nightcap, adjourn to one of the city's exciting rooftop bars. Check out the 21st-century innovation of
+        Air 360, or the river views from the M Bar at Hotel Majestic.</p>
+    <h2>Day Two</h2>
+    <h3>Morning</h3>
+    <p>In previous centuries, the bustling Chinese quarter of Cholon was a separate settlement, but the district southwest
+        of central HCMC is now an integral part of the city’s modern sprawl. Begin your second day by having another
+        local breakfast, this time with the friendly stallholders at Cholon's Binh Tay market, before negotiating the
+        surrounding urban maze. Streets are fragrant with medicinal herbs, storefronts are festooned with Chinese-language
+        signs, and Taoist and Buddhist temples stand near 19th-century Catholic churches. Explore almost five centuries
+        of Cholon history and architecture on a Heritage Tour with long-term city resident Tim Doling, or create your
+        own walking trail to discover the most interesting of the area's many temples. Slowly burning coils of fragrant
+        incense frame Thien Hau Pagoda, dedicated to the Chinese goddess of seafarers; and nearby at Phuoc An Hoi Quan
+        Pagoda a riot of red, gold, green and yellow creates one of the city's most beautiful and ornate temples.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/HCMC-incense.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>Afternoon</h3>
+    <p>Lunch back in central Saigon at Propaganda bistro – overlooking 30/4 Park and serving regional dishes from
+        across the country – then continue about 1km west to the War Remnants Museum. The human tragedy of the decades
+        of conflict that racked Vietnam in the 20th century is rendered in poignant and often confronting detail here,
+        but visiting this museum is essential. Be sure to venture upstairs to see the Requiem Exhibition, a striking
+        showcase of images taken by legendary war photographers killed in the conflict, and see if your country is
+        represented in the ground-floor collection of posters and photographs supporting the antiwar movement. After
+        visiting this compelling museum, continue to the city's lush Botanic Gardens for some quiet reflection.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/01/HCMC-street-traffic.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h3>Evening</h3>
+    <p>Begin with craft beer at the Pasteur Street Brewing Company – some of their brews use local ingredients such
+        as Dalat coffee or rambutan and lemongrass – before trying the classy southeast Asian flavours at restaurant
+        and bar The Racha Room. For a more raffish experience, crowd in with locals at the quirky and loads-of-fun
+        Quan Ut Ut. With a name roughly translating to 'Oink Oink Cafe', this easygoing riverside eatery serves up
+        slow-cooked American barbecue with a Vietnamese spin. From the energetic good times of Quan Ut Ut, it's just
+        a short hop across the river to District 4 and two of the city's best after-dark venues. Cargo plays host to
+        live music from around the region; while nearby at The Observatory, DJs and other performers raise the roof
+        on a regular basis.</p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

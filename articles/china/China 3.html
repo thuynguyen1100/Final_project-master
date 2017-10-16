@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>China</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/White-lotus-lake-mountluofu_cs.jpg"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Escaping modern China</h3>
+    <p id="heading2"> Unwind in historic Huizhou </p>
+    <p align="center"><i> Source: Planet Ware </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>It is said that an immortal from the north flying on a goose was so taken by the scenery at Huizhou’s West Lake
+        that she landed and turned into Flying Goose Mountain. This is how Huizhou got its term of endearment, “City of
+        the Goose”.</p>
+    <p>Located on the eastern periphery of the Pearl River Delta in Guangdong province, Huizhou can feel a world apart
+        from the surrounding industrial region of the Pearl River Delta – China's manufacturing powerhouse.</p>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/GettyImages-533521233_cs.jpg"
+         width="70%">
+
+    <p>Urban upstart cities like nearby Dongguan and Shenzhen might outsize and outpace Huizhou (sounds like
+        'hway-joe'), but old Goose Town’s lakes, waterways, and verdant hills, not to mention its many historic
+        attractions, make it the perfect antidote from the rush and clamour of modern China.</p>
+
+    <h2> Poet’s path </h2>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/Jiuqu-Bridge-huizhou.jpg"
+         width="70%">
+    <p>The delight most feel when first confronted with Huizhou’s West Lake is not unique. The Song Dynasty scholar Su
+        Dongpo (also known as Su Shi) was equally awestruck. Su hailed from Sichuan province, but had grown to
+        prominence in the Song capital, Hangzhou, only to be exiled from the court for his contrarian views. In those
+        days, anywhere south of the Nanling Mountains – which long sequestered far south China culturally and
+        geographically from the rest of the country – was deemed barbarous, a malarial swampland on the very edge of
+        civilization. Yet Su was genuinely taken by his home-of-exile, waxing lyrical about the local scenery, wine, tea
+        and exotic fruits. Over his three-year stint in Huizhou, beginning in 1094, Su penned more than 500 verses ode
+        to Huizhou and its people.</p>
+    <p>Today, Su’s lyrical endorsement is celebrated in the Huizhou West Lake Scenic Area. His poems have been carved
+        into sculptures lining the Su Embankment, which leads towards Huizhou’s must-have photo, the Sizhou Tower – an
+        80-metre-high, seven-storey, hexagonal Buddhist pagoda first constructed during the Ming dynasty.</p>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/Su-Dongpo-huizhou.jpg"
+         width="70%">
+    <p>In and around the Su Dongpo Memorial Hall, there are several sculptures depicting the wise and benevolent scribe
+        enjoying southern life. The hall itself houses a collection of Su’s calligraphic verse. There’s limited English
+        language information, but it’s a pleasant place to walk around, as its design is based on the classical Chinese
+        gardens synonymous with the Song dynasty.</p>
+    <p>Opposite the Memorial Hall, one can follow the Jiuqu ('nine bends') Bridge across Diancui and Fenghua Islands.
+        The islands afford shade from the subtropical sunshine and are a great place to watch people potter about on
+        pedal boats.</p>
+    <h2>Religion and revolution</h2>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/Yuanmiao-Temple-huizhou_cs.jpg"
+         width="70%">
+    <p>On the lake’s north shore, there’s more history to uncover, both religious and revolutionary. Tucked away in an
+        old, mottled neighbourhood is Yuanmiao Temple, which was first constructed in 748 during the Tang dynasty,
+        though it was damaged during the Cultural Revolution. Rebuilt again in 1990, this is incense-imbued homage to
+        Lao Tzu, the philosopher at the heart of the Taoist tradition, is very much a living temple and a place where
+        Huizhou folk come to venerate the gods (and presumably pray for some good fortune).</p>
+
+    <p>Indeed, exploring the Revolutionary Martyrs Park located just behind the temple, one is struck by how outmoded
+        the striving proletarians appeared when compared with the temple’s saintly effigies. Taosim might be far older
+        than Maoism, but as China reasserts itself, ancient culture is enjoying a renaissance, while socialist realism
+        is alas, very much yesterday’s look.</p>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/dong-river-huizhou_cs.jpg"
+         width="70%">
+    <p>As if to reinforce this opinion, a reconstruction of the Ming Dynasty city gate serves as another bold symbol
+        that Huizhou is back in business. Walking through the gate, confronted by the surging Dong River and the gilded
+        new district of Jiangbei across the water, lie the remnants of the original Ming wall preserved along the
+        riverfront. This is clearly the boundary between the old and new, the China of scribes and temples within, the
+        China of malls and manufacturing beyond.</p>
+    <p>The final piece of Goose Town’s historic jigsaw – a statue of Sun Yat-sen – is located in a park just behind the
+        old wall. The revolutionary credited with toppling China's last dynasty, the Qing, Sun is now revered as “the
+        father of the nation” (though he was not a communist). Intensely proud southerners revere Sun mostly because he
+        hailed from Guangdong province; Sun even led a popular uprising from Huizhou in 1900.</p>
+    <h2>Golden Belt Road</h2>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/Gold-Belt-st-Huizhou_cs.jpg"
+         width="70%">
+    <p>It can be thirsty work circumnavigating West Lake. Luckily, not far from the entrance to the Scenic Area is Miss
+        X’s Café, a quaint, two-storey coffee shop decorated with local furnishings. Over a ¥30 fruit juice, the
+        friendly patron Miss Xia will offer advice about the surrounding laneways. The adjacent alleyway, Jindai Jie
+        ('Golden Belt Road'), is among Huizhou’s most historic streets. </p>
+    <p>First constructed in 1389, the winding old lane was once the commercial hub of Huizhou. Family houses and
+        ancestral shrines line the route, affording a rare glimpse of a way of life fast fading from view in modern
+        China. Now earmarked for tourism, the street has a line of antiques shops, selling everything from Mao Zedong
+        posters to Ming porcelain.</p>
+    <h2>Sacred slope</h2>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/Chongxu-Temple-huizhou.jpg"
+         width="70%">
+    <p>In Su Dongpo’s poem, Huizhou Yi Jue, Mount Luofu is lionised, making for an easy excursion from Goose Town. Two
+        hours by bus through disconcertingly messy industrial hamlets does little to invoke much anticipation: clearly,
+        times have changed since Su’s day.</p>
+    <p>But the mountain, now a quintuple-A tourist site, is spellbindingly beautiful. The tapestry of history one finds
+        around West Lake is also weaved into the experience here. The central attraction is the beguiling atmospheric
+        Chongxu Temple, first founded by Taoist abbot Ge Hong in 327, though it was rebuilt during the Qing dynasty.
+        It’s extraordinary to think a temple stood here in Su Dongpo’s day. Su is said to have first tasted lychee here,
+        a spot now commemorated in the Lychee Virtue Garden.
+    </p>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/White-lotus-lake-mountluofu_cs.jpg"
+         width="70%">
+    <p>In summer, the tropical climate can make climbing the mountain unappealing, but there is a chair lift to the top.
+        The ride up offers a birds-eye of the abounding forest, making it hard to believe you are still in the heart of
+        China's manufacturing region. During the final assent on foot towards Luofu’s summit, you can’t help but feel a
+        bit like poetry in motion.</p>
+    <h2>Make it happen</h2>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2015/09/MountLuofu.jpg"
+         width="70%">
+    <p>
+        Regular buses depart from Chen Leng in Hong Kong, Luohu Bus Station in Shenzhen and Tianhe Bus Station in Guangzhou. Huizhou is on the Xiamen-Shenzhen high-speed railway line. The Dongguan to Huizhou intercity railway is scheduled to open at the end of 2015.
+        City Inn Yuandong Branch (octhotels.com) is a clean, mid-range hotel with a central location and affordable rooms. Kande International Hotelis a luxury hotel with an unrivalled location opposite West Lake.
+    </p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

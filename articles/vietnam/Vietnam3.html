@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phong Nha- Ke Bang National Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand > img {
+            position: absolute;
+            left: calc(50% - 78px);
+        }
+
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;
+        }
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown li {
+            display: block;
+            width: 150px;
+            height: 50px;
+
+        }
+
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+
+        .dropdown a:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+            background-color: transparent;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown .dropdown-menu li a:hover {
+            background-color: transparent;
+            color: cornflowerblue;
+        }
+
+        .dropdown li:hover {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+        a {
+            color: #959aa0;
+        }
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- menu -->
+<!-- /menu -->
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div id="tl" style="height: 100vh">
+    <img src="images/sondoong.jpg" width="100%" height="100%"/></div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Phong Nha - Ke Bang National Park </h3>
+    <p id="heading2"> a cave explorer's paradise </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>World Heritage Phong Nha-Ke Bang National Park, with its karst mountains, underground rivers, historic sites,
+        extensive caves and unspoilt jungle, is packed with opportunities to hike, bike, paddle or simply relax in
+        one of Vietnam's most spectacular and interesting regions.<br>
+        The national park is famously home to Hang Son Doong, discovered in the early 1990s and confirmed as the biggest
+        cave on the planet only in 2009. In recent years the cave has become one of the hottest tickets in travel for
+        in-the-know adventurers. Negotiating its 5km-long cavern is superbly exciting, but guided tours are limited and
+        beyond the budget of many. Luckily there are many other activities – both below and above ground – to occupy
+        travellers in the Phong Nha-Ke Bang area..</p>
+    <br>
+    <img src="images/phongnha.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>Boats on the river at Phong Nha-Ke National Park </i></p><br>
+    <h2> Biking the Bong Lai Valley </h2><br>
+    <p>Grab a quirky hand-drawn map from either the Phong Nha Farmstay (phong-nha-cave.com) or the Easy Tiger hostel
+        (easytigerhostel.com), and spend a day exploring the Bong Lai Valley. Meandering tracks and back roads made
+        for mountain bikes weave through local villages and along sleepy rivers, passing by an ever-expanding array of
+        laidback attractions. Lunch on grilled chicken with peanut sauce at the Pub with Cold Beer, or spend a relaxing
+        afternoon in a rustic riverside shelter at the Wild Boar Eco-Farm
+    </p>
+    <h2>Meeting the challenge of Hang Toi</h2>
+    <p>Kick off a visit to Hang Toi (Dark Cave) with a soaring zipline flight above a forest-shaded river, before a
+        brief but bracing swim into the mouth of the cave. Natural light soon fades as visitors are led further into
+        the cavern, through narrow passageways filled with a mini-ocean of gluggy mud, before soaking and swimming in
+        the underground waters of Thuy Tien lake. Upon exiting the cave, it's a short and very scenic kayak paddle back
+        to the Dark Cave's main jetty.</p>
+    <img src="images/paradise-cave.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>Zipline at Hang Toi (Dark Cave) </i></p><br>
+    <h2> Delving into the area's war history</h2><br>
+    <p>Arrange a tour with the Phong Nha Farmstay to explore the region's wartime history, either in a restored US Army
+        jeep or in the sidecar of Soviet-era Ural motorbike. Tours negotiate winding roads past roaring rapids and sheer
+        cliff faces around rugged Highway 20, and sections of the famed Ho Chi Minh Trail, which was vital to the Vietnamese
+        war effort. You can also visit poignant Hang Tam Co (Eight Lady Cave), now a memorial to eight Vietnamese pioneer
+        soldiers who perished in 1972 after a US bombing raid sealed the entrance to the cave.</p>
+    <h2> Hiking the jungle above the caves </h2>
+    <p>Join a jungle hike with one of the region's excellent local trekking guides. Hai’s Eco Conservation Tour involves
+        a day exploring the jungle and a visit to Phong Nha's Wildlife Rescue and Rehabilitation Centre. You'll find the
+        friendly Hai at his relaxed Bamboo Cafe in the town of Son Trach most evenings. Another trekking option is with
+        Dzung of Jungle Boss Trekking, who runs a one-day tour around the Ho Chi Minh Trail, also visiting the remote
+        Abandoned Valley area of the national park</p>
+    <h2> Relaxing by the river</h2>
+    <p>After active days underground or trudging through the jungle, a more relaxed pursuit is to spend a few hours at
+        the Nuoc Mooc Ecotrail. A series of linked walkways and bamboo bridges winds through a forested limestone labyrinth
+        of pristine pools and turquoise springs. Kayaking is available on a small lake, and there’s a rustic rope bridge –
+        a bit of a thrill after a lazy lunch in one of Nuoc Mooc's open-air gazebos.</p>
+    <img src="images/nuocmooc.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>Bamboo bridge on the Nuoc Mooc Ecotrai</i></p><br>
+    <h2>Touring Hang Tu Lan</h2>
+    <p>One-night/two-day tours of the wider Tu Lan Cave system commence with a full-day hike through rustic countryside,
+        before a campsite with hammocks is set up adjacent to the beautiful cave Hang Ken. Day two includes exploration
+        of Tu Lan, and the challenging combination of trekking and swimming through the Kim and Hung Ton caves. For the
+        even more adventurous, there is a longer and more challenging two-night/three-day tour option.</p>
+    <h2> Camping underground in Hang En</h2>
+    <p>Located close to renowned Hang Son Doong, Hang En is currently regarded as the third-largest cave on the planet.
+        One-night/two-day tours give travellers the opportunity to camp at a spectacular riverside location within the
+        cave, and visit the remote ethnic minority village of Ban Doong. Fossils up to 300 million years old have been
+        found in the cave, but present-day wildlife includes thousands of swifts, which dart amid the diffuse shafts of
+        sunlight projecting into Hang En's giant cavern</p>
+    <img src="images/hangen.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>Hang En, the world's third-largest cave </i>< /p><br>
+    <h2>Being one of the first to explore Hang Va</h2>
+    <p>Discovered in 2012, and only opened to visitors in 2015, Hang Va is the newest underground adventure in the Phong
+        Nha region. Leading caving outfit Oxalis runs two-day/one-night adventures that include travelling along an
+        underground river in the nearby Hang Nuoc Nut cave. After overnighting at a jungle camp near Hang Va's entrance,
+        visitors explore the cave's spectacular partially submerged stalagmite field. Bring a sense of adventure – ropes
+        and harnesses are used extensively during this experience.</p>
+    <img src="images/sontrach.jpg" width="70%"/>
+    <p style="font-size: 10px" align="center"><i>River scene at Son Trach village </i>< /p><br>
+    <h2>Make it happen</h2>
+    <p>Phong Nha-Ke Bang National Park abuts the village of Son Trach, about 50km from Dong Hoi, in Vietnam’s north-central
+        region. Regular local buses link the two towns. Hotels can also organise lifts in private cars from Dong Hoi.
+        Son Trach has an ATM, and a growing range of accommodation and eating options. </p>
+    <p>Access to the park is quite tightly controlled (the park is still riddled with unexploded ordnance). Officially
+        you are not allowed to hike here without a licensed tour operator. You can travel independently (by motorbike or car)
+        on the Ho Chi Minh Highway or Hwy 20, both of which cut through the park.</p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

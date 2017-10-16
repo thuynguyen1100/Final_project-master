@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5top</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div id="tl">
+    <img src="Project/tl.jpg" width="100%" height="auto">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> 5 Top-Rated </h3>
+    <p id="heading2"> Tourist Attractions in Thailand </p>
+    <p align="center"><i> Source: Planet Ware </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Thailand, also known as the Land of Smiles, is a jewel of Southeast Asia.
+        Developed enough to provide most comforts yet still wild enough to offer off-the-beaten path adventure,
+        Thailand is a country ripe with opportunity for once-in-a-lifetime travel experiences.
+        Whether you start with the world-class beaches in the south or the mountain villages in the north,
+        Thailand will not disappoint.</p>
+
+    <p> Cities like Bangkok and Chiang Mai are bustling hives of activity and commerce,
+        but you haven't really seen the country until you've trekked in the mountains or enjoyed some face-time with elephants or the bold monkeys
+        (who will steal your lunch as soon as look at you). Thailand's attractions are diverse and each provides a rewarding and memorable experience
+        in its own way. </p>
+    <br>
+    <h2> 1. Railay Beach </h2>
+
+    <img src="Project/thailand-railay-beach.jpg" width="70%">
+<br>
+    <p>Krabi province is home to some of Thailand's most famous beach destinations, and Railay is the cream of the crop.
+        Widely considered one of the best beaches in the country, Railay delivers on promises of white sand beaches,
+        clear blue water, and a feeling that you've found a slice of paradise. You have to take a boat to reach the island getaway,
+        with services available from Krabi town and Ao Nang.
+        <br>
+        The beaches are the main reason to visit Railay, but it's also a rock-climbing hotspot.
+        Railay's karst peaks draw adventurers both experienced and novice to try their hand at climbing the towering limestone cliffs.
+        Among the many other active things to do, you can go elephant trekking, whitewater rafting, kayaking, and snorkeling,
+        or take on some lighter options such as cooking classes and indulging in a massage. There's also the tourist-friendly Diamond Cave,
+        with a convenient walkway to accommodate curious visitors looking to do some exploring between stretches of sunbathing.</p>
+
+    <h2> 2. Koh Phi Phi </h2>
+
+    <img src="Project/thailand-koh-phi-phi.jpg" width="70%">
+<br>
+    <p>The Phi Phi Islands, also in Krabi, are one of Thailand's most popular resort areas for a reason.
+        Only Phi Phi Don is inhabited, with day trips available to the surrounding islands.
+        One of the fun spots on Koh Phi Phi is Monkey Beach, where you'll come face-to-face,
+        literally, with the namesake creatures. You can hire a guide to take you out on a small wooden boat or rent your own kayak.
+        There's also a small stand where you can buy snacks and fruit shakes, but hang onto your treats.
+        If you leave them unguarded, the monkeys will brazenly dig in and chow down right in front of you.
+        Long Beach is another nice spot on the island; it's not a secluded place, but is great for watching the sunset.
+        If you're lucky and the tide is out, it's a beautiful walk back toward the main part of the island.
+        <br>
+        Tour operators offer packages for snorkeling and diving trips, as well as excursions to the infamous Maya Bay,
+        where the Leonardo DiCaprio movie The Beach was filmed. Because Koh Phi Phi draws so many tourists,
+        there are plenty of tour companies arranging tickets to other beach destinations, such as Phuket, Koh Chang,
+        and Koh Lanta. Though you would hardly know to see it now, Phi Phi Don was one of the areas hit hard by the 2004 tsunami.
+        Guesthouses, restaurants, and markets have been rebuilt and crowds still come in droves to the resort island.
+        There is a small, somber memorial park to honor those who died in the tragedy, yet the resort areas appear otherwise revived.</p>
+
+    <h2> 3. The Grand Palace, Bangkok </h2>
+
+    <img src="Project/grand-palace.jpg" width="70%">
+<br>
+    <p>Even if your plans for Thailand mainly involve frolicking on a beach, cozying up to elephants, and eating as much Massaman curry and tom ka gai as humanly possible,
+        you'll probably spend at least a day or two in Bangkok. There's plenty to see and do in the capital, but it's perhaps best to start with the Grand Palace.
+        This is the number one sightseeing attraction in the city, and it's staggering in historical significance and craftsmanship.
+        The grounds are a maze of royal halls, temples, and ancient relics, the most important being Wat Phra Kaeo, Temple of the Emerald Buddha.
+        A relic within this temple is said to be a piece of bone or hair from the enlightened Buddha himself. Allow several hours to do the Grand Palace justice,
+        but if you're up for more walking afterward, you can easily take in some of the city's other major landmarks. The famous Wat Po and Wat Arun, the Temple of the Dawn
+        (a great place to watch the sunset), are also nearby.
+        And as Bangkok is a main hub for international travel, it's a great starting point for excursions throughout the country.</p>
+
+    <h2> 4. Sunday Walking Street, Chiang Mai </h2>
+
+    <img src="Project/thailand-sunday-walking-street-chiang-mai.jpg" width="70%">
+<br>
+    <p>Every Thailand visitor looks forward to cheap and delicious food, and it can be found in abundance at Chiang Mai's Sunday Night Walking Street.
+        Vendors sell all kinds of treats: pad Thai, chicken satay, samosas, crab cakes, fried bananas, sweet rotees, and fresh fruit shakes - often for
+        less than $2 a piece. When you've satisfied your culinary cravings, you can peruse hundreds of stalls selling an array of unique goods such as
+        all-natural soaps, hand-dyed textiles bearing the unique patterns of local hill tribes, incense and essential oils, musical instruments, paintings, wall hangings, and more
+        </br>
+        The market gets crowded every week without fail, no matter what time of year you're visiting, so brace yourself and try to enjoy being part of the throng.
+        This is a must-do in Chiang Mai, and is an essential part of the Thailand experience. If you're not around for the Sunday market, or just want to get a
+        taste of other market experiences in Chiang Mai, check out the Saturday Night Walking Street or the Night Bazaar on Chang Klan Road, a daily event.
+        For something less touristy, check out the daytime Warorot Market, near Mae Ping River.</p>
+
+    <h2> 5. Pai</h2>
+
+    <img src="Project/thailand-pai.jpg" width="70%">
+<br>
+    <p>Thailand's reputation as a country of beautiful landscapes and friendly people is thanks largely to the world-renowned southern beaches.
+        Most people don't realize that the vast north is also home to breathtaking landscapes, though these are of a different nature entirely.
+        Northern Thailand, particularly the western region near the Burmese border, is marked by mountainous jungle terrain that is both rugged and beautiful.
+        Pai, in Mae Hong Son province, is a perfect place from which to enjoy the country's natural beauty as well as the famed Thai hospitality and cooking.
+        This small town has developed a reputation as a mecca for hippies and backpackers, though you will see locals and families here as well.
+        There is a small nightly walking street market, a variety of local and Western foods, and easy access to nearby temples, waterfalls, and the impressive Pai canyon.
+        There is an air of cheerfulness and relaxation as you walk through the tiny town center, and it is this vibe that continues to draw crowds season after season.</p>
+</div>
+<br>
+<br>
+<br>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food and Drink</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+
+        .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+        }
+
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand > img {
+            position: absolute;
+            left: calc(50% - 78px);
+        }
+
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;
+        }
+
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+
+        .dropdown a:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+            background-color: transparent;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown .dropdown-menu li a:hover {
+            background-color: transparent;
+            color: royalblue;
+        }
+
+        .dropdown li:hover {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+
+        /*bookings*/
+        #booking a {
+            text-decoration: none;
+        }
+
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        /*style video*/
+        a {
+            color: #959aa0;
+
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .box {
+            background-image: url(https://images.unsplash.com/photo-1503764654157-72d979d9af2f?dpr=1&auto=compress,format&fit=crop&w=1506&h=&q=80&cs=tinysrgb&crop=);
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: black;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="height: 100vh" class="box">
+</div>
+<br><br><br>
+<p style="margin-left: 9%; font-size: 25px;"><b>VIETNAM</b></p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <img style="height: 197px; width: 263px"
+                 src="https://lonelyplanetwp.imgix.net/2011/03/vietnam-food-market-produce.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 class="img-responsive" alt="Image">
+            <a href="VNfood1.html"><h4>Vietnam on a plate</h4>
+                <h4>a tour of Vietnam's best regional dishes</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://i.pinimg.com/originals/42/5b/25/425b25307e823709e6abf10c444f5c5a.jpg"
+                 class="img-responsive" style="height: 197px; width: 263px" alt="Image">
+            <a href="VNfood2.html"><h4>Hanoi's street foods</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="http://3.bp.blogspot.com/-SzZef7ORuUY/Te_UEVXAqYI/AAAAAAAABDY/NiH0wuB66KQ/s1600/DSC_0990.jpg"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="VNfood3.html"><h4>Vietnamese coffee</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="http://whereto.vn/custom/domain_1/articles/fullsize/article14531/hoi-an-banh-mi-was-commented-a-pretty-magical-sandwich-by-one-bbc-journalist-photo-internet-tin8-2.jpg"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="VNfood4.html"><h4>10 Best Hoi An dishes</h4></a>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<hr style="color: #959aa0; width: 90%; ">
+<p style="margin-left: 9%; font-size: 25px;"><b>THAILAND</b></p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <img style="height: 197px; width: 263px"
+                 src="https://lonelyplanetwp.imgix.net/2015/11/Pile-of-durians-these-spiky-green-cannonballs-are-incredibly-healthy.-Image-by-Anita-Isalska.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 class="img-responsive" alt="Image">
+            <a href="Thailand1.Food.html"><h4> Durian 101 </h4>
+                <h4>Everything you need to know about Southeast Asia's ‘King of Fruits’</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2012/05/Krua-Apsorn-a-shophouse-based-restaurant-in-Bangkok.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 class="img-responsive" style="height: 197px; width: 263px" alt="Image">
+            <a href="Thailand2.Food.html"><h4>Beyond the street stalls</h4>
+                <h4>Where else to eat in Bangkok</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2015/06/N%C3%A1m-pr%C3%ADk-n%C3%B9m-as-served-at-a-restaurant-in-northern-Thailand.-Image-by-Austin-Bush.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="Thailand3.Food.html"><h4>Top 10</h4>
+                <h4>Must-try Northern Thai dishes</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/Im-Cafe3-60ecfbc8e901.jpg"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="Thailand4.Food.html"><h4>A coffee-lover's guide to Chiang Mai</h4></a>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<hr style="color: #959aa0; width: 90%; ">
+<p style="margin-left: 9%; font-size: 25px;"><b>CHINA</b></p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <img style="height: 197px; width: 263px"
+                 src="https://lonelyplanetwp.imgix.net/2014/10/seafood-stew-macau.jpg?fit=min&q=40&sharp=10&vib=20&w=14700"
+                 class="img-responsive" alt="Image">
+            <a href="Food%20China.html"><h4>What to eat in Macau</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2010/12/hk-dimsum-yumcha_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 class="img-responsive" style="height: 197px; width: 263px" alt="Image">
+            <a href="Food%20China%201.html"><h4>Hong Kong's most unique dining experiences</h4>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2015/05/4099148495_093c32121d_b.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="Food%20China%202.html"><h4>Essential regional cuisine of China</h4>
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2014/09/liqun-peking-duck.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="Food%20China%203.html"><h4>What to eat in Beijing</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<hr style="color: #959aa0; width: 90%; ">
+<p style="margin-left: 9%; font-size: 25px;"><b>SOUTH KOREA</b></p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <img style="height: 197px; width: 263px"
+                 src="https://lonelyplanetwp.imgix.net/2015/06/kimchi-jjinppang-mandu_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 class="img-responsive" alt="Image">
+            <a href="Food1.html"><h4> RA hungry traveller's guide to Korean street food</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2016/08/southside_parlor-c88fca281df4.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 class="img-responsive" style="height: 197px; width: 263px" alt="Image">
+            <a href="Food%202.html"><h4>Behind closed doors: 10 of Seoul's most glamorous speakeasies</h4>
+            </a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2015/04/hangukjip-jeonju_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="Food%203.html"><h4>48 hours in Jeonju: Korea's foodie capital</h4></a>
+        </div>
+        <div class="col-lg-3">
+            <img src="https://lonelyplanetwp.imgix.net/2015/06/tteokbokki-korean-street-food_cs.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"
+                 style="height: 197px; width: 263px" alt="Image">
+            <a href="Food%204.html"><h4>LIFE IN KOREA : Korean street food</h4></a>
+        </div>
+    </div>
+</div>
+<br><br>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

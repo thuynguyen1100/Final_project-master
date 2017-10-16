@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="http://tong.visitkorea.or.kr/cms/resource_etc/57/2463657_image_1.jpg" width="100%" height="660">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Unique Winter Festival, Hwacheon Sancheoneo Ice Festival </h3>
+    <p id="heading2"> Tourist Attraction in South Korea </p>
+    <p align="center"><i> Source: Visitkorea </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>When Hwacheoncheon Stream, located in Hwacheon-gun, Gangwon-do freezes in winter, locals and tourists alike flock to the stream, carve out a hole in the ice, and begin ice fishing for sancheoneo (Masou salmon). The trout are known to live only in high quality fresh waters. Visitors fishing in the stream can be seen patiently waiting, and then jumping with excitement as they pull their catches from the hole in the ice. Some even choose to jump into the icy waters of the pool built beside the stream wearing shorts and a tee-shirt for barehanded fishing. In addition to ice fishing, the festival offers a plethora of fun activities with the snow and ice. For that, Hwacheon Sancheoneo Ice Festival has become one of the ultimate winter activities for the whole family to enjoy.
+    </p>
+    <br>
+
+    <h2> Sancheoneo Fishing </h2>
+
+    <img src="http://tong.visitkorea.or.kr/cms/resource_etc/57/2463657_image_2.jpg" width="70%">
+
+    <p>Sancheoneo fishing is the main activity at the Hwacheon Sancheoneo Ice Festival. There are three ways for visitors to fish at the festival: ice fishing on the frozen stream, lure fishing in the flowing waters, and bare-hand fishing in a pool. In addition, visitors can take the fish they have caught to be served fried or in raw slices for a fee in the food centers.
+	   <br>Fishing in Hwacheon Stream on ice that is at least 30cm thick is the most popular fishing activity at the festival. Wait patiently for the fish swimming underneath the frozen stream to be attracted to the bait by moving the reel up and down. When you feel a tug, calmly pull the fishing line up and place it in the plastic bag. Voila, you have your first catch! International visitors can enjoy fishing in an exclusive section of ice to increase the odds of catching fish.
+       <br>Operating period: January 14-February 5, 2017 / 09:00-18:00 
+        <br> On-site tickets are available during the festival. Please be aware that tickets often sell out early in the morning on weekends.
+        <br>Venue: Downstream from hanging bridge at festival site (International visitor exclusive site)
+        <br>Activity fee: 8,000 won (Discounted fee for international tourists / 5,000-won coupon for use at festival venue included) 
+        <br> Be sure to bring your passport to the ticketing booth to get the discounted fare!
+        <br>What to bring: Fishing pole/reel, metal lure, small chair, blanket, etc.
+        <br>Items are also available for purchase on-site.
+	   </p>
+     
+    <h2> Sancheoneo Barehanded Fishing </h2>
+
+    <img src="http://tong.visitkorea.or.kr/cms/resource_etc/57/2463657_image_3.jpg" width="70%">
+
+    <p>For those who do not fancy the motionless wait while ice fishing, you may want to challenge yourself with some barehanded ice fishing. Participants for the barehanded ice fishing change will be given festival tee-shirts and shorts to change into. After perform a simple warm-up exercise, participants jump into the pool at the word “Go!” and try to catch sancheoneo using their bare hands. Each participant is allowed to catch up to three fish. After the event is over, participants may thaw out their feet with a warm foot bath.
+    <br>Operating period: January 14-February 5, 2017 / Weekdays (four times a day) 11:00-15:00 (Excluding 12:00), Weekends (seven times a day) 10:00-16:00
+    <br> Ticketing begins one hour before each run (first-come, first-served basis) / The number of operations is subject to change depending on weather conditions
+    <br>Venue: Under Baemeorigyo Bridge
+    <br>Activity Fee: 8,000 won (Discounted fee for international tourists / 5,000-won coupon for use at festival venue included)
+    </p>
+
+    <h2> Snow / Ice Activities </h2>
+
+    <img src="http://tong.visitkorea.or.kr/cms/resource_etc/57/2463657_image_4.jpg" width="70%">
+
+    <p>Snow and ice activities are other core part of Hwacheon Sancheoneo Ice Festival. The ice sledding experience zone features traditional Korean sleds and sleds from around the world. A 40 meter-long snow slope and 100m ice slope are also available to send thrills down your spine through various winter leisure sports including snow sledding, bobsleighing with a special tube and ice soccer.
+       </p>
+       
+
+    <h2> Other Attractions</h2>
+
+     <img src="http://tong.visitkorea.or.kr/cms/resource_etc/57/2463657_image_5.jpg" width="70%">
+
+    <p>The excitement of Hwacheon Sancheoneo Festival can also be felt throughout the town of Hwacheon. Participants may find sancheoneo-shaped lanterns made from hanji paper and beautiful luminaries of LED lights brilliantly decorating Seondeung Street. Furthermore, large-scale ice sculptures lit up in an assortment of colors are on display at the ice plaza. There are also other festivities to enjoy including traditional Korean folk games and a photo zone. Throughout the festival grounds and city, restaurants that serve raw and fried fish, as well as tteokbokki (stir-fried rice cake), fish cakes, dumplings, and other sweet and savory fritters can be found.
+    <br> Hwacheon Sancheoneo Ice Festival
+    <br>Period: January 14–February 5, 2017 / Seondeung Street Lighting: December 24, 2016 – February 12, 2017
+    <br>Venue: 137, Sancheoneo-gil, Hwacheon-eup, Hwacheon-gun, Gangwon-do
+    <br>Directions: Dong Seoul Bus Terminal → Hwacheon Bus Terminal → Walk approx. 2min. to Temporary Intercity Bus Terminal Bus Stop → Take Bus No. 7 to Front of Base Bus Stop and walk approx. 10min to festival grounds.
+    <br>Operating hours: 07:05 (first bus) - 19:35 (last bus)
+    <br>Travel time: Approx. 2hr 40min
+    <br>Fare: Adults 13,900 won
+    <br>Websites: 
+    Hwacheon Sancheoneo Ice Festival: www.narafestival.com (Korean, English, Japanese, Chinese, French)
+    Hwacheon Tourism: tour.ihc.go.kr (Korean, English, Japanese, Chinese)
+    <br>Inquiries: +82-1688-3005 (Korean, English, Japanese, Chinese) ※ Operates during festival period
+    <br>1330 Korea Travel Hotline: +82-2-1330 (Korean, English, Japanese, Chinese)
+    </p>
+
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

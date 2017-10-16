@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maubaivietmoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="https://photos.travellerspoint.com/775552/large_IMG_5338.jpg" width="100%" height="660">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> Explore South Korea's Largest Tea Plantation </h3>
+    <p id="heading2"> Tourist Attraction in South Korea </p>
+    <p align="center"><i> Source: Mimsie Ladner </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Considered by many to be one of the most beautiful sites in South Korea, Daehan Dawon in Boseong, Jeollanam Province is an oasis of verdancy and tranquility. Blanketed in soft, rolling hills of beautifully landscaped tea hedges, the farm functions as one of the biggest producers of the country’s green-tea products, and is perhaps the area’s most popular tourist attraction. Join us as we explore this picturesque village and find out what makes it so special.
+    </p>
+    <br>
+ <h2> A Brief History </h2>
+
+    <img src="https://cdn.theculturetrip.com/wp-content/uploads/2017/04/rsz_12376818304_a5d2ac440d_k_1-1-1024x683.jpg" width="70%">
+
+    <p>Daehan Dawon, the largest and oldest tea garden in the southern county of Boseong, dates back to 1937, when the first green tea trees were planted by Japanese colonialists. The area’s rich soil, humidity and day-to-night temperature differences made it a perfect location for tea cultivation.
+       <br>In 1945, with Japan’s defeat in World War II, the country’s Japanese overlords returned to their native land, and Boseong’s single tea plantation was all but deserted. In the mid 1950s however, Jang Young-seob, a Korean entrepreneur, purchased the land, reestablishing it as a functioning tea plantation. Soon enough, more plantations were instituted nearby, extending as far as the coast. Boseong’s tea industry quickly began to flourish, and today, the town accounts for some 40% of Korea’s green tea production.
+       </p>
+     
+    <h2> Going Green </h2>
+
+    <img src="https://cdn.theculturetrip.com/wp-content/uploads/2017/04/14563584556_2046f56862_k-1024x683.jpg" width="70%">
+
+    <p>Presently, the tea fields boast approximately 5.8 million plants which are harvested to make yubi-cha—often considered to be Korea’s best variety, thanks to its superb taste and aroma. The seemingly endless rows of tea hedges trace a number of walking paths that are punctuated by groves of cedar, bamboo, maple or cypress trees.
+    <br>The cedar path—perhaps the most notable attraction of the site, second only to the tea plants themselves —commences at the ticketing office by the plantation’s entrance, and features trees that soar more than 30m (98 ft.) above the fields. The journey continues to the rest area, where visitors can opt to climb up the stairway to get to the central observatory, which overlooks the plantation’s majestic green tea landscapes. Or, they can follow the cedar path toward the field observatory or the sea observatory, both of which offer views of the extensive plantation, its thick forests and the sea in the distance.
+    </p>
+
+    <h2> Eats, Treats and a Whole Lot of Fun </h2>
+
+    <img src="https://cdn.theculturetrip.com/wp-content/uploads/2017/04/10894721403_3482bdeab4_k-1024x683.jpg" width="70%">
+
+    <p>Of course, no visit to Daehan Dawon would be complete without sampling some of the region’s unique green-tea cuisine. At the plantations’ Dawon Lounge, visitors can try ice cream, milkshakes or lattes, all of which incorporate tea produced on the farm. The second floor of the lounge houses the Green Tea Restaurant, where visitors can order green tea jajangmyeon, cold green tea noodles and green tea bibimbap.
+    <br>Adjacent to the Daehan Dawon is the Tea Museum of Korea. Here, visitors can learn more about the life cycle of the tea leaf, its harvesting and drinking culture. In addition, the museum offers a number of programs such as tea-making and  tea ceremony workshops that provide a unique, hands-on experience. Furthermore, visitors can get an up-close look at tea plants from Korea, China, Japan and India at the museum’s arboretum.
+    <br>Daehan Dawon is most spectacular during May, when it is at its greenest. This is also the time when the Boseong Green Tea Festival is held. During the event, festival-goers can participate in tea-picking and tea-making demonstrations, along with other cultural activities.
+       </p>
+       
+
+    <h2> Getting There</h2>
+
+    <p>Situated a bit off the beaten track, Daehan Dawon is most accessible by private car, but it can also be reached by bus. From Seoul Express Bus Terminal, take an intercity bus directly to Boseong, or to Gwangju. From Gwangju’s U-Square Bus Terminal, take an intercity bus to Boseong. From Boseong Bus Terminal, either hail a cab or take the hourly Boseong-Gunhak bus to Daehan Dawon.
+    </p>
+
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

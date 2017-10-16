@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chiangmai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div id="tl">
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/Im-Cafe3-60ecfbc8e901.jpg" width="100%" height="auto">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1"> A coffee-lover's  </h3>
+    <p id="heading2"> guide to Chiang Mai </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Thailand evokes images of serene beaches, ancient temples and delicious coffee. OK, not so much the latter – yet – but this country has a growing coffee industry
+        and caffeine-seekers can find a cup of jo basically everywhere. The northern city of Chiang Mai is particularly known for its coffee outlets serving locally grown
+        coffee and making for a welcome break between visiting temples and shopping for souvenirs. You’ll have no problem recaffeinating as necessary while you spend a day
+        exploring in and around the city. Here’s our selection of the best spots to do so.</p>
+<br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/GettyImages-692063109-049fda33828b.jpg" width="70%">
+    <br>
+    <h2> Coffee central </h2>
+    <p>
+        Chiang Mai city centre has plenty of places to begin your coffeesploration. For something quick and special to start the day, a short túk-túk ride will take you to Akha Ama Cafe, one of the city’s best.
+        The beans here are sustainable, harvested locally, and have a reputation for producing some of the best coffee in Thailand.
+    </p>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/GettyImages-645356669-f9eb20fc5e33.jpg" width="70%">
+    <br>
+    <p>For an early morning coffee-temple combo head to Wat Pha Khao, off Ratchamanka Road, and treat yourself to a cheap but perfectly made iced latte or americano at Creative Coffee.
+        In Thailand, most small coffee stands are here one day and gone the next, but not this little gem. The barista uses Hillkoff beans grown in the highlands of northern Thailand
+        and makes sure to ask first if you’d like sugar mixed in or not. The shop sits just inside the entrance to the temple under a gigantic tree, surrounded by orchids – grab a cup,
+        stroll through the temple, and maybe get a cheap foot massage before you leave.
+        <br>
+        Like to start your day a bit later? No problem. Ponganes Coffee Roasters (facebook.com/ponganesespressobar), off Moon Muang Road, opens at 10am for a cup of locally roasted brew.
+        If you like that perfectly percolated espresso you just tried, you can buy a few bags to make your own at home. Not only do they have beans sourced from local Chiang Mai farmers,
+        they also use select beans from all over the world to create extremely aromatic and tasty blends. Take a seat on the bench next to other patrons and enjoy spooning out the thick crema..</p>
+    <h4> Lattes for breakfast </h4>
+    <p> Your coffee quest doesn't have to end at the city limits either. Southwest of Chiang Mai in Hang Dong, Yok Coffee N’ Bar (facebook.com/pages/Yok-Coffee-N-Bar) is on the first floor of
+        a family's two-storey, traditional Thai style townhouse and is decorated with old toys, antiques and plenty of hanging plants. Yok is popular with locals who enjoy a hot latte on the
+        patio in the chilly morning or grab a cup to go and head over to nearby Hang Dong market for a steaming bowl of rice soup (khao tom). Also within easy driving distance are Ban Tawai
+        handicraft village (the perfect place to scout out home furnishings, woven baskets, or souvenirs for family back home), the Royal Park Rajapruek gardens and the Chiang Mai Night Safari.</p>
+
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/Im-Cafe3-60ecfbc8e901.jpg" width="70%">
+    <br>
+    <p>For a local late breakfast or early lunch, Im Cafe serves incredible Thai and Western dishes, and has some of the best coffee in Chiang Mai. Located next to a car wash, this quaint cafe
+        opens at 8am and offers a range of caffeinated options including sweet caramel macchiatos and iced coffee served in mason jars, as well as fresh juice served in a large light bulb glass.
+        <br>
+        Craving a Western-style breakfast with your freshly-brewed coffee? Take a quick rót dang (red truck) or taxi ride down Chang Klan Rd to Butter is Better (butterisbetterbakery.com),
+        a classic 1950s American diner which is rather a unique find in Thailand. Their drip-brewed coffee is particularly good, especially when paired with a warm sticky bun or blueberry pancakes.
+    </p>
+
+    <h2> An afternoon pick-me-up </h2>
+    <p>
+        After a morning of sightseeing, stop off at the Fern Forest Cafe to recharge. Set, as the name suggests, amongst ferns and other greenery, this busy, bossa-nova-playing cafe has an array
+        of drinks and light meals, such as roti stuffed with spinach in a cream sauce. Their lattes and iced espressos are particularly good and make a perfect pick-me-up.
+    </p>
+    <br>
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/Fern1-27292847c1aa.jpg" width="70%">
+    <br>
+    <p>If you’re looking for somewhere to write your blog, check your email or even do some work, pop into Roastniyom (facebook.com/roastniyomcoffee), south of Chiang Mai Gate and housed in the
+        front an old IBM office building. The brightly lit interior and backroom standing desk are great for catching up on social media posts.
+        <br>
+        Chiang Mai is famous for its shopping and the city's numerous malls know that a caffeinated shopper is a money-spending shopper. Pangkhon Coffee makes an excellent americano if you're
+        looking for a break from the souvenirs in the vast Central Airport Plaza Mall. Nestled inside the Northern Village area on the mall's first floor, it's the place to rest your legs and
+        enjoy some coffee (they use shade-grown Arabica beans from Thailand) and sweets. They have tea options too for something different. Afterwards, take some time to enjoy the delights of
+        this mall: see a movie (they have most new releases in English), take the kids rollerblading or to the play area (both on the fourth floor), or take an afternoon off from sightseeing and just shop.
+    </p>
+
+    <img src="http://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2017/06/Roastniyom1-151899869c60.jpg" width="70%">
+    <br>
+    <p>In common with Chiang Mai, the rest of Northern Thailand has a large community of coffee growers and coffee lovers, shown by the multitude of shops, stalls, even rickshaws that travel
+        from street market to street market, selling the local Thai beans. Top spots are found across the region, just bear in mind that the coffee will be made the way the locals enjoy it
+        – with plenty of sugar and condensed milk. To get what you want when ordering from a small shop learn a little Thai: if you don’t want sugar, for example, say ‘mai sai nam thaan’.
+        Be polite and order with a smile and the barista will make a cup exactly how you want it.</p>
+</div>
+<br>
+<br>
+<br>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

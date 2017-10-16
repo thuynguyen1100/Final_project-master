@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoi An dishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div  id="tl">
+    <img src="http://whereto.vn/custom/domain_1/articles/fullsize/article14531/hoi-an-banh-mi-was-commented-a-pretty-magical-sandwich-by-one-bbc-journalist-photo-internet-tin8-2.jpg"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1">10 Best Hoi An dishes</h3>
+    <p align="center"><i> Source: Journey Vietnam </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>The best Hoi An dishes are exclusively available within the UNESCO World Heritage Site which is this remarkable
+        city, utilising fresh greens, herbs, fish, meat, and even water from the neighbouring Tra Que Vegetable Village,
+        Cham Island, Ba Le Well, and Cam Nam Village. Once a prominent Vietnamese trading port, Hoi An’s specialities
+        are the result of Chinese, French and Japanese influences</p>
+    <p>The streets of Hoi An Ancient Town are filled with an array of dining choices, ranging from glitzy Vietnamese
+        restaurants to riverside food stalls. Noodles and rice dishes are typically priced between VND 10,000 and VND
+        50,000 while appetisers such as banh xeo and banh mi should cost no more than VND 25,000. Read on for our list
+        of must-try dishes in Hoi An.</p>
+    <h2>1. Cao Lau</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/0/image.jpg" width="70%"/>
+    <br>
+    <p>Cao lau is Hoi An’s definitive dish, comprising chewy udon-like rice noodles, Chinese barbecued pork slices,
+        beansprouts, croutons, and fresh herbs in a pork-based gravy. This local delicacy is only available in Hoi An
+        because the noodles can only be cooked using water from well-hidden ancient Cham wells while fresh greens are
+        sourced from Tra Que Vegetable Village. You can find cao lau at any Vietnamese restaurant in Hoi An, with
+        prices ranging between VND 10,000 and VND 50,000. Certain eateries serve their own variation of cau lao by
+        adding peanuts, rice crackers, scallions, lime, and chilli jam.</p>
+    <h2> 2. Banh Bao Vac </h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/00/image.jpg" width="70%"/>
+    <br>
+    <p>Banh bao vac is a local appetiser that resembles delicate white roses displayed on a platter. Each dumpling
+        is made by wrapping shrimp or pork filling in flattened rice dough before cooking it in a steamer. Once soft
+        and translucent, banh bao vac is carefully arranged on a flat plate, topped with shallots, and served with a
+        dipping sauce made from shrimp broth, chillies, lemon and sugar. Available at most local restaurants in Hoi An,
+        the banh bao vac are supplied by a local family residing at 533 Hai Ba Trung Street, where you can witness
+        how this trademark dish is made.</p>
+    <h2>3. Com Ga</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/01/image.jpg" width="70%"/>
+    <br>
+    <p>Com ga is a hearty ensemble of fragrant rice, shredded village chicken, fresh herbs, black pepper, and chilli
+        jam. Originating from China, it’s a very common dish in Southeast Asia, but Hoi An is said to utilise only
+        top quality rice and farm-raised chickens. The rice is also cooked in a mixture of pandan leaves, chicken
+        stock and turmeric in wood-fired clay ovens, resulting in its distinctive pale yellow exterior. A standard
+        plate of com ga is priced at VND30,000, which comes with a small bowl of clear soup, dipping sauces, and
+        pickled green chillies.</p>
+    <h2>4. Mi Quang</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/02/image.jpg" width="70%"/>
+    <br>
+    <p>Mi quang consists of yellow rice noodles, bone broth seasoned with fish sauce, black pepper, shallot, and garlic,
+        topped with a variety of meat, herbs, and local greens. A bowl costs between VND 15,000 and VND 25,000, though
+        prices can go much higher at established restaurants in Hoi An. Traditionally, meat toppings are either chicken,
+        pork, or beef slices, but many restaurants now include squid, boiled quail eggs, snails, and frogs. As with most
+        noodle and rice dishes in Vietnam, mi quang also features lots of fresh herbs and other additions such as basil,
+        peanuts, coriander, sliced banana flowers, and sesame rice crackers.</p>
+    <h2>5. Bun Dau Mam Tom </h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/03/image.jpg" width="70%"/>
+    <br>
+    <p>Bun dau mam tom is a simple dish of deep-fried tofu, thin rice noodles, cucumber, and fresh herbs. This local
+        delicacy is also served with fermented shrimp paste or mam tom. Do note that this pungent dipping sauce is
+        not for everyone, but you can easily reduce the strong taste with some lime juice and black pepper. One of
+        the best places in Hoi An to enjoy this unique dish is Quan Dau Bac, located along Phan Chu Trinh Street.
+        The meatless variation is priced at VND 20,000 while a platter of bun dau mam tom with steamed pork, beef,
+        fish balls, and mushrooms costs VND 35,000.1</p>
+    <h2>6. Banh Xeo </h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/04/image.jpg" width="70%"/>
+    <br>
+    <p>A typical Vietnamese snack or appetiser, banh xeo is made of rice flour, coconut milk, and turmeric, filled with
+        ingredients such as vermicelli noodles, chicken, pork or beef slices, shrimps, sliced onions, beansprouts,
+        and mushrooms. Priced between VND 15,000 and VND 25,000, banh xeo is sold at roadside stalls, markets, and
+        restaurants in Hoi An. Eat like the locals by wrapping the crispy pancake in mustard leaf, lettuce leaves
+        or rice papers together with nem lui (lemongrass pork skewers), mint leaves, and basil, then dip it in fermented
+        peanut sauce.1</p>
+    <h2>7. Banh Mi</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/05/image.jpg" width="70%"/>
+    <br>
+    <p>Quick and tasty, banh mi is one of Vietnam’s quintessential dish that you should never miss out on. This
+        baguette sandwich is priced between VND 10,000 and VND 15,000 and consists of pickled vegetables, pâté,
+        butter, soy sauce, cilantro, chillies, and hot peppers. Depending on the restaurant or food stall, you can
+        also choose from a variety of meat fillings for your banh mi, including heo quay (roasted pork belly), cha ca
+        (fried fish with turmeric and dill), cha lua (boiled sausages), xiu mai (meatballs), thit ga (boiled chicken),
+        trung op la (fried egg), thit nuong (grilled pork loin), and xa xiu (Chinese barbecued pork).</p>
+    <h2>8. Bun Thit Nuong</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/06/image.jpg" width="70%"/>
+    <br>
+    <p>Bun thit nuong combines white vermicelli rice noodles, freshly chopped lettuce, sliced cucumber, beansprouts,
+        pickled daikon, basil, chopped peanuts, and mint. The dish is finally topped with sweet and peppery pork
+        (thit nuong) slices that are grilled over a charcoal stove. While the dish is quite filling on its own, you
+        also opt for a side of green chilli, fresh lettuce, and a peanut-based gravy to mix into the bun thit nuong
+        for extra flavour. Bun thit nuong is priced around VND 30,000 at established restaurants within the Ancient
+        Town, but there are numerous food stalls along Hoi An Riverside selling it much cheaper.</p>
+    <h2>9. Bánh Dap</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/07/image.jpg" width="70%"/>
+    <br>
+    <p>Banh dap is a traditional snack that’s exclusively available at Cam Nam Village, located about 10 minutes away
+        from Hoi An Ancient Town. Priced at only VND 8,000, it’s made by placing a wet rice paper atop a crispy one
+        before layering on some mung bean paste, fried shallots, and chopped spring onions. Finally, another crispy
+        rice paper covers the entire ensemble. It’s also known as smashing rice paper, as you get to crush the banh
+        dap into pieces on the table before enjoying it with some fermented fish sauce with chillies.</p>
+    <h2>10.Hoanh Thanh Chien</h2>
+    <br>
+    <img src="http://static.asiawebdirect.com/m/.imaging/678x452/website/bangkok/portals/vietnam/homepage/hoi-an/top10/10-best-hoi-an-dishes/allParagraphs/00/top10Set/08/image.jpg" width="70%"/>
+    <br>
+    <p>Hoan thanh chien may resemble Mexican nachos due its salsa-like topping, but it’s actually a fried wonton dumpling
+        with a variety of meat fillings. Made with rice flour, the wonton is filled with diced pork, shrimp, eggs, and
+        various spices before being deep-fried until golden. Great as a snack or appetiser, hoan thanh chien is then
+        topped with a mix of sautéed pork, corn, shrimp, tomato roulade, and coriander leaves. Expect to pay between
+        VND 30,000 and VND 50,000 for a massive platter.</p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

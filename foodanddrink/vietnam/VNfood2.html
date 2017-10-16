@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hanoi streetfood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: rgba(256, 256, 256, 0.2);
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 160px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: royalblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
+        /*bookings*/
+        #booking a{
+            text-decoration:none ;
+        }
+        /*footer*/
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #959aa0;
+        }
+
+        ul.footer-menu li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /*content*/
+        #heading1 {
+            font-family: 'Lato', sans-serif;;
+            font-size: 100px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            color: grey;
+        }
+        #heading2 {
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            color: grey;
+        }
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: 'Catamaran', sans-serif;
+            font-style: italic;
+            text-align: justify;
+        }
+        .content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- /menu -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Video.html"><b>Video</b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Destination</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="China_destination.html">China</a></li>
+                        <li><a href="Korea_destination.html">Korea</a></li>
+                        <li><a href="Thailand.html">Thailand</a></li>
+                        <li><a href="Vietnam_destination.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Bookings</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.booking.com/" target="_blank">Hotels</a></li>
+                        <li><a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3" target="_blank">Flights</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                               target="_blank">Transportation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><b>Interest</b> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="FoodnDr.html">Food and Drink</a></li>
+                        <li><a href="Festival.html">Festival</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="Homepage%20.html"><img src="images/cs-lonely-planet.png"
+                                                                                    height="72" width="156"/></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- header img -->
+<div style="height: 100vh" id="tl">
+    <img src="http://www.vietnamtastelondon.com/wp-content/uploads/2016/12/foodbanner04.jpg"
+         width="100%" height="100%">
+</div>
+<!-- content -->
+<!-- heading -->
+<div>
+    <h3 id="heading1">  Hanoi's street foods </h3>
+    <p id="heading2"> From snail soup to deep-fried dumplings </p>
+    <p align="center"><i> Source: Lonely Planet </i></p>
+</div>
+<!-- text -->
+<div class="content">
+    <p>Most visitors to Hanoi will sample the city’s most famous dishes: beef pho, bun cha (barbecued pork with rice
+        noodles) and banh mi (baguette). But beyond the three Bs, the capital’s food scene is as diverse as it is
+        adventurous. Here are 10 of Hanoi’s essential street eats, with something for both the brave and faint of
+        stomach.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-street-che.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Bun oc</h2>
+    <p>Forget chicken soup and grilled cheese – snail noodle soup is Hanoi’s classic comfort food. A standard bowl
+        comes with rice noodles (bun), tofu, sometimes beef and crab meat, and a heaping plate of the greens that
+        accompany most Vietnamese dishes. Key ingredients in the broth are tomatoes, wine vinegar, and pepper, giving
+        it a nice kick. This dish can be found all over Hanoi, but a bowl at 13 Hoe Nhai in Ba Dinh District is
+        a little spicier and more flavourful than other varieties. You can also select the size of your snail: big
+        or small.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-bun-oc.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2> Bun bo Hue</h2>
+    <p>Another variant of the bun noodle family, bun bo Hue is a regional dish hailing from the ancient city of Hue
+        in central Vietnam. But Hanoians can also cook up a mean bowl of these noodles, with pig knuckles, oxtail and
+        pork, topped with a cube of congealed blood and broth that is somehow sweet, sour, and spicy all at once.
+        The complexity of flavours prompted Anthony Bourdain to say it would be a ‘relationship-ender’ if he learned
+        his significant other didn’t like the dish. Don’t fret if blood and pig feet aren’t your thing – you can
+        request a bowl without it. A street stall at 3 P Quang Trung, Hoan Kiem District, serves the real deal.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-bun-bo-hue.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Hanoi-style barbecue</h2>
+    <p>Grab a plastic basket and some tongs. A Hanoi barbecue street food stall is a little like a farmers market,
+        but with more squid and cow udders. A popular barbecue in the Old Quarter at 66 P Hang Bong has a good
+        selection of veggies, meat kebabs, and seafood skewers. After choosing from the mystery meats (nothing is
+        labelled), pull up a stool and get grilling on one of the mini burners that are placed at each table. Another
+        barbecue at 61 P Quan Su offers tasty ribs, glazed okra, and funky-looking enoki mushrooms.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-bbq.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Mien xao luon </h2>
+    <p>Like sliced pig-ear meat, eel is not an uncommon ingredient in Vietnamese salads. And no one serves it quite
+        like Dong Thinh at 87 P Hang Dieu, Hoan Kiem District. For the dish mien xao luon, crispy eel is mixed with
+        stir-fried glass noodles, egg, and bean sprouts. Other options include mien tron (noodles tossed with eel,
+        cucumber, and herbs) and chao luon (eel porridge). A display case out front is kept filled to the brim with
+        dried eel, and with the constant foot traffic it’s easy to see why.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-eel-display.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Banh xeo</h2>
+    <p>Banh xeo is part crepe, part pancake and 100% delicious. The Hanoian version of the savoury rice-flour cake
+        is filled with prawns and bean sprouts, served with assorted greens, cucumber, and sour mango or papaya.
+        Scissors are often supplied to help diners cut up the crispy banh xeo, which can be rolled in rice paper
+        along with other toppings. Most banh xeo places also serve nem lui, grilled pork sausages, which can be
+        eaten in the same fashion. P Doi Can, Ba Dinh District, has many street vendors that sell this popular dish.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-banh-xeo.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Banh da tron</h2>
+    <p>For a unique local food experience, head to 42C P Ly Thuong Kiet, Hoan Kiem District. You’ll see a woman on the
+        side of the street with a carrying pole and two baskets: one holds a steaming pot and the other is filled
+        with raw ingredients. She carries this load to that spot every day, and mostly feeds hungry office workers
+        during their lunch breaks. Her speciality is banh da tron: thick, flat noodles topped with sausage, fried
+        fish cakes, tofu, peanuts and leafy vegetables. Thin glass noodles called mien are another option.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-banh-da-tron.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Ha cao and banh tom</h2>
+    <p>A small food stall at 55 P Hang Bo in the Old Quarter has been churning out deep-fried dumplings for 30 years.
+        These golden snacks are only served for a short window each day from about 2.30pm to 5pm. The ha cao chien is
+        filled with mushroom, pork and red onion, while the banh tom is made from battered sweet potato and prawns.
+        The side of fish sauce with slices of papaya is sweet and slightly spicy. Wash it down with a glass of iced soy milk.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-fried-snack-vendor.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Banh ghoi</h2>
+    <p>For more fried goodies, head to Quan Goc Da at 52 P Ly Quoc Su near St Joseph’s Cathedral, where several women
+        tend to a massive vat of frying oil. Pork, woodear mushrooms and vermicelli noodles are encased in a pillow-shaped
+        pastry called banh ghoi, the the most in-demand menu item. Other options include nem cua be (crab spring rolls),
+        banh ran thit (glutinous rice balls filled with pork), and banh ran ngot (sweet glutinous rice balls).</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-banh-ghoi.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>My ga tan</h2>
+    <p>My ga tan is one of Hanoi’s most intimidating dishes. But after getting past the shock of realising there’s a
+        chicken head peering back at you from your soup, you’ll find the dish is hearty and fulfilling. Diners have
+        two options: the 'regular' chicken, or a miniature (and slightly more expensive) chicken called a black-bone
+        silky, named for its black skin. The chickens are stuffed into empty soda and beer cans with aromatic
+        Chinese herbs. Next, the cans are placed over heat, allowing the meat to soak up the flavours while it simmers.
+        Ramen noodles are added to the stew, and Vietnamese swear by the soup’s healing properties. Quan Cay Si
+        restaurant at 29 Tong Duy Tan in Hoan Kiem District serves up the best in town.</p>
+    <br>
+    <img src="https://lonelyplanetwp.imgix.net/2016/06/hanoi-food-my-ga-tan.jpg?fit=min&q=40&sharp=10&vib=20&w=1470" width="70%"/>
+    <h2>Che</h2>
+    <p>To finish off with something sweet, try che, a sweet soup made from coconut cream and tapioca, available in
+        many variations. On a Saturday afternoon, a che stall at 31 Dao Duy Tu in the Old Quarter buzzes with young
+        people sipping lemon tea and spitting sunflower seeds. Some order che chuoi nuong, a sweet soup with tangy,
+        caramelised banana and pink jelly. Others go for the popular che nep cam, made from rice and taro. Crushed
+        ice is served on the side so that the level of sweetness can be adjusted to suit individual tastes.</p>
+</div>
+<!-- /footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4" id="so1">
+                <h5>DESTINATIONS</h5>
+                <a href="China_destination.html">China</a><br>
+                <a href="Korea_destination.html">Korea</a><br>
+                <a href="Thailand.html">Thailand</a><br>
+                <a href="Vietnam_destination.html">Vietnam</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>INTERESTS</h5>
+                <a href="">Festivals</a><br>
+                <a href="">Food and Drink</a><br>
+            </div>
+            <div class="col-lg-4" id="so1">
+                <h5>TRAVEL BOOKING</h5>
+                <a href="https://www.booking.com/" target="_blank">Hotels</a><br>
+                <a href="https://booking.kayak.com/?sid=0d2289d0c2be84af328798893df5efe3"
+                   target="_blank">Flights</a><br>
+                <a href="http://www.rentalcars.com/Home.do?sid=0d2289d0c2be84af328798893df5efe3&adplat=cross_product_bar&preflang=en&affiliateCode=booking-com"
+                   target="_blank">Transportation</a><br>
+            </div>
+            <hr style="color: #959aa0; width: 90%; " text-center>
+            <div class="pull-left" id="footertrai">
+                <div class="col-lg-3">
+                    <a href="Homepage%20.html"> <img src="images/anh.png" width="100px" style="margin-left: 60px;"></a>
+                </div>
+            </div>
+            <div>
+                <div class="pull-left" id="footerphai">
+                    <nav>
+                        <div class="col-lg-7">
+                            <ul class="footer-menu">
+                                <li><a href="https://www.lonelyplanet.com/about/">About us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/about/careers/">Work for us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/contact">Contact us</a></li>
+                                <li><a href="https://www.lonelyplanet.com/press-trade-advertising/">Press trade and
+                                    Advertising</a></li>
+                                <li><a href="https://www.lonelyplanet.com/tourism">Tourism Solutions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/website-terms/">Terms and
+                                    Conditions</a></li>
+                                <li><a href="https://www.lonelyplanet.com/legal/privacy-policy/">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p style="margin-left: 50px; font-size: 12px;"> © 2017 Lonely Planet. All rights reserved. No
+                        part of this site may be reproduced without our written permission.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.pinterest.com/lonelyplanet/"><img
+                            src="images/22361315_336785070116122_51008527_n.png" width="30px"></a>
+                    <a href="https://twitter.com/lonelyplanet"><img
+                            src="images/22384883_336785066782789_552435625_n.png" width="30px"></a>
+                    <a href="https://www.facebook.com/lonelyplanet"><img
+                            src="images/22384990_336785063449456_1979986176_n.png" width="30px"></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
