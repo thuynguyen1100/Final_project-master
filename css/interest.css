@@ -152,13 +152,13 @@ ul.footer-menu li {
 }
 
 .box {
-    background-image: url(https://images.unsplash.com/photo-1503764654157-72d979d9af2f?dpr=1&auto=compress,format&fit=crop&w=1506&h=&q=80&cs=tinysrgb&crop=);
     width: 100%;
     height: 100%;
     padding: 10px;
     margin: 0 auto;
     position: relative;
 }
+
 .container {
     text-align: center;
 }
